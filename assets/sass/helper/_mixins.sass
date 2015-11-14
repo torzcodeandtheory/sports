@@ -232,5 +232,25 @@
 	position: absolute
 	left: 50%
 	transform: translateX(-50%)
+
+=hideTabMob()
+	+fortablet
+		display: none
+	+formobile
+		display: none
+
+=showTabMob()
+	+fortablet
+		display: block
+	+formobile
+		display: block
+
+=showTab()
+	+fortablet
+		display: block
+
+=showMob()
+	+fortablet
+		display: block
 	
 	

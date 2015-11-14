@@ -1,32 +1,16 @@
+include doubleMenu.jade
+
 .header
 	.top-section
 		.b1000px
-			ul.topnav
-				li
-					a(href="#", class="home") <i class="fa fa-home fa-lg"></i>
-				li
-					a(href="#", class="live") Live <i class="fa fa-circle"></i>
-				li
-					a(href="#") News
-				li
-					a(href="#") Entertainment
-				li.dropdown
-					a(href="#") More <i class="fa fa-chevron-down"></i>
-					ul
-						li
-							a(href="#") Lorem Ipsum
-						li
-							a(href="#") Link Nav One
-			ul.signlogs
-				li
-					a(href="#", class="signup") Signup
-				li
-					a(href="#", class="login") Login
+			+doubleMenu
 	
 	.mid-section
 		.b1000px
 			.logo
 				img(src="images/main-logo.png")
+			.burger
+				<i class="fa fa-navicon fa-2x"></i>
 			ul.nav
 				li
 					a(href="#", class="active") Home

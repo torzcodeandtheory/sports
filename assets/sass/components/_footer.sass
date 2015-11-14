@@ -2,6 +2,7 @@
 	clear: both
 	background: $black
 	overflow: hidden
+	text-transform: uppercase
 
 	ul.ftrLinks
 		float: left
@@ -13,10 +14,26 @@
 			a
 				line-height: 40px
 				color: $white
-				+transitionspeed(.5s)
+				+transitionspeed(.3s)
 		
 				&:hover
 					color: $red
+	
+			+formobile
+				float: none
+				clear: both
+
+		+formobile
+			float: none
+
+	+fortablet
+		padding: 0 10px
+		box-sizing: border-box
+
+	+formobile
+		padding: 0 10px
+		box-sizing: border-box
+		text-align: center
 
 	.copyright
 		float: right
@@ -24,3 +41,7 @@
 		
 		p
 			line-height: 40px
+
+		+formobile
+			float: none
+			clear: both
