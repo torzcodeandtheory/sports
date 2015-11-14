@@ -154,7 +154,6 @@ a {
     .top-section ul.topnav .dropdown:hover a, .top-section ul.topnav .dropdown.active a {
       background: #872836; }
     .top-section ul.topnav .dropdown:hover ul, .top-section ul.topnav .dropdown.active ul {
-      height: 54px;
       transition: .5s; }
   .top-section ul.signlogs {
     float: right;
