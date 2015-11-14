@@ -181,11 +181,36 @@ a {
         display: block;
         transition: .5s; }
         .top-section ul.signlogs li a:hover {
-          color: #c1f8f2; }
+          color: #a4f2e9; }
 
 .mid-section {
-  background: #262626; }
+  background: #262626;
+  float: left;
+  width: 100%;
+  height: 80px;
+  border-bottom: 2px #e31837 solid; }
   .mid-section .logo {
-    float: left; }
+    float: left;
+    position: relative;
+    height: 80px;
+    width: 164px; }
+    .mid-section .logo img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0; }
+  .mid-section ul.nav {
+    float: left;
+    margin: 30px 0 0 30px; }
+    .mid-section ul.nav li {
+      float: left;
+      margin: 0 10px; }
+      .mid-section ul.nav li a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+        display: block; }
+        .mid-section ul.nav li a:hover, .mid-section ul.nav li a.active {
+          color: #e31837; }
 
 /*# sourceMappingURL=maps/main.css.map */
