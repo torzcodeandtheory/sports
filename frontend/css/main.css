@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,300,900);
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700italic,700,400italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 @font-face {
   font-family: 'oswald_bold';
   src: url("fonts/oswald-bold-webfont.eot");
@@ -86,18 +87,72 @@ a {
   outline-width: 0;
   cursor: pointer; }
 
-h1 {
-  font-family: "oswald_regular", Arial;
-  font-size: 24px;
-  line-height: 24px; }
-
 .b1000px {
   width: 1000px;
   margin: 0 auto; }
 
+.container {
+  clear: both; }
+
 .top-section {
   border-top: 1px #872836 solid;
+  border-bottom: 1px #872836 solid;
   background: #e31837;
   height: 27px; }
+  .top-section ul.topnav {
+    position: relative;
+    float: left; }
+    .top-section ul.topnav > li {
+      float: left;
+      position: relative; }
+      .top-section ul.topnav > li:before {
+        content: "";
+        display: block;
+        background: #fff;
+        width: 1px;
+        height: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0; }
+      .top-section ul.topnav > li:last-of-type:before {
+        display: none; }
+      .top-section ul.topnav > li a {
+        color: #fff;
+        font-family: "Lato", Arial;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 27px;
+        padding: 0 10px;
+        display: block;
+        transition: .5s; }
+        .top-section ul.topnav > li a:hover {
+          background: #872836;
+          transition: .5s; }
+        .top-section ul.topnav > li a.live i {
+          color: #8dc63f; }
+    .top-section ul.topnav .dropdown ul {
+      position: absolute;
+      background: #872836;
+      width: 200px;
+      height: 0;
+      overflow: hidden;
+      transition: .5s;
+      border-bottom: 1px #872836 solid; }
+      .top-section ul.topnav .dropdown ul li {
+        border-top: 1px #872836 solid; }
+        .top-section ul.topnav .dropdown ul li a {
+          background: #912b3a;
+          transition: .5s; }
+          .top-section ul.topnav .dropdown ul li a:hover {
+            background: #e31837; }
+      .top-section ul.topnav .dropdown ul:first-of-type {
+        border: 0; }
+    .top-section ul.topnav .dropdown:hover a, .top-section ul.topnav .dropdown.active a {
+      background: #872836; }
+    .top-section ul.topnav .dropdown:hover ul, .top-section ul.topnav .dropdown.active ul {
+      height: 54px;
+      transition: .5s; }
 
 /*# sourceMappingURL=maps/main.css.map */

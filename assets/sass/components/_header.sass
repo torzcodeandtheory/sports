@@ -1,4 +1,76 @@
 .top-section 
-	border-top: 1px $darkRed solid
+	border-top: 1px $maroon solid
+	border-bottom: 1px $maroon solid
 	background: $red
 	height: 27px
+
+	ul.topnav
+		position: relative
+		float: left
+
+		& > li
+			float: left
+			position: relative
+
+			&:before
+				content: ""
+				display: block
+				background: $white
+				width:	1px
+				height: 10px
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: 0
+			
+			&:last-of-type
+				&:before
+					display: none
+	
+			a
+				color: $white
+				+font($lato,12px,400)
+				text-transform: uppercase
+				line-height: 27px
+				padding: 0 10px
+				display: block
+				transition: .5s
+				
+				&:hover
+					background: $maroon
+					transition: .5s
+				
+				&.live
+					i
+						color: $liveGreen
+	
+		.dropdown
+			ul
+				position: absolute
+				background: $maroon
+				width: 200px
+				height: 0
+				overflow: hidden
+				transition: .5s
+				border-bottom: 1px $maroon solid
+		
+				li
+					border-top: 1px $maroon solid
+				
+					a
+						background: $lighterMaroon
+						transition: .5s
+		
+						&:hover
+							background: $red
+	
+				&:first-of-type
+					border: 0
+		
+			&:hover,
+			&.active
+				a
+					background: $maroon
+				ul
+					height: 54px
+					transition: .5s
