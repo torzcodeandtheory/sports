@@ -126,10 +126,13 @@ a {
         color: #fff;
         padding: 0 12px;
         display: block;
-        transition: .5s; }
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
         .top-section ul.topnav li a:hover {
-          background: #872836;
-          transition: .5s; }
+          background: #872836; }
         .top-section ul.topnav li a.live i {
           color: #8dc63f; }
     .top-section ul.topnav .dropdown ul {
@@ -138,7 +141,11 @@ a {
       width: 200px;
       height: 0;
       overflow: hidden;
-      transition: .5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
       border-bottom: 1px #872836 solid; }
       .top-section ul.topnav .dropdown ul li {
         border-top: 1px #872836 solid;
@@ -147,7 +154,11 @@ a {
           display: none; }
         .top-section ul.topnav .dropdown ul li a {
           background: #912b3a;
-          transition: .5s; }
+          -moz-transition: 0.5s;
+          -webkit-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s; }
           .top-section ul.topnav .dropdown ul li a:hover {
             background: #e31837; }
       .top-section ul.topnav .dropdown ul:first-of-type {
@@ -155,7 +166,11 @@ a {
     .top-section ul.topnav .dropdown:hover a, .top-section ul.topnav .dropdown.active a {
       background: #872836; }
     .top-section ul.topnav .dropdown:hover ul, .top-section ul.topnav .dropdown.active ul {
-      transition: .5s; }
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
   .top-section ul.signlogs {
     float: right;
     background: #2f3837;
@@ -179,7 +194,11 @@ a {
         color: #fff;
         padding: 0 10px;
         display: block;
-        transition: .5s; }
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
         .top-section ul.signlogs li a:hover {
           color: #a4f2e9; }
 
@@ -201,30 +220,88 @@ a {
       left: 0; }
   .mid-section ul.nav {
     float: left;
-    margin: 32px 0 0 30px; }
+    margin: 32px 0 0 15px; }
     .mid-section ul.nav li {
       float: left;
-      margin: 0 10px; }
+      margin: 0 8px; }
       .mid-section ul.nav li a {
         color: #fff;
         text-transform: uppercase;
         font-size: 16px;
         display: block;
-        transition: .5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
         font-family: "oswald_light", Arial; }
         .mid-section ul.nav li a:hover, .mid-section ul.nav li a.active {
-          color: #e31837;
-          transition: .5s; }
+          color: #e31837; }
   .mid-section .searchsocial {
     float: right;
     margin: 25px 0 0 0; }
     .mid-section .searchsocial .searchBlock {
       float: left;
       border-right: 1px #808080 solid; }
+      .mid-section .searchsocial .searchBlock .inputBox {
+        float: left;
+        margin-right: 5px;
+        background: #fff;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        border-radius: 15px;
+        overflow: hidden;
+        width: 0;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+        .mid-section .searchsocial .searchBlock .inputBox input[type=text] {
+          float: right;
+          line-height: 24px;
+          font-family: "Lato", Arial;
+          font-size: 14px;
+          font-weight: 400;
+          outline: none;
+          border: 0;
+          padding-left: 12px;
+          padding-right: 12px;
+          background: transparent; }
       .mid-section .searchsocial .searchBlock .searchIcon {
+        float: left;
         color: #fff;
         cursor: pointer;
-        margin-right: 8px; }
+        margin-right: 8px;
+        line-height: 25px;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        border: 0;
+        background: transparent;
+        outline: none;
+        padding: 0;
+        font-size: 14px; }
+        .mid-section .searchsocial .searchBlock .searchIcon:hover {
+          color: #e31837; }
+      .mid-section .searchsocial .searchBlock.open .searchIcon {
+        color: #e31837;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+      .mid-section .searchsocial .searchBlock.open .inputBox {
+        width: 171px;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
     .mid-section .searchsocial ul.socials {
       float: left; }
       .mid-section .searchsocial ul.socials li {
@@ -240,12 +317,21 @@ a {
           -webkit-border-radius: 50%;
           -ms-border-radius: 50%;
           -o-border-radius: 50%;
-          border-radius: 50%; }
+          border-radius: 50%;
+          -moz-transition: 0.5s;
+          -webkit-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s; }
           .mid-section .searchsocial ul.socials li a.fbLink {
             background: #537bbd;
             margin-left: 5px; }
+            .mid-section .searchsocial ul.socials li a.fbLink:hover {
+              background: #3d62a0; }
           .mid-section .searchsocial ul.socials li a.twLink {
             background: #78cdf0; }
+            .mid-section .searchsocial ul.socials li a.twLink:hover {
+              background: #4abceb; }
           .mid-section .searchsocial ul.socials li a i {
             position: absolute;
             top: 50%;

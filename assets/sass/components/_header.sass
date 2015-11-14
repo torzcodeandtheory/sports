@@ -32,11 +32,10 @@
 				color: $white
 				padding: 0 12px
 				display: block
-				transition: .5s
+				+transitionspeed(.5s)
 				
 				&:hover
 					background: $maroon
-					transition: .5s
 				
 				&.live
 					i
@@ -49,7 +48,7 @@
 				width: 200px
 				height: 0
 				overflow: hidden
-				transition: .5s
+				+transitionspeed(.5s)
 				border-bottom: 1px $maroon solid
 		
 				li
@@ -61,7 +60,7 @@
 				
 					a
 						background: $lighterMaroon
-						transition: .5s
+						+transitionspeed(.5s)
 		
 						&:hover
 							background: $red
@@ -74,7 +73,7 @@
 				a
 					background: $maroon
 				ul
-					transition: .5s
+					+transitionspeed(.5s)
 	
 	ul.signlogs
 		float: right
@@ -104,7 +103,7 @@
 				color: $white
 				padding: 0 10px
 				display: block
-				transition: .5s
+				+transitionspeed(.5s)
 		
 				&:hover
 					color: $lightAqua
@@ -131,24 +130,23 @@
 
 	ul.nav
 		float: left
-		margin: 32px 0 0 30px
+		margin: 32px 0 0 15px
 	
 		li
 			float: left
-			margin: 0 10px
+			margin: 0 8px
 
 			a
 				color: $white
 				text-transform: uppercase
 				font-size: 16px
 				display: block
-				transition: .5s
+				+transitionspeed(.5s)
 				font-family: $light
 			
 				&:hover,
 				&.active
 					color: $red
-					transition: .5s
 		
 	.searchsocial
 		float: right
@@ -158,10 +156,49 @@
 			float: left
 			border-right: 1px $lighterGray solid
 
+			.inputBox
+				float: left
+				margin-right: 5px
+				background: $white
+				+bradius(15px)
+				overflow: hidden
+				width: 0
+				+transitionspeed(.5s)
+			
+				input[type=text]
+					float: right
+					line-height: 24px
+					+font($lato,14px,400)
+					outline: none
+					border: 0
+					padding-left: 12px
+					padding-right: 12px
+					background: transparent
+	
 			.searchIcon
+				float: left
 				color: $white
 				cursor: pointer
 				margin-right: 8px
+				line-height: 25px
+				+transitionspeed(.5s)
+				border: 0
+				background: transparent
+				outline: none
+				padding: 0
+				font-size: 14px
+	
+				&:hover 
+					color: $red
+	
+			&.open
+				.searchIcon
+					color: $red
+					+transitionspeed(.5s)
+	
+				.inputBox
+					width: 171px
+					+transitionspeed(.5s)
 				
 
 		ul.socials
@@ -176,13 +213,20 @@
 					position: relative
 					color: $white
 					+bradius(50%)
+					+transitionspeed(.5s)
 	
 					&.fbLink
 						background: $fbBlue
 						margin-left: 5px
+						
+						&:hover
+							background: $fbBlueDarken
+	
 					&.twLink
 						background: $twBlue
-					
+						
+						&:hover
+							background: $twBlueDarken
 					i
 						+centerAll()
 						

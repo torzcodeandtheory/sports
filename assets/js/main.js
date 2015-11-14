@@ -13,5 +13,17 @@ $(document).ready(function() {
 		$(dd).css('height', '0px');
 	});
 	
+	//search
+	$('.searchIcon').click(function() {
+		var parent = $(this).parent();
+		
+		if(!$(parent).hasClass('open')) {
+			$(this).parent().addClass('open');
+		} else {
+			$(this).parent().removeClass('open');
+		}
+		
+	});
+	
 	
 });
