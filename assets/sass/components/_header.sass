@@ -141,22 +141,27 @@
 			transform: translateY(-50%)
 			left: 0
 
-	.burger
-		height: 80px
-		width: 25px
+	.triggers
 		position: absolute
 		color: $white
 		cursor: pointer
 		+transitionspeed(.3s)
-		right: 10px
+		right: 0
 		display: none
 
-		&.show,
-		&:hover
-			color: $red
+		& > div
+			position: relative
+			height: 80px
+			width: 25px
+			float: right
+			margin-right: 10px
 
-		i
-			+centerVert()
+			&.show,
+			&:hover
+				color: $red
+
+			i
+				+centerVert()
 
 		+showTabMob()
 		
@@ -185,7 +190,7 @@
 		float: right
 		margin: 26px 0 0 0
 		+hideTabMob()
-	
+
 		.searchBlock
 			float: left
 			border-right: 1px $lighterGray solid
@@ -265,12 +270,21 @@
 							background: $twBlueDarken
 					i
 						+centerAll()
-						
+	
+	.searchBox
+		height: 0
+		overflow: hidden
+		clear: both
+		+transitionspeed(.3s)
+		
+		+fordesktop
+			display: none
+
 	&.show
 		height: auto
 		+transitionspeed(.3s)
 		
-		& ul.nav
+		& ul.nav.show
 			display: block
 			clear: both
 			margin: 0
@@ -299,4 +313,48 @@
 					&.active
 						color: $red
 						background: $darkGrayDarken
+	
+		& .searchBox.show
+			height: 47px
+			+transitionspeed(.3s)
+			position: relative
+			background: $red
+			
+
+			.inputBox
+				overflow: hidden
+				margin: 0 auto
+				background: $white
+				+bradius(15px)
+				padding-right: 30px
+				width: 80%
+				+centerAll()
+				
+			
+				input[type=text]
+					float: right
+					line-height: 24px
+					+font($lato,14px,400)
+					outline: none
+					border: 0
+					padding-left: 12px
+					padding-right: 12px
+					background: transparent
+					box-sizing: border-box
+					width: 100%
+	
+			.searchIcon
+				color: $red
+				cursor: pointer
+				margin-right: 8px
+				+transitionspeed(.3s)
+				border: 0
+				background: transparent
+				outline: none
+				padding: 0
+				font-size: 14px
+				position: absolute
+				width: 25px
+				right: 0
+				height: 25px
 	

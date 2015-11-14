@@ -1,4 +1,5 @@
 include doubleMenu.jade
+include searchBlock.jade
 
 .header
 	.top-section
@@ -9,8 +10,13 @@ include doubleMenu.jade
 		.b1000px
 			.logo
 				img(src="images/main-logo.png")
-			.burger
-				<i class="fa fa-navicon fa-2x"></i>
+			.triggers
+				.burger
+					<i class="fa fa-navicon fa-2x"></i>
+				.search
+					<i class="fa fa-search fa-2x"></i>
+			.searchBox
+				+searchBlock2
 			ul.nav
 				li
 					a(href="#", class="active") Home
@@ -28,12 +34,11 @@ include doubleMenu.jade
 					a(href="#") Shows
 				li
 					a(href="#") Upload
+					
 			.searchsocial
 				.searchBlock
-					.inputBox
-						input(type="text", placeholder="Search..")
-					button.searchIcon
-						<i class="fa fa-search fa-lg"></i>
+					+searchBlock
+				
 				ul.socials
 					li
 						a(href="#", class="fbLink") <i class="fa fa-facebook fa-lg"></i>
