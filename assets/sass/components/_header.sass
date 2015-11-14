@@ -21,9 +21,7 @@
 				background: $white
 				width:	1px
 				height: 10px
-				position: absolute
-				top: 50%
-				transform: translateY(-50%)
+				+centerVert
 				right: 0
 			
 			&:last-of-type
@@ -133,7 +131,7 @@
 
 	ul.nav
 		float: left
-		margin: 30px 0 0 30px
+		margin: 32px 0 0 30px
 	
 		li
 			float: left
@@ -144,7 +142,48 @@
 				text-transform: uppercase
 				font-size: 16px
 				display: block
+				transition: .5s
+				font-family: $light
 			
 				&:hover,
 				&.active
 					color: $red
+					transition: .5s
+		
+	.searchsocial
+		float: right
+		margin: 25px 0 0 0
+	
+		.searchBlock
+			float: left
+			border-right: 1px $lighterGray solid
+
+			.searchIcon
+				color: $white
+				cursor: pointer
+				margin-right: 8px
+				
+
+		ul.socials
+			float: left
+			li
+				float: left
+				margin: 0 2px
+				a
+					width: 25px
+					height: 25px
+					display: block
+					position: relative
+					color: $white
+					+bradius(50%)
+	
+					&.fbLink
+						background: $fbBlue
+						margin-left: 5px
+					&.twLink
+						background: $twBlue
+					
+					i
+						+centerAll()
+						
+	
