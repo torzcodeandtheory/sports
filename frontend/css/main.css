@@ -98,14 +98,19 @@ a {
   border-top: 1px #872836 solid;
   border-bottom: 1px #872836 solid;
   background: #e31837;
-  height: 27px; }
+  height: 27px;
+  font-family: "Lato", Arial;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 27px; }
   .top-section ul.topnav {
     position: relative;
     float: left; }
-    .top-section ul.topnav > li {
+    .top-section ul.topnav li {
       float: left;
       position: relative; }
-      .top-section ul.topnav > li:before {
+      .top-section ul.topnav li:before {
         content: "";
         display: block;
         background: #fff;
@@ -115,22 +120,17 @@ a {
         top: 50%;
         transform: translateY(-50%);
         right: 0; }
-      .top-section ul.topnav > li:last-of-type:before {
+      .top-section ul.topnav li:last-of-type:before {
         display: none; }
-      .top-section ul.topnav > li a {
+      .top-section ul.topnav li a {
         color: #fff;
-        font-family: "Lato", Arial;
-        font-size: 12px;
-        font-weight: 400;
-        text-transform: uppercase;
-        line-height: 27px;
-        padding: 0 10px;
+        padding: 0 12px;
         display: block;
         transition: .5s; }
-        .top-section ul.topnav > li a:hover {
+        .top-section ul.topnav li a:hover {
           background: #872836;
           transition: .5s; }
-        .top-section ul.topnav > li a.live i {
+        .top-section ul.topnav li a.live i {
           color: #8dc63f; }
     .top-section ul.topnav .dropdown ul {
       position: absolute;
@@ -142,6 +142,8 @@ a {
       border-bottom: 1px #872836 solid; }
       .top-section ul.topnav .dropdown ul li {
         border-top: 1px #872836 solid; }
+        .top-section ul.topnav .dropdown ul li:before {
+          border: 0; }
         .top-section ul.topnav .dropdown ul li a {
           background: #912b3a;
           transition: .5s; }
@@ -154,5 +156,31 @@ a {
     .top-section ul.topnav .dropdown:hover ul, .top-section ul.topnav .dropdown.active ul {
       height: 54px;
       transition: .5s; }
+  .top-section ul.signlogs {
+    float: right;
+    background: #2f3837;
+    padding: 0 15px; }
+    .top-section ul.signlogs li {
+      float: left;
+      position: relative; }
+      .top-section ul.signlogs li:before {
+        content: "";
+        display: block;
+        background: #fff;
+        width: 1px;
+        height: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0; }
+      .top-section ul.signlogs li:last-of-type:before {
+        display: none; }
+      .top-section ul.signlogs li a {
+        color: #fff;
+        padding: 0 10px;
+        display: block;
+        transition: .5s; }
+        .top-section ul.signlogs li a:hover {
+          color: #c1f8f2; }
 
 /*# sourceMappingURL=maps/main.css.map */

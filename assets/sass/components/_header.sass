@@ -3,12 +3,15 @@
 	border-bottom: 1px $maroon solid
 	background: $red
 	height: 27px
+	+font($lato,12px,400)
+	text-transform: uppercase
+	line-height: 27px
 
 	ul.topnav
 		position: relative
 		float: left
 
-		& > li
+		li
 			float: left
 			position: relative
 
@@ -29,10 +32,7 @@
 	
 			a
 				color: $white
-				+font($lato,12px,400)
-				text-transform: uppercase
-				line-height: 27px
-				padding: 0 10px
+				padding: 0 12px
 				display: block
 				transition: .5s
 				
@@ -56,6 +56,9 @@
 		
 				li
 					border-top: 1px $maroon solid
+			
+					&:before
+						border: 0
 				
 					a
 						background: $lighterMaroon
@@ -74,3 +77,36 @@
 				ul
 					height: 54px
 					transition: .5s
+	
+	ul.signlogs
+		float: right
+		background: $darkAqua
+		padding: 0 15px
+
+		li
+			float: left
+			position: relative
+
+			&:before
+				content: ""
+				display: block
+				background: $white
+				width:	1px
+				height: 10px
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: 0
+	
+			&:last-of-type
+				&:before
+					display: none
+			
+			a
+				color: $white
+				padding: 0 10px
+				display: block
+				transition: .5s
+		
+				&:hover
+					color: $lightAqua
