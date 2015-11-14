@@ -22,7 +22,6 @@ $(document).ready(function() {
 		} else {
 			$(this).parent().removeClass('open');
 		}
-		
 	});
 	
 	
