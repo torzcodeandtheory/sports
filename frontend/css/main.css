@@ -239,7 +239,7 @@ a {
           color: #e31837; }
   .mid-section .searchsocial {
     float: right;
-    margin: 25px 0 0 0; }
+    margin: 28px 0 0 0; }
     .mid-section .searchsocial .searchBlock {
       float: left;
       border-right: 1px #808080 solid; }
@@ -337,5 +337,9 @@ a {
             top: 50%;
             left: 50%;
             transform: translateY(-50%) translateX(-50%); }
+
+.footer {
+  clear: both;
+  background: #000; }
 
 /*# sourceMappingURL=maps/main.css.map */
