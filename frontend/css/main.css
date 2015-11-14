@@ -141,9 +141,10 @@ a {
       transition: .5s;
       border-bottom: 1px #872836 solid; }
       .top-section ul.topnav .dropdown ul li {
-        border-top: 1px #872836 solid; }
+        border-top: 1px #872836 solid;
+        float: none; }
         .top-section ul.topnav .dropdown ul li:before {
-          border: 0; }
+          display: none; }
         .top-section ul.topnav .dropdown ul li a {
           background: #912b3a;
           transition: .5s; }
@@ -181,5 +182,10 @@ a {
         transition: .5s; }
         .top-section ul.signlogs li a:hover {
           color: #c1f8f2; }
+
+.mid-section {
+  background: #262626; }
+  .mid-section .logo {
+    float: left; }
 
 /*# sourceMappingURL=maps/main.css.map */
