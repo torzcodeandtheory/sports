@@ -494,6 +494,8 @@ a {
           -ms-transform: rotateX(180deg);
           -o-transform: rotateX(180deg);
           transform: rotateX(180deg); }
+  .mid-section.show {
+    height: auto; }
   .mid-section .logo {
     margin-left: 10px; }
   .mid-section .triggers {
@@ -514,7 +516,12 @@ a {
       float: right;
       margin-right: 10px; }
       .mid-section .triggers > div.show, .mid-section .triggers > div:hover {
-        color: #e31837; }
+        color: #e31837;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
       .mid-section .triggers > div i {
         position: absolute;
         top: 50%;
@@ -548,5 +555,81 @@ a {
   .footer .copyright {
     float: none;
     clear: both; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .mid-section ul.nav {
+    height: 0;
+    overflow: hidden;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    display: block;
+    margin: 0;
+    float: none;
+    clear: both; }
+    .mid-section ul.nav li {
+      float: none;
+      display: block;
+      border-bottom: 1px #262626 solid;
+      margin: 0; }
+      .mid-section ul.nav li:first-of-type {
+        border-top: 1px #262626 solid; }
+      .mid-section ul.nav li a {
+        line-height: 30px;
+        display: block;
+        padding: 5px 10px 0;
+        background: #1e1e1e; }
+        .mid-section ul.nav li a.active, .mid-section ul.nav li a:focus {
+          background: #e31837;
+          color: #fff; }
+    .mid-section ul.nav.show {
+      margin: 0;
+      clear: both;
+      width: 100%;
+      -moz-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; } }
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .mid-section ul.nav {
+    height: 0;
+    overflow: hidden;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    display: block;
+    margin: 0;
+    float: none;
+    clear: both; }
+    .mid-section ul.nav li {
+      float: none;
+      display: block;
+      border-bottom: 1px #262626 solid;
+      margin: 0; }
+      .mid-section ul.nav li:first-of-type {
+        border-top: 1px #262626 solid; }
+      .mid-section ul.nav li a {
+        line-height: 30px;
+        display: block;
+        padding: 5px 10px 0;
+        background: #1e1e1e; }
+        .mid-section ul.nav li a.active, .mid-section ul.nav li a:focus {
+          background: #e31837;
+          color: #fff; }
+    .mid-section ul.nav.show {
+      margin: 0;
+      clear: both;
+      width: 100%;
+      -moz-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; } }
 
 /*# sourceMappingURL=maps/main.css.map */

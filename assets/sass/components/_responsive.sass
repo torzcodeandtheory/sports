@@ -92,6 +92,8 @@
 						
 
 	.mid-section
+		&.show
+			height: auto
 		.logo
 			margin-left: 10px
 		.triggers
@@ -112,6 +114,7 @@
 				&.show,
 				&:hover
 					color: $red
+					+transitionspeed(.3s)
 
 				i
 					+centerVert()

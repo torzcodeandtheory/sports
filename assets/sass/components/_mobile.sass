@@ -1,1 +1,37 @@
 +formobile()
+	.mid-section
+		ul.nav
+			height: 0
+			overflow: hidden
+			+transitionspeed(.3s)
+			display: block
+			margin: 0
+			float: none
+			clear: both
+
+			li
+				float: none
+				display: block
+				border-bottom: 1px $darkGray solid
+				margin: 0
+				&:first-of-type
+					border-top: 1px $darkGray solid
+
+				a
+					line-height: 30px
+					display: block
+					padding: 5px 10px 0
+					background: $darkGrayDarken
+
+					&.active,
+					&:focus
+						background: $red
+						color: $white
+	
+			&.show
+				margin: 0
+				clear: both
+				width: 100%
+				+transitionspeed(.3s)
+
+				

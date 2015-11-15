@@ -59,5 +59,24 @@ $(document).ready(function() {
 		}
 	});
 	
+	//main nav responsive
+	var midSectBox = $('.mid-section');
+	var midSect = $('.mid-section').height();
+	var midSectUL = $('.mid-section ul.nav');
+	var midSectULHeight = $('.mid-section ul.nav')[0].scrollHeight;
+	var totalHeight2 = midSectULHeight + midSect;
+	
+	$('.burger').click(function() {
+		if(!$(this).hasClass('show')) {
+			$(this).addClass('show');
+			$(midSectUL).addClass('show');
+			$(midSectUL).css('height', midSectULHeight);
+		} else {
+			$(this).removeClass('show');
+			$(midSectUL).removeClass('show');
+			$(midSectUL).css('height', '0px');
+		}
+	});
+	
 	
 });
