@@ -411,6 +411,19 @@ a {
         float: none;
         clear: both; } }
 
+.adsBlock {
+  background: #363636;
+  padding: 10px 0 15px;
+  clear: both; }
+  .adsBlock .placeholder {
+    max-width: 728px;
+    margin: 0 auto;
+    width: 80%; }
+    .adsBlock .placeholder img {
+      width: 100%;
+      height: auto;
+      display: block; }
+
 @media only screen and (max-width: 1023px) {
   .top-section {
     background: #e31837;
@@ -571,7 +584,6 @@ a {
     clear: both; }
     .mid-section ul.nav li {
       float: none;
-      display: block;
       border-bottom: 1px #262626 solid;
       margin: 0; }
       .mid-section ul.nav li:first-of-type {
@@ -609,7 +621,6 @@ a {
     clear: both; }
     .mid-section ul.nav li {
       float: none;
-      display: block;
       border-bottom: 1px #262626 solid;
       margin: 0; }
       .mid-section ul.nav li:first-of-type {
