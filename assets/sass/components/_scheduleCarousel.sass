@@ -1,0 +1,50 @@
+.carouselScheduleBlock
+	overflow: hidden
+	clear: both
+	background: $lightGray
+	h1
+		width: 10%
+		float: left
+		color: $white
+		line-height: 90px
+
+	.carouselSchedule
+		width: 90%
+		float: left
+		height: 90px
+		.csBox
+			float: left
+			width: 92%
+			.dateBox
+				width: 30%
+				float: left
+				text-align: center
+				position: relative
+				background: red
+				p
+					clear: both
+					display: block
+
+			.league
+				width: 70%
+				float: left
+
+	.slick-arrow
+		//+centerVert()
+		z-index: 2
+		cursor: pointer
+		color: $white
+		background: $dirtyWhite
+		+transitionspeed(.3s)
+		width: 4%
+		height: 90px
+
+		&:hover
+			opacity: .5
+			+transitionspeed(.3s)
+
+		&.prevBtn
+			float: left
+
+		&.nextBtn
+			float: right

@@ -64,20 +64,25 @@ $(document).ready(function() {
 	var midSectUL = $('.mid-section ul.nav');
 	var midSectULHeight = $('.mid-section ul.nav')[0].scrollHeight;
 	var totalHeight2 = midSectULHeight + midSect;
-	console.log(totalHeight2)
+	//console.log(totalHeight2)
 
 	$('.burger').click(function() {
 		if(!$(this).hasClass('show')) {
 			$(this).addClass('show');
+			$(midSectBox).addClass('show');
 			$(midSectUL).addClass('show');
 			$(midSectUL).css('height', midSectULHeight);
+			$(midSectBox).css('height', totalHeight2);
 		} else {
 			$(this).removeClass('show');
+			$(midSectBox).removeClass('show');
 			$(midSectUL).removeClass('show');
 			$(midSectUL).css('height', '0px');
+			$(midSectBox).css('height', '80px');
 		}
 	});
 	
+	//Full Carousel
 	$('.fullCarousel').slick({
 		dots: true,
 		infinite: true,
@@ -86,5 +91,32 @@ $(document).ready(function() {
 		lazyLoad: 'ondemand',
 		prevArrow: '<div class="prevBtn"><i class="fa fa-chevron-left fa-2x"></i></div>',
 		nextArrow: '<div class="nextBtn"><i class="fa fa-chevron-right fa-2x"></i></div>'
+	});
+	
+	$('.csBox').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		prevArrow: '<div class="prevBtn"><i class="fa fa-chevron-left fa-2x"></i></div>',
+		nextArrow: '<div class="nextBtn"><i class="fa fa-chevron-right fa-2x"></i></div>',
+		appendArrows: '.carouselSchedule',
+		responsive: [
+			{
+				breakpoint: 1023,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
 });
