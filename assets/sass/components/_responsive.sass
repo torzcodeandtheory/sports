@@ -1,0 +1,143 @@
++forresponsive()
+
+	//Header
+	.top-section
+		background: $red
+		height: auto
+		border-bottom: 0
+
+		ul.topnav
+			display: none
+
+		.moreNav
+			display: block
+			padding: 0 10px
+			border-right: 1px $maroon solid
+			float: left
+			color: $white
+			cursor: pointer
+			
+			&:hover,
+			&:focus,
+			&.show
+				background: $darkAqua
+
+		.backHome
+			display: block
+			padding: 0 10px
+			border-right: 1px $maroon solid
+			float: left
+			color: $white
+			cursor: pointer
+
+			&:hover,
+			&:focus,
+			&.show
+				background: $darkAqua
+
+		.moreNavContents
+			height: 0
+			overflow: hidden
+			display: block
+			clear: both
+			border-top: 1px $maroon solid
+			border-bottom: 1px $maroon solid
+			+transitionspeed(.3s)
+
+			&.show
+				+transitionspeed(.3s)
+
+			li
+				border-bottom: 1px $darkAquaDarken solid
+	
+				&:last-of-type
+					border-bottom: 0
+	
+				a
+					color: $white
+					padding: 0 10px
+					background: $darkAqua
+					display: block
+					span
+						float: right						
+						+transitionspeed(.3s)
+	
+					&.live
+						i
+							color: $liveGreen
+	
+					&:hover
+						background: $darkAquaDarken
+	
+				&.more
+					ul
+						height: 0
+						overflow: hidden
+						border-top: 1px $darkAquaDarken solid
+						+transitionspeed(.3s)
+	
+						li
+							a
+								color: $white
+								padding: 0 10px 0 20px
+		
+					&.show
+						ul
+							height: auto
+		
+					&.show
+						a
+							span
+								+rotateX(180deg)
+						
+
+	.mid-section
+		.logo
+			margin-left: 10px
+		.triggers
+			display: block
+			position: absolute
+			color: $white
+			cursor: pointer
+			+transitionspeed(.3s)
+			right: 0
+
+			& > div
+				position: relative
+				height: 80px
+				width: 25px
+				float: right
+				margin-right: 10px
+
+				&.show,
+				&:hover
+					color: $red
+
+				i
+					+centerVert()
+	
+	//Footer
+	.footer
+		ul.ftrLinks
+			li
+				a
+				+formobile
+					float: none
+					clear: both
+			+formobile
+				float: none
+		+fortablet
+			padding: 0 10px
+			box-sizing: border-box
+		+formobile
+			padding: 0 10px
+			box-sizing: border-box
+			text-align: center
+
+		.copyright
+			p
+				line-height: 40px
+
+			+formobile
+				float: none
+				clear: both

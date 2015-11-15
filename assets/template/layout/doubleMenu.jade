@@ -1,4 +1,9 @@
 mixin doubleMenu
+	.moreNav
+		<i class="fa fa-navicon fa-lg"></i>
+	.backHome
+		<i class="fa fa-home fa-lg"></i>
+		
 	ul.topnav
 		li
 			a(href="#", class="home") <i class="fa fa-home fa-lg"></i>
@@ -20,19 +25,22 @@ mixin doubleMenu
 			a(href="#", class="signup") Signup
 		li
 			a(href="#", class="login") Login
-			
-mixin moreNav
-	li
-		a(href="#", class="home") <i class="fa fa-home fa-lg"></i>
-	li
-		a(href="#", class="live") Live <i class="fa fa-circle"></i>
-	li
-		a(href="#") News
-	li
-		a(href="#") Entertainment
-	li
-		a(href="#") More <i class="fa fa-chevron-down"></i>
-	li
-		a(href="#", class="signup") Signup
-	li
-		a(href="#", class="login") Login
+	
+	ul.moreNavContents
+		li
+			a(href="#", class="live") Live
+				span <i class="fa fa-circle"></i>
+		li
+			a(href="#") News
+		li
+			a(href="#") Entertainment
+		li.more
+			a(href="#") More
+				span <i class="fa fa-chevron-down"></i>
+			ul
+				li
+					a(href="#") Lorem Ipsum
+				li
+					a(href="#") Link Nav One
+	
+	

@@ -37,7 +37,11 @@
 =formobile
     @media only screen and (min-width: 0) and (max-width: 767px)
         @content
-        
+
+//TARGET < 1023
+=forresponsive
+    @media only screen and (max-width: 1023px)
+        @content
         
 //ALL FIREFOX TARGET
 =firefox
