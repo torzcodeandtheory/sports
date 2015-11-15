@@ -4,9 +4,11 @@
 	.fullCarouselBlock
 		.fullCarousel
 			.fc-content
-				.imgCaption
-					position: relative
-					bottom: auto
+				.imgBlock
+					.mobImg
+						+showMob()
+					.defImg
+						+showTab()
 
 	//Header
 	.top-section

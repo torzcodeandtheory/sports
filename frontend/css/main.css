@@ -91,7 +91,8 @@ a {
   max-width: 1000px;
   margin: 0 auto;
   width: 100%;
-  position: relative; }
+  position: relative;
+  box-sizing: border-box; }
 
 .container {
   clear: both; }
@@ -434,18 +435,6 @@ a {
     height: auto; }
     .fullCarouselBlock .fullCarousel .fc-content {
       position: relative; }
-      .fullCarouselBlock .fullCarousel .fc-content:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: block;
-        background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0) 13%, black 94%);
-        background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0) 13%, black 94%);
-        background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0) 13%, black 94%);
-        background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0) 13%, black 94%);
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0) 13%, black 94%);
-        z-index: 1; }
       .fullCarouselBlock .fullCarousel .fc-content:hover .imgBlock img {
         -moz-transition: 8s;
         -webkit-transition: 8s;
@@ -466,7 +455,29 @@ a {
         overflow: hidden;
         width: 100%;
         margin: 0 auto;
-        position: relative; }
+        position: relative;
+        max-height: 450px; }
+        @media only screen and (min-width: 1024px) {
+          .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
+            display: none; } }
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+          .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
+            display: block; } }
+        @media only screen and (min-width: 0) and (max-width: 767px) {
+          .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
+            display: block; } }
+        .fullCarouselBlock .fullCarousel .fc-content .imgBlock:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0) 50%, black 94%);
+          background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0) 50%, black 94%);
+          background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0) 50%, black 94%);
+          background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0) 50%, black 94%);
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0) 50%, black 94%);
+          z-index: 1; }
         .fullCarouselBlock .fullCarousel .fc-content .imgBlock img {
           width: 100%;
           height: auto;
@@ -553,14 +564,35 @@ a {
       .fullCarouselBlock .fullCarousel .slick-arrow:hover {
         color: #e31837; }
       .fullCarouselBlock .fullCarousel .slick-arrow.prevBtn {
-        left: 10px; }
+        left: 5px; }
       .fullCarouselBlock .fullCarousel .slick-arrow.nextBtn {
-        right: 10px; }
+        right: 5px; }
+
+@media only screen and (max-width: 1023px) and (min-width: 0) and (max-width: 767px) {
+  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
+    display: block; } }
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
+    display: none; } }
+
+@media only screen and (max-width: 1023px) and (min-width: 1024px) {
+  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
+    display: none; } }
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .defImg {
+    display: block; } }
+
+@media only screen and (max-width: 1023px) and (min-width: 0) and (max-width: 767px) {
+  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .defImg {
+    display: none; } }
+
+@media only screen and (max-width: 1023px) and (min-width: 1024px) {
+  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .defImg {
+    display: none; } }
 
 @media only screen and (max-width: 1023px) {
-  .fullCarouselBlock .fullCarousel .fc-content .imgCaption {
-    position: relative;
-    bottom: auto; }
   .top-section {
     background: #e31837;
     height: auto;
@@ -740,7 +772,9 @@ a {
       -webkit-transition: 0.3s;
       -ms-transition: 0.3s;
       -o-transition: 0.3s;
-      transition: 0.3s; } }
+      transition: 0.3s; }
+  .fullCarouselBlock .fullCarousel .fc-content .imgCaption .b1000px {
+    padding: 0 40px; } }
 
 @media only screen and (min-width: 0) and (max-width: 767px) {
   .mid-section ul.nav {
@@ -778,9 +812,24 @@ a {
       -ms-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
-  .fullCarouselBlock .fullCarousel .fc-content .imgCaption {
-    position: relative; }
-    .fullCarouselBlock .fullCarousel .fc-content .imgCaption .tag a {
-      font-size: 12px; } }
+  .footer ul.ftrLinks li {
+    margin-right: 0; }
+  .fullCarouselBlock .fullCarousel .fc-content .imgCaption .b1000px {
+    padding: 0 30px; }
+  .fullCarouselBlock .fullCarousel .fc-content .imgCaption .tag a {
+    font-size: 12px; }
+  .fullCarouselBlock .fullCarousel .fc-content .imgCaption h1 {
+    font-size: 21px; }
+  .fullCarouselBlock .fullCarousel .fc-content .imgCaption p {
+    font-size: 14px;
+    line-height: 21px; } }
+
+@media only screen and (min-width: 0) and (max-width: 767px) and (min-width: 601px) and (max-width: 767px) {
+  .fullCarouselBlock .fullCarousel .fc-content .imgCaption .tag a {
+    font-size: 14px; }
+  .fullCarouselBlock .fullCarousel .fc-content .imgCaption h1 {
+    font-size: 28px; }
+  .fullCarouselBlock .fullCarousel .fc-content .imgCaption p {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=maps/main.css.map */

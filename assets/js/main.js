@@ -78,18 +78,12 @@ $(document).ready(function() {
 		}
 	});
 	
-	$('img').unveil(200, function() {
-		$(this).load(function() {
-			this.style.opacity = 1;
-			$('.imgloading').removeClass('show');
-		});
-	});
-	
 	$('.fullCarousel').slick({
 		dots: true,
 		infinite: true,
 		speed: 500,
 		cssEase: 'linear',
+		lazyLoad: 'ondemand',
 		prevArrow: '<div class="prevBtn"><i class="fa fa-chevron-left fa-2x"></i></div>',
 		nextArrow: '<div class="nextBtn"><i class="fa fa-chevron-right fa-2x"></i></div>'
 	});

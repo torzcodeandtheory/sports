@@ -33,12 +33,33 @@
 				clear: both
 				width: 100%
 				+transitionspeed(.3s)
-
+	.footer
+		ul.ftrLinks
+			li
+				margin-right: 0
+	
 	.fullCarouselBlock
 		.fullCarousel
 			.fc-content
 				.imgCaption
-					position: relative
+					.b1000px
+						padding: 0 30px
 					.tag
 						a
 							font-size: 12px
+					h1
+						font-size: 21px
+					p
+						font-size: 14px
+						line-height: 21px
+					+forstablet()
+						.tag
+							a
+								font-size: 14px
+						h1
+							font-size: 28px
+						p
+							font-size: 16px
+							//line-height: 21px
+						
+				

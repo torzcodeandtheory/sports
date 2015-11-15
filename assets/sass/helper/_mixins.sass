@@ -240,6 +240,8 @@
 		display: none
 
 =showTabMob()
+	+fordesktop
+		display: none
 	+fortablet
 		display: block
 	+formobile
@@ -248,9 +250,17 @@
 =showTab()
 	+fortablet
 		display: block
+	+formobile
+		display: none
+	+fordesktop
+		display: none
 
 =showMob()
-	+fortablet
+	+formobile
 		display: block
+	+fortablet
+		display: none
+	+fordesktop
+		display: none
 	
 	

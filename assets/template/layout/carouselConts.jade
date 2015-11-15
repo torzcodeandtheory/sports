@@ -1,11 +1,10 @@
 mixin fullCarousel
 	.fc-content
 		.imgBlock
-			.imgloading.show
-				<i class="fa fa-spinner fa-spin fa-2x"></i>
-			img(src="images/bg.png", data-src="http://lorempixel.com/1000/450/sports/2")
-			noscript.
-				img(src="http://lorempixel.com/abstract/1440/450/")
+			.mobImg
+				img(data-lazy="http://lorempixel.com/767/450/sports/2")
+			.defImg
+				img(data-lazy="http://lorempixel.com/1200/750/sports/2")
 		.imgCaption
 			.b1000px
 				.tag
@@ -13,18 +12,16 @@ mixin fullCarousel
 				h1 Fiba Asia Game Preview
 				p.
 					Gilas Pilipinas out for No. 1 seeding in Group E battle with India
-	
 	.fc-content
 		.imgBlock
-			.imgloading.show
-				<i class="fa fa-spinner fa-spin fa-2x"></i>
-			img(src="images/bg.png", data-src="http://lorempixel.com/1000/450/sports/5")
-			noscript.
-				img(src="http://lorempixel.com/abstract/1440/450/")
+			.mobImg
+				img(data-lazy="http://lorempixel.com/767/450/sports/2")
+			.defImg
+				img(data-lazy="http://lorempixel.com/1200/750/sports/2")
 		.imgCaption
 			.b1000px
 				.tag
 					a(href="#") fiba
 				h1 Fiba Asia Game Preview
 				p.
-					Gilas Pilipinas out for No. 2 seeding in Group E battle with India
+					Gilas Pilipinas out for No. 1 seeding in Group E battle with India
