@@ -95,10 +95,12 @@
 				+bradius(50%)
 				margin: 0 5px
 				cursor: pointer
+				+transitionspeed(.3s)
 	
 				&:hover,
 				&.slick-active
 					background: $red
+					+transitionspeed(.3s)
 	
 				button
 					display: none
@@ -108,9 +110,12 @@
 			z-index: 2
 			cursor: pointer
 			color: $white
+			opacity: .5
+			+transitionspeed(.3s)
 
 			&:hover
-				color: $red
+				opacity: 1
+				+transitionspeed(.3s)
 
 			&.prevBtn
 				left: 5px

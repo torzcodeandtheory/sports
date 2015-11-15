@@ -549,9 +549,19 @@ a {
         -o-border-radius: 50%;
         border-radius: 50%;
         margin: 0 5px;
-        cursor: pointer; }
+        cursor: pointer;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
         .fullCarouselBlock .fullCarousel .slick-dots li:hover, .fullCarouselBlock .fullCarousel .slick-dots li.slick-active {
-          background: #e31837; }
+          background: #e31837;
+          -moz-transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
         .fullCarouselBlock .fullCarousel .slick-dots li button {
           display: none; }
     .fullCarouselBlock .fullCarousel .slick-arrow {
@@ -560,9 +570,20 @@ a {
       transform: translateY(-50%);
       z-index: 2;
       cursor: pointer;
-      color: #fff; }
+      color: #fff;
+      opacity: .5;
+      -moz-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
       .fullCarouselBlock .fullCarousel .slick-arrow:hover {
-        color: #e31837; }
+        opacity: 1;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
       .fullCarouselBlock .fullCarousel .slick-arrow.prevBtn {
         left: 5px; }
       .fullCarouselBlock .fullCarousel .slick-arrow.nextBtn {
