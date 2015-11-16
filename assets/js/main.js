@@ -16,7 +16,6 @@ $(document).ready(function() {
 	//search
 	$('.searchIcon').click(function() {
 		var parent = $(this).parent();
-		
 		if(!$(parent).hasClass('open')) {
 			$(this).parent().addClass('open');
 		} else {
@@ -26,59 +25,38 @@ $(document).ready(function() {
 	
 	//top link responsive
 	var topMore = $('.moreNavContents');
-	var tmHeight = $('.moreNavContents')[0].scrollHeight;
-	
-	//nav hover
 	$('.moreNav').click(function() {
 		
 		if(!$(this).hasClass('show')) {
 			$(this).addClass('show');
 			$(topMore).addClass('show visible');
-			$(topMore).css('height', tmHeight);
 		} else {
 			$(this).removeClass('show');
 			$(topMore).removeClass('show visible');
-			$(topMore).css('height', '0px');
 		}
 	});
 	
 	//more responsive
-	var ddMore = $('.more ul');
-	var moreHeight = $('.more ul')[0].scrollHeight;
-	var totalHeight = moreHeight + tmHeight;
-	//nav hover
 	$('.more').click(function() {
 		if(!$(this).hasClass('show')) {
 			$(this).addClass('show');
-			$(ddMore).css('height', moreHeight); //dynamic height
-			$(topMore).css('height', totalHeight);
 		} else {
 			$(this).removeClass('show');
-			$(ddMore).css('height', '0');
-			$(topMore).css('height', tmHeight);
 		}
 	});
 	
 	var midSectBox = $('.mid-section');
-	var midSect = $('.mid-section').height();
 	var midSectUL = $('.mid-section ul.nav');
-	var midSectULHeight = $('.mid-section ul.nav')[0].scrollHeight;
-	var totalHeight2 = midSectULHeight + midSect;
-	//console.log(totalHeight2)
 
 	$('.burger').click(function() {
 		if(!$(this).hasClass('show')) {
 			$(this).addClass('show');
 			$(midSectBox).addClass('show');
 			$(midSectUL).addClass('show');
-			$(midSectUL).css('height', midSectULHeight);
-			$(midSectBox).css('height', totalHeight2);
 		} else {
 			$(this).removeClass('show');
 			$(midSectBox).removeClass('show');
 			$(midSectUL).removeClass('show');
-			$(midSectUL).css('height', '0px');
-			$(midSectBox).css('height', '80px');
 		}
 	});
 	
