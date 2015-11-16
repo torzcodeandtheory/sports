@@ -54,12 +54,12 @@ gulp.task('sass', function () {
         .pipe(plumber({
             errorHandler: errorAlert
         }))
+		.pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'nested',
             noCache: true
         }))
-        .pipe(sourcemaps.init())
-        .pipe(sourcemaps.write('./maps'))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./frontend/css'));
 
 });

@@ -102,10 +102,10 @@
     position: -webkit-sticky
     position: sticky
 
-=calc($val)
-    -webkit-calc($val)
-    -moz-calc($val)
-    calc($val)
+=calcu($property, $expression)
+    #{$property}: -moz-calc(#{$expression})
+    #{$property}: -webkit-calc(#{$expression})
+    #{$property}: calc(#{$expression})
 
 =centerer
     position: absolute

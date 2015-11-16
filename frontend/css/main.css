@@ -595,29 +595,99 @@ a {
   clear: both;
   background: #363636; }
   .carouselScheduleBlock h1 {
-    width: 10%;
+    width: 100px;
     float: left;
     color: #fff;
-    line-height: 90px; }
+    font-size: 21px;
+    line-height: 90px;
+    text-transform: uppercase;
+    text-align: center; }
   .carouselScheduleBlock .carouselSchedule {
-    width: 90%;
+    max-width: -moz-calc(100% - 100px);
+    max-width: -webkit-calc(100% - 100px);
+    max-width: calc(100% - 100px);
     float: left;
     height: 90px; }
     .carouselScheduleBlock .carouselSchedule .csBox {
       float: left;
-      width: 92%; }
+      max-width: -moz-calc(100% - 60px);
+      max-width: -webkit-calc(100% - 60px);
+      max-width: calc(100% - 60px); }
       .carouselScheduleBlock .carouselSchedule .csBox .dateBox {
-        width: 30%;
+        width: 50px;
         float: left;
         text-align: center;
         position: relative;
-        background: red; }
-        .carouselScheduleBlock .carouselSchedule .csBox .dateBox p {
-          clear: both;
-          display: block; }
+        background: #e1e1e1;
+        padding: 10px 0; }
+        .carouselScheduleBlock .carouselSchedule .csBox .dateBox span {
+          display: block;
+          color: #363636;
+          font-family: "oswald_light", Arial;
+          font-size: 14px;
+          font-weight: normal;
+          text-transform: uppercase;
+          line-height: 18px;
+          padding: 3px 0; }
+          .carouselScheduleBlock .carouselSchedule .csBox .dateBox span.date {
+            font-family: "oswald_regular", Arial;
+            font-size: 21px;
+            font-weight: normal; }
       .carouselScheduleBlock .carouselSchedule .csBox .league {
-        width: 70%;
-        float: left; }
+        float: left;
+        background: #ebebeb;
+        height: 90px; }
+        .carouselScheduleBlock .carouselSchedule .csBox .league.single {
+          width: 130px; }
+          .carouselScheduleBlock .carouselSchedule .csBox .league.single > div {
+            width: 100%; }
+        .carouselScheduleBlock .carouselSchedule .csBox .league.double {
+          width: 260px; }
+          .carouselScheduleBlock .carouselSchedule .csBox .league.double > div {
+            width: 50%;
+            position: relative; }
+            .carouselScheduleBlock .carouselSchedule .csBox .league.double > div:first-of-type:before {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 0;
+              right: 0;
+              height: 90px;
+              width: 1px;
+              background: #ebebeb; }
+        .carouselScheduleBlock .carouselSchedule .csBox .league .game {
+          float: left; }
+          .carouselScheduleBlock .carouselSchedule .csBox .league .game h2 {
+            background: #898989;
+            padding: 5px; }
+          .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li {
+            width: 56px;
+            float: left;
+            text-align: center;
+            padding: 5px 0 0;
+            position: relative; }
+            .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li .logoBox {
+              width: 50px;
+              height: 35px;
+              overflow: hidden;
+              margin: 0 auto; }
+              .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li .logoBox img {
+                width: 100%;
+                height: auto;
+                display: block; }
+            .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li p {
+              line-height: 23px;
+              padding-top: 4px; }
+              .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li p span {
+                padding-left: 5px; }
+                .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li p span.win {
+                  color: #e31837; }
+            .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li.vs {
+              width: 18px; }
+              .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li.vs p {
+                line-height: 60px;
+                text-transform: uppercase;
+                padding: 0; }
   .carouselScheduleBlock .slick-arrow {
     z-index: 2;
     cursor: pointer;
@@ -628,10 +698,16 @@ a {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-    width: 4%;
-    height: 90px; }
+    width: 30px;
+    height: 90px;
+    position: relative; }
+    .carouselScheduleBlock .slick-arrow i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%); }
     .carouselScheduleBlock .slick-arrow:hover {
-      opacity: .5;
+      opacity: .9;
       -moz-transition: 0.3s;
       -webkit-transition: 0.3s;
       -ms-transition: 0.3s;
@@ -906,4 +982,4 @@ a {
   .fullCarouselBlock .fullCarousel .fc-content .imgCaption p {
     font-size: 16px; } }
 
-/*# sourceMappingURL=maps/main.css.map */
+/*# sourceMappingURL=main.css.map */

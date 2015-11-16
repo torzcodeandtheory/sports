@@ -100,6 +100,7 @@ $(document).ready(function() {
 		prevArrow: '<div class="prevBtn"><i class="fa fa-chevron-left fa-2x"></i></div>',
 		nextArrow: '<div class="nextBtn"><i class="fa fa-chevron-right fa-2x"></i></div>',
 		appendArrows: '.carouselSchedule',
+		variableWidth: true,
 		responsive: [
 			{
 				breakpoint: 1023,

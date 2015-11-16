@@ -3,44 +3,121 @@
 	clear: both
 	background: $lightGray
 	h1
-		width: 10%
+		width: 100px
 		float: left
 		color: $white
+		font-size: 21px
 		line-height: 90px
+		text-transform: uppercase
+		text-align: center
 
 	.carouselSchedule
-		width: 90%
+		//width: 90%
+		+calcu(max-width,'100% - 100px')
 		float: left
 		height: 90px
 		.csBox
 			float: left
-			width: 92%
+			+calcu(max-width,'100% - 60px')
 			.dateBox
-				width: 30%
+				width: 50px
 				float: left
 				text-align: center
 				position: relative
-				background: red
-				p
-					clear: both
+				background: $white1
+				padding: 10px 0
+				
+				span
 					display: block
+					color: $lightGray
+					+font($light, 14px, normal)
+					text-transform: uppercase
+					line-height: 18px
+					padding: 3px 0
+	
+					&.date
+						+font($default, 21px, normal)
 
 			.league
-				width: 70%
 				float: left
+				background: $white2
+				height: 90px
+	
+				&.single
+					width: 130px
+					& > div
+						width: 100%
+				&.double
+					width: 260px
+					& > div
+						width: 50%
+						position: relative
+						&:first-of-type
+							&:before
+								content: ''
+								display: block
+								position: absolute
+								top: 0
+								right: 0
+								height: 90px
+								width: 1px
+								background: $white2
+				.game
+					float: left
+					
+	
+					h2
+						background: $gray
+						padding: 5px
+					ul
+						li
+							width: 56px
+							float: left
+							text-align: center
+							padding: 5px 0 0
+							position: relative
+							.logoBox
+								width: 50px
+								height: 35px
+								overflow: hidden
+								margin: 0 auto
+								img
+									width: 100%
+									height: auto
+									display: block
+							p
+								line-height: 23px
+								padding-top: 4px
+								span
+									padding-left: 5px
+									&.win
+										color: $red
+		
+							&.vs
+								width: 18px
+								p
+									line-height: 60px
+									text-transform: uppercase
+									padding: 0
+							
+					
+	
 
 	.slick-arrow
-		//+centerVert()
 		z-index: 2
 		cursor: pointer
 		color: $white
 		background: $dirtyWhite
 		+transitionspeed(.3s)
-		width: 4%
+		width: 30px
 		height: 90px
+		position: relative
+
+		i
+			+centerAll()
 
 		&:hover
-			opacity: .5
+			opacity: .9
 			+transitionspeed(.3s)
 
 		&.prevBtn
