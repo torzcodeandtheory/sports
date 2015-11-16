@@ -93,7 +93,7 @@ a {
   width: 100%;
   position: relative;
   box-sizing: border-box;
-  padding: 0 15px; }
+  padding: 0 25px; }
 
 .container {
   clear: both; }
@@ -620,7 +620,7 @@ a {
 .carouselScheduleBlock {
   overflow: hidden;
   clear: both;
-  background: #363636; }
+  background: #262626; }
   .carouselScheduleBlock h1 {
     width: 120px;
     float: left;
@@ -663,7 +663,8 @@ a {
       .carouselScheduleBlock .carouselSchedule .csBox .league {
         float: left;
         background: #ebebeb;
-        height: 90px; }
+        height: 89px;
+        border-top: 1px #ebebeb solid; }
         .carouselScheduleBlock .carouselSchedule .csBox .league.single {
           width: 130px; }
           .carouselScheduleBlock .carouselSchedule .csBox .league.single > div {
@@ -695,7 +696,7 @@ a {
             padding: 5px 0 0;
             position: relative; }
             .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li .logoBox {
-              width: 50px;
+              width: 90%;
               height: 35px;
               overflow: hidden;
               margin: 0 auto; }
@@ -705,7 +706,7 @@ a {
                 display: block; }
             .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li p {
               line-height: 23px;
-              padding-top: 4px; }
+              padding-top: 3px; }
               .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li p span {
                 padding-left: 5px; }
                 .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li p span.win {
@@ -749,6 +750,118 @@ a {
       float: left; }
     .carouselScheduleBlock .slick-arrow.nextBtn {
       float: right; }
+
+.contBlock {
+  padding: 25px 0;
+  float: left;
+  width: 100%;
+  position: relative; }
+  .contBlock.light {
+    background: #363636; }
+  .contBlock.dark {
+    background: #262626; }
+  .contBlock h2 {
+    font-family: "oswald_regular", Arial;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 8px 0 0;
+    color: #fff; }
+  .contBlock .wrap {
+    padding: 25px 0 10px;
+    overflow: hidden; }
+    .contBlock .wrap .watchBlock {
+      float: left;
+      max-width: -moz-calc(100% - 370px);
+      max-width: -webkit-calc(100% - 370px);
+      max-width: calc(100% - 370px);
+      width: 100%;
+      overflow: hidden;
+      position: relative; }
+      .contBlock .wrap .watchBlock:hover .imgBlock img {
+        -moz-transition: 8s;
+        -webkit-transition: 8s;
+        -ms-transition: 8s;
+        -o-transition: 8s;
+        transition: 8s;
+        -moz-transform-style: ease-in-out;
+        -webkit-transform-style: ease-in-out;
+        -ms-transform-style: ease-in-out;
+        -o-transform-style: ease-in-out;
+        transform-style: ease-in-out;
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2); }
+      .contBlock .wrap .watchBlock .imgBlock {
+        overflow: hidden; }
+        .contBlock .wrap .watchBlock .imgBlock img {
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transform: scale(1.1);
+          width: 100%;
+          -moz-transition: 8s;
+          -webkit-transition: 8s;
+          -ms-transition: 8s;
+          -o-transition: 8s;
+          transition: 8s;
+          -moz-transform-style: ease-in-out;
+          -webkit-transform-style: ease-in-out;
+          -ms-transform-style: ease-in-out;
+          -o-transform-style: ease-in-out;
+          transform-style: ease-in-out; }
+      .contBlock .wrap .watchBlock .captionBlock {
+        background: url("../images/blackTransparent.png");
+        padding: 15px 15px 15px 40px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-transform: uppercase;
+        box-sizing: border-box; }
+        .contBlock .wrap .watchBlock .captionBlock .texts {
+          float: left;
+          max-width: -moz-calc(100% - 180px);
+          max-width: -webkit-calc(100% - 180px);
+          max-width: calc(100% - 180px); }
+          .contBlock .wrap .watchBlock .captionBlock .texts h3 {
+            font-family: "oswald_regular", Arial;
+            font-size: 30px;
+            font-weight: normal;
+            color: #fff;
+            padding-bottom: 5px; }
+          .contBlock .wrap .watchBlock .captionBlock .texts p {
+            color: #fff;
+            font-family: "oswald_regular", Arial;
+            font-size: 18px;
+            font-weight: normal; }
+        .contBlock .wrap .watchBlock .captionBlock a {
+          background: #e31837;
+          color: #fff;
+          display: block;
+          float: right;
+          padding: 20px;
+          font-family: "oswald_regular", Arial;
+          font-size: 18px;
+          font-weight: normal;
+          -moz-transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          text-align: center; }
+          .contBlock .wrap .watchBlock .captionBlock a:hover {
+            background: #fff;
+            color: #e31837; }
+    .contBlock .wrap .sideAds {
+      float: right;
+      padding: 25px;
+      box-sizing: border-box;
+      background: #e1e1e1; }
+      .contBlock .wrap .sideAds img {
+        border: 1px #808080 solid; }
 
 @media only screen and (max-width: 1023px) and (min-width: 0) and (max-width: 767px) {
   .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
@@ -960,7 +1073,20 @@ a {
       transition: 0.3s;
       max-height: 1000px; }
   .fullCarouselBlock .fullCarousel .fc-content .imgCaption .b1366px {
-    padding: 0 40px; } }
+    padding: 0 40px; }
+  .contBlock .wrap .watchBlock .imgBlock {
+    max-height: 303px;
+    height: auto; }
+    .contBlock .wrap .watchBlock .imgBlock img {
+      width: auto;
+      height: 100%; }
+  .contBlock .wrap .watchBlock .captionBlock {
+    padding: 15px; }
+    .contBlock .wrap .watchBlock .captionBlock .texts h3 {
+      font-size: 21px;
+      line-height: 24px; }
+    .contBlock .wrap .watchBlock .captionBlock .texts p {
+      font-size: 14px; } }
 
 @media only screen and (min-width: 0) and (max-width: 767px) {
   .mid-section ul.nav {
@@ -1001,6 +1127,32 @@ a {
       max-height: 1000px; }
   .footer ul.ftrLinks li {
     margin-right: 0; }
+  .carouselScheduleBlock h1 {
+    float: none;
+    width: 100%;
+    line-height: 45px; }
+  .carouselScheduleBlock .carouselSchedule {
+    max-width: 100%; }
+    .carouselScheduleBlock .carouselSchedule .csBox .dateBox {
+      width: 50px; }
+    .carouselScheduleBlock .carouselSchedule .csBox .league.single {
+      width: 105px; }
+    .carouselScheduleBlock .carouselSchedule .csBox .league.double {
+      width: 210px; }
+    .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li {
+      width: 43px; }
+      .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li .logoBox {
+        width: 80%;
+        height: 25px; }
+        .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li .logoBox img {
+          width: 100%;
+          height: auto; }
+      .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li p {
+        line-height: 16px;
+        padding-top: 3px; }
+        .carouselScheduleBlock .carouselSchedule .csBox .league .game ul li p span {
+          padding-left: 0;
+          display: block; }
   .fullCarouselBlock .fullCarousel .fc-content .imgCaption .b1000px {
     padding: 0 30px; }
   .fullCarouselBlock .fullCarousel .fc-content .imgCaption .tag a {
@@ -1018,5 +1170,39 @@ a {
     font-size: 28px; }
   .fullCarouselBlock .fullCarousel .fc-content .imgCaption p {
     font-size: 16px; } }
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .contBlock .wrap .watchBlock {
+    float: none;
+    max-width: none; }
+    .contBlock .wrap .watchBlock .imgBlock {
+      max-height: 303px;
+      height: auto; }
+      .contBlock .wrap .watchBlock .imgBlock img {
+        width: auto;
+        height: 100%; }
+    .contBlock .wrap .watchBlock .captionBlock {
+      padding: 15px;
+      position: relative;
+      bottom: auto;
+      overflow: hidden;
+      margin-bottom: 25px; }
+      .contBlock .wrap .watchBlock .captionBlock .texts {
+        float: none;
+        max-width: none;
+        margin-bottom: 15px; }
+        .contBlock .wrap .watchBlock .captionBlock .texts h3 {
+          font-size: 21px;
+          line-height: 24px; }
+        .contBlock .wrap .watchBlock .captionBlock .texts p {
+          font-size: 14px; }
+      .contBlock .wrap .watchBlock .captionBlock a {
+        float: none; }
+  .contBlock .wrap .sideAds {
+    float: none; }
+    .contBlock .wrap .sideAds img {
+      border: 1px #808080 solid;
+      width: 100%;
+      height: auto; } }
 
 /*# sourceMappingURL=main.css.map */
