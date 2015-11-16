@@ -768,93 +768,8 @@ a {
     padding: 8px 0 0;
     color: #fff; }
   .contBlock .wrap {
-    padding: 25px 0 10px;
+    padding: 25px 0 0;
     overflow: hidden; }
-    .contBlock .wrap .watchBlock {
-      float: left;
-      max-width: -moz-calc(100% - 370px);
-      max-width: -webkit-calc(100% - 370px);
-      max-width: calc(100% - 370px);
-      width: 100%;
-      overflow: hidden;
-      position: relative; }
-      .contBlock .wrap .watchBlock:hover .imgBlock img {
-        -moz-transition: 8s;
-        -webkit-transition: 8s;
-        -ms-transition: 8s;
-        -o-transition: 8s;
-        transition: 8s;
-        -moz-transform-style: ease-in-out;
-        -webkit-transform-style: ease-in-out;
-        -ms-transform-style: ease-in-out;
-        -o-transform-style: ease-in-out;
-        transform-style: ease-in-out;
-        -moz-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        transform: scale(1.2); }
-      .contBlock .wrap .watchBlock .imgBlock {
-        overflow: hidden; }
-        .contBlock .wrap .watchBlock .imgBlock img {
-          -moz-transform: scale(1.1);
-          -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-          -o-transform: scale(1.1);
-          transform: scale(1.1);
-          width: 100%;
-          -moz-transition: 8s;
-          -webkit-transition: 8s;
-          -ms-transition: 8s;
-          -o-transition: 8s;
-          transition: 8s;
-          -moz-transform-style: ease-in-out;
-          -webkit-transform-style: ease-in-out;
-          -ms-transform-style: ease-in-out;
-          -o-transform-style: ease-in-out;
-          transform-style: ease-in-out; }
-      .contBlock .wrap .watchBlock .captionBlock {
-        background: url("../images/blackTransparent.png");
-        padding: 15px 15px 15px 40px;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        text-transform: uppercase;
-        box-sizing: border-box; }
-        .contBlock .wrap .watchBlock .captionBlock .texts {
-          float: left;
-          max-width: -moz-calc(100% - 180px);
-          max-width: -webkit-calc(100% - 180px);
-          max-width: calc(100% - 180px); }
-          .contBlock .wrap .watchBlock .captionBlock .texts h3 {
-            font-family: "oswald_regular", Arial;
-            font-size: 30px;
-            font-weight: normal;
-            color: #fff;
-            padding-bottom: 5px; }
-          .contBlock .wrap .watchBlock .captionBlock .texts p {
-            color: #fff;
-            font-family: "oswald_regular", Arial;
-            font-size: 18px;
-            font-weight: normal; }
-        .contBlock .wrap .watchBlock .captionBlock a {
-          background: #e31837;
-          color: #fff;
-          display: block;
-          float: right;
-          padding: 20px;
-          font-family: "oswald_regular", Arial;
-          font-size: 18px;
-          font-weight: normal;
-          -moz-transition: 0.3s;
-          -webkit-transition: 0.3s;
-          -ms-transition: 0.3s;
-          -o-transition: 0.3s;
-          transition: 0.3s;
-          text-align: center; }
-          .contBlock .wrap .watchBlock .captionBlock a:hover {
-            background: #fff;
-            color: #e31837; }
     .contBlock .wrap .sideAds {
       float: right;
       padding: 25px;
@@ -862,6 +777,184 @@ a {
       background: #e1e1e1; }
       .contBlock .wrap .sideAds img {
         border: 1px #808080 solid; }
+
+.watchBlock {
+  float: left;
+  max-width: -moz-calc(100% - 370px);
+  max-width: -webkit-calc(100% - 370px);
+  max-width: calc(100% - 370px);
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .watchBlock:hover .imgBlock img {
+    -moz-transition: 8s;
+    -webkit-transition: 8s;
+    -ms-transition: 8s;
+    -o-transition: 8s;
+    transition: 8s;
+    -moz-transform-style: ease-in-out;
+    -webkit-transform-style: ease-in-out;
+    -ms-transform-style: ease-in-out;
+    -o-transform-style: ease-in-out;
+    transform-style: ease-in-out;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
+  .watchBlock .imgBlock {
+    overflow: hidden; }
+    .watchBlock .imgBlock img {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+      width: 100%;
+      -moz-transition: 8s;
+      -webkit-transition: 8s;
+      -ms-transition: 8s;
+      -o-transition: 8s;
+      transition: 8s;
+      -moz-transform-style: ease-in-out;
+      -webkit-transform-style: ease-in-out;
+      -ms-transform-style: ease-in-out;
+      -o-transform-style: ease-in-out;
+      transform-style: ease-in-out; }
+  .watchBlock .captionBlock {
+    background: url("../images/blackTransparent.png");
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-transform: uppercase;
+    box-sizing: border-box; }
+    .watchBlock .captionBlock .texts {
+      float: left;
+      max-width: -moz-calc(100% - 180px);
+      max-width: -webkit-calc(100% - 180px);
+      max-width: calc(100% - 180px); }
+      .watchBlock .captionBlock .texts h3 {
+        font-family: "oswald_regular", Arial;
+        font-size: 30px;
+        font-weight: normal;
+        color: #fff;
+        padding-bottom: 5px; }
+      .watchBlock .captionBlock .texts p {
+        color: #fff;
+        font-family: "oswald_regular", Arial;
+        font-size: 18px;
+        font-weight: normal; }
+    .watchBlock .captionBlock a {
+      background: #e31837;
+      color: #fff;
+      display: block;
+      float: right;
+      padding: 20px;
+      font-family: "oswald_regular", Arial;
+      font-size: 18px;
+      font-weight: normal;
+      -moz-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      text-align: center; }
+      .watchBlock .captionBlock a:hover {
+        background: #fff;
+        color: #e31837; }
+
+.readMore {
+  float: left;
+  max-width: -moz-calc(100% - 370px);
+  max-width: -webkit-calc(100% - 370px);
+  max-width: calc(100% - 370px);
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .readMore:hover .imgBlock img {
+    -moz-transition: 8s;
+    -webkit-transition: 8s;
+    -ms-transition: 8s;
+    -o-transition: 8s;
+    transition: 8s;
+    -moz-transform-style: ease-in-out;
+    -webkit-transform-style: ease-in-out;
+    -ms-transform-style: ease-in-out;
+    -o-transform-style: ease-in-out;
+    transform-style: ease-in-out;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
+  .readMore .imgBlock {
+    overflow: hidden; }
+    .readMore .imgBlock img {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+      width: 100%;
+      -moz-transition: 8s;
+      -webkit-transition: 8s;
+      -ms-transition: 8s;
+      -o-transition: 8s;
+      transition: 8s;
+      -moz-transform-style: ease-in-out;
+      -webkit-transform-style: ease-in-out;
+      -ms-transform-style: ease-in-out;
+      -o-transform-style: ease-in-out;
+      transform-style: ease-in-out; }
+  .readMore .captionBlock {
+    background: url("../images/blackTransparent.png");
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-transform: uppercase;
+    box-sizing: border-box; }
+    .readMore .captionBlock .texts {
+      float: left;
+      max-width: -moz-calc(100% - 180px);
+      max-width: -webkit-calc(100% - 180px);
+      max-width: calc(100% - 180px); }
+      .readMore .captionBlock .texts h3 {
+        font-family: "oswald_regular", Arial;
+        font-size: 30px;
+        font-weight: normal;
+        color: #fff;
+        padding-bottom: 5px; }
+      .readMore .captionBlock .texts p {
+        color: #fff;
+        font-family: "oswald_regular", Arial;
+        font-size: 18px;
+        font-weight: normal; }
+    .readMore .captionBlock a {
+      background: #e31837;
+      color: #fff;
+      display: block;
+      float: right;
+      padding: 20px;
+      font-family: "oswald_regular", Arial;
+      font-size: 18px;
+      font-weight: normal;
+      -moz-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      text-align: center; }
+      .readMore .captionBlock a:hover {
+        background: #fff;
+        color: #e31837; }
+
+.mini2Block li {
+  width: 50%;
+  float: left; }
+  .mini2Block li .readMore {
+    max-width: none; }
 
 @media only screen and (max-width: 1023px) and (min-width: 0) and (max-width: 767px) {
   .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
@@ -1074,18 +1167,31 @@ a {
       max-height: 1000px; }
   .fullCarouselBlock .fullCarousel .fc-content .imgCaption .b1366px {
     padding: 0 40px; }
-  .contBlock .wrap .watchBlock .imgBlock {
+  .watchBlock .imgBlock {
     max-height: 303px;
     height: auto; }
-    .contBlock .wrap .watchBlock .imgBlock img {
+    .watchBlock .imgBlock img {
       width: auto;
       height: 100%; }
-  .contBlock .wrap .watchBlock .captionBlock {
+  .watchBlock .captionBlock {
     padding: 15px; }
-    .contBlock .wrap .watchBlock .captionBlock .texts h3 {
+    .watchBlock .captionBlock .texts h3 {
       font-size: 21px;
       line-height: 24px; }
-    .contBlock .wrap .watchBlock .captionBlock .texts p {
+    .watchBlock .captionBlock .texts p {
+      font-size: 14px; }
+  .readMore .imgBlock {
+    max-height: 303px;
+    height: auto; }
+    .readMore .imgBlock img {
+      width: auto;
+      height: 100%; }
+  .readMore .captionBlock {
+    padding: 15px; }
+    .readMore .captionBlock .texts h3 {
+      font-size: 21px;
+      line-height: 24px; }
+    .readMore .captionBlock .texts p {
       font-size: 14px; } }
 
 @media only screen and (min-width: 0) and (max-width: 767px) {
@@ -1172,37 +1278,63 @@ a {
     font-size: 16px; } }
 
 @media only screen and (min-width: 0) and (max-width: 767px) {
-  .contBlock .wrap .watchBlock {
-    float: none;
-    max-width: none; }
-    .contBlock .wrap .watchBlock .imgBlock {
-      max-height: 303px;
-      height: auto; }
-      .contBlock .wrap .watchBlock .imgBlock img {
-        width: auto;
-        height: 100%; }
-    .contBlock .wrap .watchBlock .captionBlock {
-      padding: 15px;
-      position: relative;
-      bottom: auto;
-      overflow: hidden;
-      margin-bottom: 25px; }
-      .contBlock .wrap .watchBlock .captionBlock .texts {
-        float: none;
-        max-width: none;
-        margin-bottom: 15px; }
-        .contBlock .wrap .watchBlock .captionBlock .texts h3 {
-          font-size: 21px;
-          line-height: 24px; }
-        .contBlock .wrap .watchBlock .captionBlock .texts p {
-          font-size: 14px; }
-      .contBlock .wrap .watchBlock .captionBlock a {
-        float: none; }
   .contBlock .wrap .sideAds {
     float: none; }
     .contBlock .wrap .sideAds img {
       border: 1px #808080 solid;
       width: 100%;
-      height: auto; } }
+      height: auto; }
+  .watchBlock {
+    float: none;
+    max-width: none; }
+    .watchBlock .imgBlock {
+      max-height: 303px;
+      height: auto; }
+      .watchBlock .imgBlock img {
+        width: auto;
+        height: 100%; }
+    .watchBlock .captionBlock {
+      padding: 15px;
+      position: relative;
+      bottom: auto;
+      overflow: hidden;
+      margin-bottom: 25px; }
+      .watchBlock .captionBlock .texts {
+        float: none;
+        max-width: none;
+        margin-bottom: 15px; }
+        .watchBlock .captionBlock .texts h3 {
+          font-size: 21px;
+          line-height: 24px; }
+        .watchBlock .captionBlock .texts p {
+          font-size: 14px; }
+      .watchBlock .captionBlock a {
+        float: none; }
+  .readMore {
+    float: none;
+    max-width: none; }
+    .readMore .imgBlock {
+      max-height: 303px;
+      height: auto; }
+      .readMore .imgBlock img {
+        width: auto;
+        height: 100%; }
+    .readMore .captionBlock {
+      padding: 15px;
+      position: relative;
+      bottom: auto;
+      overflow: hidden;
+      margin-bottom: 25px; }
+      .readMore .captionBlock .texts {
+        float: none;
+        max-width: none;
+        margin-bottom: 15px; }
+        .readMore .captionBlock .texts h3 {
+          font-size: 21px;
+          line-height: 24px; }
+        .readMore .captionBlock .texts p {
+          font-size: 14px; }
+      .readMore .captionBlock a {
+        float: none; } }
 
 /*# sourceMappingURL=main.css.map */
