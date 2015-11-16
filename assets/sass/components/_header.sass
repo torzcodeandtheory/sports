@@ -6,7 +6,11 @@
 	+font($lato,12px,400)
 	text-transform: uppercase
 	line-height: 27px
-	overflow: hidden
+	float: left
+	width: 100%
+
+	.b1366px
+		padding: 0
 
 	.moreNav,
 	.backHome,
@@ -52,7 +56,7 @@
 				position: absolute
 				background: $maroon
 				width: 200px
-				height: 0
+				max-height: 0
 				overflow: hidden
 				+transitionspeed(.3s)
 				border-bottom: 1px $maroon solid
@@ -81,6 +85,7 @@
 					background: $maroon
 				ul
 					+transitionspeed(.3s)
+					max-height: 1000px
 	
 	ul.signlogs
 		float: right
@@ -138,12 +143,12 @@
 
 	ul.nav
 		float: left
-		margin: 32px 0 0 15px
+		margin: 32px 0 0 25px
 		+hideTabMob()
 	
 		li
 			float: left
-			margin: 0 8px
+			margin: 0 10px
 
 			a
 				color: $white
@@ -157,8 +162,9 @@
 					color: $red	
 		
 	.searchsocial
-		float: right
 		margin: 26px 0 0 0
+		position: absolute
+		right: 10px;
 		+hideTabMob()
 
 		.searchBlock
@@ -214,6 +220,7 @@
 
 		ul.socials
 			float: left
+			margin-top: 1px
 			li
 				float: left
 				margin: 0 2px

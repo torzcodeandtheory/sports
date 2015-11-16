@@ -3,7 +3,7 @@
 	clear: both
 	background: $lightGray
 	h1
-		width: 100px
+		width: 120px
 		float: left
 		color: $white
 		font-size: 21px
@@ -13,14 +13,14 @@
 
 	.carouselSchedule
 		//width: 90%
-		+calcu(max-width,'100% - 100px')
+		+calcu(max-width,'100% - 120px')
 		float: left
 		height: 90px
 		.csBox
 			float: left
 			+calcu(max-width,'100% - 60px')
 			.dateBox
-				width: 50px
+				width: 70px
 				float: left
 				text-align: center
 				position: relative
@@ -69,6 +69,7 @@
 					h2
 						background: $gray
 						padding: 5px
+						color: $white
 					ul
 						li
 							width: 56px
@@ -100,9 +101,6 @@
 									text-transform: uppercase
 									padding: 0
 							
-					
-	
-
 	.slick-arrow
 		z-index: 2
 		cursor: pointer

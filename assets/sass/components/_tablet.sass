@@ -1,13 +1,13 @@
 +fortablet()
 	.mid-section
 		ul.nav
-			height: 0
 			overflow: hidden
 			+transitionspeed(.3s)
 			display: block
 			margin: 0
 			float: none
 			clear: both
+			max-height: 0
 
 			li
 				float: none
@@ -33,10 +33,11 @@
 				clear: both
 				width: 100%
 				+transitionspeed(.3s)
+				max-height: 1000px
 	
 	.fullCarouselBlock
 		.fullCarousel
 			.fc-content
 				.imgCaption
-					.b1000px
+					.b1366px
 						padding: 0 40px
