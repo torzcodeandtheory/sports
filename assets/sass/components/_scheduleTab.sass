@@ -1,0 +1,77 @@
+.schedTab
+	.leagueTab
+		li
+			float: left
+			a
+				background: $white4
+				line-height: 40px
+				width: 70px
+				display: block
+				color: $blakish
+				text-transform: uppercase
+				font-size: 18px
+				text-align: center
+				&:hover
+					color: $white
+					background: $red
+					+transitionspeed(.3s)
+			&.ui-tabs-active
+				a
+					color: $white
+					background: $red
+	.schedCont
+		.schedTable
+			clear: both
+			width: 100%
+			
+			th	
+				background: $red
+				p
+					line-height: 23px
+					padding: 10px 0 9px
+					color: $white
+					text-transform: uppercase
+				&.rank
+					width: 70px
+					background: $gray
+				&.team
+					+calc(max-width, '100% - 205px')
+				&.win
+					width: 45px
+				&.loss
+					width: 45px
+			td
+				background: $white
+				vertical-align: middle
+				p
+					text-align: center
+					line-height: 23px
+					padding: 10px 0 8px
+				.imgBlock
+					width: 75px
+					height: 44px
+					float: left
+					position: relative
+					+formobile()
+						display: none
+					img
+						+centerVert()
+						+formobile()
+							position: relative
+							transform: none
+							top: auto
+						
+				.teamName
+					float: left
+					text-align: left
+					margin-left: 10px
+					+formobile()
+						float: none
+						margin: 0
+						padding-left: 15px
+			tr
+				&:nth-child(odd)
+					td
+						background: $white4
+				
+				

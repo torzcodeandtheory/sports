@@ -1,15 +1,16 @@
 include ../modules/gallery.jade
+include ../layout/standingsTab.jade
 include ../layout/ads-sizes.jade
+
 
 .contBlock.dark
 	.b1366px
-		.titleBox
-			h2 Basketball
-			a(href="#", class="moreBtn") More
-			
-			
-		.wrap
-			.leftPanel
+		
+		.leftPanel
+			.titleBox
+				h2 Basketball
+				a(href="#", class="moreBtn") More
+			.wrap
 				+watchNow
 
 				ul.miniBlock.by2s
@@ -17,7 +18,9 @@ include ../layout/ads-sizes.jade
 						+readMore
 					li
 						+readMore
-					
-			.rightPanel
-				.sideAds
-					+ads_300x250
+
+		.rightPanel
+			.titleBox
+				h2 Standings
+			.wrap
+				+standings

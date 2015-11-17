@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1;
-  font-family: "oswald_regular", Arial;
+  font-family: "oswald_light", Arial;
   font-size: 13px;
   background: #fff; }
 
@@ -536,9 +536,7 @@ a {
             display: block;
             padding: 6px 8px 3px;
             color: #fff;
-            font-family: "oswald_light", Arial;
-            font-size: 16px;
-            font-weight: normal; }
+            font-size: 16px; }
         .fullCarouselBlock .fullCarousel .fc-content .imgCaption h1 {
           clear: both;
           font-family: "oswald_bold", Arial;
@@ -546,9 +544,7 @@ a {
           font-weight: normal;
           margin-bottom: 5px; }
         .fullCarouselBlock .fullCarousel .fc-content .imgCaption p {
-          font-family: "oswald_light", Arial;
           font-size: 24px;
-          font-weight: normal;
           max-width: 370px;
           line-height: 32px; }
     .fullCarouselBlock .fullCarousel .slick-dots {
@@ -641,14 +637,12 @@ a {
         .carouselScheduleBlock .carouselSchedule .csBox .dateBox span {
           display: block;
           color: #363636;
-          font-family: "oswald_light", Arial;
           font-size: 14px;
-          font-weight: normal;
           text-transform: uppercase;
           line-height: 18px;
           padding: 3px 0; }
           .carouselScheduleBlock .carouselSchedule .csBox .dateBox span.date {
-            font-family: "oswald_regular", Arial;
+            font-family: "oswald_light", Arial;
             font-size: 21px;
             font-weight: normal; }
       .carouselScheduleBlock .carouselSchedule .csBox .league {
@@ -752,7 +746,7 @@ a {
   .contBlock.dark {
     background: #262626; }
   .contBlock .titleBox h2 {
-    font-family: "oswald_regular", Arial;
+    font-family: "oswald_light", Arial;
     font-size: 36px;
     font-weight: normal;
     text-transform: uppercase;
@@ -767,7 +761,7 @@ a {
     padding: 10px 20px 7px;
     text-transform: uppercase;
     margin-left: 10px;
-    font-family: "oswald_regular", Arial;
+    font-family: "oswald_light", Arial;
     font-size: 14px;
     font-weight: normal;
     -moz-transition: 0.3s;
@@ -879,14 +873,14 @@ a {
       max-width: -webkit-calc(100% - 180px);
       max-width: calc(100% - 180px); }
       .colBlock .captionBlock .texts h3 {
-        font-family: "oswald_regular", Arial;
+        font-family: "oswald_light", Arial;
         font-size: 30px;
         font-weight: normal;
         color: #fff;
         padding-bottom: 5px; }
       .colBlock .captionBlock .texts p {
         color: #fff;
-        font-family: "oswald_regular", Arial;
+        font-family: "oswald_light", Arial;
         font-size: 18px;
         font-weight: normal; }
     .colBlock .captionBlock a {
@@ -895,7 +889,7 @@ a {
       display: block;
       float: right;
       padding: 20px;
-      font-family: "oswald_regular", Arial;
+      font-family: "oswald_light", Arial;
       font-size: 18px;
       font-weight: normal;
       -moz-transition: 0.3s;
@@ -916,24 +910,40 @@ a {
   .miniBlock li .captionBlock {
     background: #1b1b1b;
     overflow: hidden; }
-    .miniBlock li .captionBlock .texts h3.minis {
-      font-size: 18px;
-      line-height: 21px;
-      padding: 0; }
+    .miniBlock li .captionBlock .texts {
+      max-width: -moz-calc(100% - 130px);
+      max-width: -webkit-calc(100% - 130px);
+      max-width: calc(100% - 130px);
+      position: absolute;
+      top: 50%;
+      -moz-transform: translateY(-50%);
+        -moz-transform--webkit-transform: translateY(-50%);
+        -moz-transform--ms-transform: translateY(-50%);
+        -moz-transform--o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .miniBlock li .captionBlock .texts h3.minis {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 0; }
     .miniBlock li .captionBlock .readMoreLink {
       max-width: none;
       line-height: 40px;
-      padding: 0 20px; }
+      padding: 3px 10px;
+      font-size: 14px; }
+    .miniBlock li .captionBlock .watchNowMiniLink {
+      line-height: 40px;
+      padding: 3px 10px;
+      font-size: 14px; }
 
 .miniBlock.by2s li {
-  width: 48%; }
-  @media only screen and (min-width: 1168px) {
+  width: 47.87%; }
+  @media only screen and (min-width: 1280px) {
     .miniBlock.by2s li {
       width: 48.37%; } }
 
 .miniBlock.by3s li {
   width: 31.33%; }
-  @media only screen and (min-width: 1168px) {
+  @media only screen and (min-width: 1280px) {
     .miniBlock.by3s li {
       width: 31.9%; } }
 
@@ -950,9 +960,7 @@ a {
 
 .miniBlockCarousel li .captionBlock {
   padding: 15px;
-  background: #363636;
-  position: relative;
-  bottom: auto; }
+  background: #363636; }
   .miniBlockCarousel li .captionBlock .texts {
     max-width: none;
     float: none;
@@ -966,7 +974,7 @@ a {
         background: none;
         padding: 0;
         text-align: left;
-        line-height: 21px; }
+        line-height: 30px; }
         .miniBlockCarousel li .captionBlock .texts h3.minis.link a:hover {
           color: #fff;
           text-decoration: underline; }
@@ -1000,14 +1008,118 @@ a {
     transition: 0.3s; }
   .showsBlock .slick-arrow.prevBtn {
     left: 3px; }
-    @media only screen and (min-width: 1168px) {
+    @media only screen and (min-width: 1280px) {
       .showsBlock .slick-arrow.prevBtn {
         left: -15px; } }
   .showsBlock .slick-arrow.nextBtn {
     right: 3px; }
-    @media only screen and (min-width: 1168px) {
+    @media only screen and (min-width: 1280px) {
       .showsBlock .slick-arrow.nextBtn {
         right: -15px; } }
+
+.feedBlocks .fbFeed,
+.feedBlocks .twFeed {
+  position: relative;
+  margin-bottom: 25px; }
+  .feedBlocks .fbFeed:before,
+  .feedBlocks .twFeed:before {
+    background: #1b1b1b;
+    content: 'Social Feeds Container';
+    display: block;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    border: 1px #1b1b1b solid; }
+  .feedBlocks .fbFeed img,
+  .feedBlocks .twFeed img {
+    width: 100%;
+    height: auto; }
+
+.schedTab .leagueTab li {
+  float: left; }
+  .schedTab .leagueTab li a {
+    background: #cccccc;
+    line-height: 40px;
+    width: 70px;
+    display: block;
+    color: #1b1b1b;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center; }
+    .schedTab .leagueTab li a:hover {
+      color: #fff;
+      background: #e31837;
+      -moz-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+  .schedTab .leagueTab li.ui-tabs-active a {
+    color: #fff;
+    background: #e31837; }
+
+.schedTab .schedCont .schedTable {
+  clear: both;
+  width: 100%; }
+  .schedTab .schedCont .schedTable th {
+    background: #e31837; }
+    .schedTab .schedCont .schedTable th p {
+      line-height: 23px;
+      padding: 10px 0 9px;
+      color: #fff;
+      text-transform: uppercase; }
+    .schedTab .schedCont .schedTable th.rank {
+      width: 70px;
+      background: #898989; }
+    .schedTab .schedCont .schedTable th.team {
+      max-width: -moz-calc(100% - 205px);
+      max-width: -webkit-calc(100% - 205px);
+      max-width: calc(100% - 205px); }
+    .schedTab .schedCont .schedTable th.win {
+      width: 45px; }
+    .schedTab .schedCont .schedTable th.loss {
+      width: 45px; }
+  .schedTab .schedCont .schedTable td {
+    background: #fff;
+    vertical-align: middle; }
+    .schedTab .schedCont .schedTable td p {
+      text-align: center;
+      line-height: 23px;
+      padding: 10px 0 8px; }
+    .schedTab .schedCont .schedTable td .imgBlock {
+      width: 75px;
+      height: 44px;
+      float: left;
+      position: relative; }
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        .schedTab .schedCont .schedTable td .imgBlock {
+          display: none; } }
+      .schedTab .schedCont .schedTable td .imgBlock img {
+        position: absolute;
+        top: 50%;
+        -moz-transform: translateY(-50%);
+          -moz-transform--webkit-transform: translateY(-50%);
+          -moz-transform--ms-transform: translateY(-50%);
+          -moz-transform--o-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        @media only screen and (min-width: 0) and (max-width: 767px) {
+          .schedTab .schedCont .schedTable td .imgBlock img {
+            position: relative;
+            transform: none;
+            top: auto; } }
+    .schedTab .schedCont .schedTable td .teamName {
+      float: left;
+      text-align: left;
+      margin-left: 10px; }
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        .schedTab .schedCont .schedTable td .teamName {
+          float: none;
+          margin: 0;
+          padding-left: 15px; } }
+  .schedTab .schedCont .schedTable tr:nth-child(odd) td {
+    background: #cccccc; }
 
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {
@@ -1245,6 +1357,25 @@ a {
       line-height: 24px; }
     .colBlock .captionBlock .texts p {
       font-size: 14px; }
+  .miniBlock li .captionBlock {
+    padding: 15px; }
+    .miniBlock li .captionBlock .texts {
+      position: relative;
+      transform: none;
+      max-width: none; }
+  .miniBlock.by2s .captionBlock {
+    padding: 15px; }
+    .miniBlock.by2s .captionBlock .texts {
+      max-width: -moz-calc(100% - 130px);
+      max-width: -webkit-calc(100% - 130px);
+      max-width: calc(100% - 130px);
+      position: absolute;
+      top: 50%;
+      -moz-transform: translateY(-50%);
+        -moz-transform--webkit-transform: translateY(-50%);
+        -moz-transform--ms-transform: translateY(-50%);
+        -moz-transform--o-transform: translateY(-50%);
+      transform: translateY(-50%); }
   .miniBlock.by3s li {
     float: left;
     width: 31%;
@@ -1403,6 +1534,12 @@ a {
         float: none;
         padding: 0 15px;
         line-height: 40px; }
+  .miniBlock li .captionBlock {
+    padding: 15px; }
+    .miniBlock li .captionBlock .texts {
+      position: relative;
+      transform: none;
+      max-width: none; }
   .miniBlock.by3s li {
     float: none;
     width: 100%;

@@ -1,0 +1,18 @@
+include ../modules/standings.jade
+
+mixin standings
+	.schedTab
+		ul.leagueTab
+			li
+				a(href="#pba") pba
+			li
+				a(href="#psl") psl
+			li
+				a(href="#ufl") ufl
+		
+		.schedCont#pba
+			+standingsTeamPBA
+		.schedCont#psl
+			+standingsTeamPSL
+		.schedCont#ufl
+			+standingsTeamUFL
