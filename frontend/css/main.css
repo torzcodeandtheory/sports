@@ -1155,7 +1155,7 @@ a {
 
 .gridwithad {
   clear: both;
-  padding: 25px 0; }
+  padding: 25px 0 0; }
   .gridwithad ul {
     margin: 0 0 15px 0; }
     @media only screen and (min-width: 0) and (max-width: 767px) {

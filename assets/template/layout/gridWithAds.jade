@@ -5,24 +5,25 @@ include ../layout/advertisement.jade
 mixin gridwithadtemplate
 	.contBlock.light
 		.b1366px
-
 			.titleBox
 				h2 Videos
-			.gridwithad
-				ul
-					li.big
-						+articlesfeatured
-					li
-						+articles
-					li
-						+articles
-					li
-						+articles
-					li.adsWrap
-						+ads_300x250
-					li
-						+articles
-					li
-						+articles
-					li
-						+articles
+			.wrap
+				.gridwithad
+					ul
+						li.big
+							+articlesfeatured
+						li
+							+articles
+						li
+							+articles
+						li
+							+articles
+						li.adsWrap
+							+ads_300x250
+						li
+							+articles
+						li
+							+articles
+						li
+							+articles
+				a(href="#", class="showMoreBtn") Show more
