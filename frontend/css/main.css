@@ -748,13 +748,28 @@ a {
     background: #363636; }
   .contBlock.dark {
     background: #262626; }
-  .contBlock h2 {
+  .contBlock .titleBox h2 {
     font-family: "oswald_regular", Arial;
     font-size: 36px;
     font-weight: normal;
     text-transform: uppercase;
-    padding: 8px 0 0;
-    color: #fff; }
+    padding: 2px 0 0;
+    color: #fff;
+    float: left; }
+  .contBlock .titleBox a.moreBtn {
+    color: #fff;
+    background: #e31837;
+    display: block;
+    float: left;
+    padding: 10px 20px 7px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-family: "oswald_regular", Arial;
+    font-size: 14px;
+    font-weight: normal; }
+    .contBlock .titleBox a.moreBtn:hover {
+      background: #fff;
+      color: #e31837; }
 
 @media only screen and (min-width: 1024px) {
   .mobImg {
@@ -887,8 +902,14 @@ a {
   margin-right: 25px; }
   .miniBlock li:last-of-type {
     margin-right: 0; }
-  .miniBlock li .readMore {
-    max-width: none; }
+  .miniBlock li .texts h3.minis {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0; }
+  .miniBlock li .readMoreLink {
+    max-width: none;
+    line-height: 40px;
+    padding: 0 20px; }
 
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {
@@ -1209,6 +1230,12 @@ a {
     font-size: 16px; } }
 
 @media only screen and (min-width: 0) and (max-width: 767px) {
+  .contBlock .titleBox h2 {
+    font-size: 24px; }
+  .contBlock .titleBox a.moreBtn {
+    font-size: 11px;
+    padding: 3px 10px 0;
+    line-height: 18px; }
   .contBlock .wrap .sideAds {
     float: none; }
     .contBlock .wrap .sideAds img {
@@ -1233,7 +1260,7 @@ a {
         width: auto;
         height: 100%; }
     .colBlock .captionBlock {
-      padding: 15px;
+      padding: 15px 0;
       position: relative;
       bottom: auto;
       overflow: hidden; }
@@ -1247,6 +1274,8 @@ a {
         .colBlock .captionBlock .texts p {
           font-size: 14px; }
       .colBlock .captionBlock a {
-        float: none; } }
+        float: none;
+        padding: 0 15px;
+        line-height: 40px; } }
 
 /*# sourceMappingURL=main.css.map */

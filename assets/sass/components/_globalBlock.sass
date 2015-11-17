@@ -7,12 +7,29 @@
 		background: $lightGray
 	&.dark
 		background: $darkGray
+	
+	.titleBox
+		h2
+			+font($default, 36px, normal)
+			text-transform: uppercase
+			padding: 2px 0 0
+			color: $white
+			float: left
+		a
+			&.moreBtn
+				color: $white
+				background: $red
+				display: block
+				float: left
+				padding: 10px 20px 7px
+				text-transform: uppercase
+				margin-left: 10px
+				+font($default, 14px, normal)
+				&:hover
+					background: $white
+					color: $red
+			
 
-	h2
-		+font($default, 36px, normal)
-		text-transform: uppercase
-		padding: 8px 0 0
-		color: $white
 .mobImg
 	+showTabMob()
 
@@ -93,3 +110,22 @@
 			&:hover
 				background: $white
 				color: $red
+.miniBlock
+	&.by2s
+		li
+			width: 48.59%
+	li
+		float: left
+		margin-right: 25px
+
+		&:last-of-type
+			margin-right: 0
+		.texts
+			h3.minis
+				font-size: 18px
+				line-height: 21px
+				padding: 0
+		.readMoreLink
+			max-width: none
+			line-height: 40px
+			padding: 0 20px
