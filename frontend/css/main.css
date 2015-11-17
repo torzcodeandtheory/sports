@@ -1164,12 +1164,14 @@ a {
     .gridwithad ul li {
       width: 31%;
       box-sizing: border-box;
-      margin-right: 25px;
+      margin-right: 2%;
       display: inline-block;
       vertical-align: text-top; }
       @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .gridwithad ul li {
-          width: 48%; } }
+          width: 48.8%; }
+          .gridwithad ul li:nth-child(odd) {
+            margin-right: 0; } }
       @media only screen and (min-width: 0) and (max-width: 767px) {
         .gridwithad ul li {
           width: 100%;
@@ -1179,6 +1181,10 @@ a {
         width: -webkit-calc(100% - 35.8%);
         width: calc(100% - 35.8%); }
         @media only screen and (min-width: 768px) and (max-width: 1023px) {
+          .gridwithad ul li.big {
+            width: 100%;
+            margin: 0; } }
+        @media only screen and (min-width: 0) and (max-width: 767px) {
           .gridwithad ul li.big {
             width: 100%;
             margin: 0; } }

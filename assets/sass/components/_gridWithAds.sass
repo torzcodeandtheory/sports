@@ -8,12 +8,14 @@
 		li
 			width: 31%
 			box-sizing: border-box
-			margin-right: 25px
+			margin-right: 2%
 			display: inline-block
 			vertical-align: text-top
 
 			+fortablet()
-				width: 48%
+				width: 48.8%
+				&:nth-child(odd)
+					margin-right: 0
 
 			+formobile()
 				width: 100%
@@ -23,6 +25,10 @@
 				+fortablet()
 					width: 100%
 					margin: 0
+				+formobile()
+					width: 100%
+					margin: 0
+				
 
 			&.adsWrap
 				float: none
