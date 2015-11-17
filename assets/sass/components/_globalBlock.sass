@@ -110,7 +110,14 @@
 			&:hover
 				background: $white
 				color: $red
+	&.articles
+		.captionBlock
+			.texts
+				max-width: none !important
+				float: none !important
+				margin-bottom: 0 !important
 .miniBlock
+	overflow: hidden
 	li
 		float: left
 		margin-right: 25px
@@ -120,6 +127,7 @@
 		.captionBlock
 			background: $blakish
 			overflow: hidden
+			min-height: 76px
 			.texts
 				+calc(max-width, '100% - 130px');
 				+centerVert()
@@ -229,3 +237,21 @@
 		img
 			width: 100%
 			height: auto
+
+.showMoreBtn
+	clear: both
+	color: $white
+	background: $red
+	display: block
+	padding: 10px 20px 7px
+	line-height: 21px
+	text-transform: uppercase
+	margin: 20px auto
+	+font($default, 14px, normal)
+	+transitionspeed(.3s)
+	max-width: 100px
+	width: 100%
+	text-align: center
+	&:hover
+		background: $white
+		color: $red

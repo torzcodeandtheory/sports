@@ -1,6 +1,13 @@
 include ads-sizes.jade
 
-.adsBlock
-	.b1366px
-		.placeholder
-			+ads_728x90
+mixin darkAds
+	.adsBlock.dark
+		.b1366px
+			.placeholder
+				+ads_728x90
+
+mixin lightAds
+	.adsBlock.light
+		.b1366px
+			.placeholder
+				+ads_728x90

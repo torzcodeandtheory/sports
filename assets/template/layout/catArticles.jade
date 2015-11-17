@@ -1,0 +1,34 @@
+include ../modules/gallery.jade
+include ../layout/ads-sizes.jade
+include ../layout/advertisement.jade
+
++lightAds
+.contBlock.light
+	.b1366px
+		.titleBox
+			h2 Articles
+			
+		.wrap
+			ul.miniBlock.by3s
+				li
+					+articles
+				li
+					+articles
+				li
+					+articles
+			a(href="#", class="showMoreBtn") Show more
++lightAds
+.contBlock.light
+	.b1366px
+		.titleBox
+			h2 Videos
+			
+		.wrap
+			ul.miniBlock.by3s
+				li
+					+miniWatch
+				li
+					+miniWatch
+				li
+					+miniWatch
+			a(href="#", class="showMoreBtn") Show more
