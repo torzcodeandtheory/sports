@@ -7,13 +7,15 @@ include ../layout/ads-sizes.jade
 			Basketball
 			
 		.wrap
-			+watchNow
-						
-			.sideAds
-				+ads_300x250
-				
-			ul.mini2Block
-				li
-					+readMore
-				li
-					+readMore
+			.leftPanel
+				+watchNow
+
+				ul.mini2Block
+					li
+						+readMore
+					li
+						+readMore
+					
+			.rightPanel
+				.sideAds
+					+ads_300x250

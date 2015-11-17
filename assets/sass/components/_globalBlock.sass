@@ -1,0 +1,93 @@
+.contBlock
+	padding: 25px 0
+	float: left
+	width: 100%
+	position: relative
+	&.light
+		background: $lightGray
+	&.dark
+		background: $darkGray
+
+	h2
+		+font($default, 36px, normal)
+		text-transform: uppercase
+		padding: 8px 0 0
+		color: $white
+
+.wrap
+	padding: 25px 0 0
+	overflow: hidden
+	clear: both
+
+.sideAds
+	float: none
+	width: 100%
+	padding: 25px
+	box-sizing: border-box
+	background: $white1
+	img
+		border: 1px $lighterGray solid
+		width: 100%
+		height: auto
+
+.leftPanel
+	float: left
+	+calcu(max-width,'100% - 325px')
+	width: 100%
+
+.rightPanel
+	float: right
+	max-width: 300px
+	width: 100%
+	
+.colBlock
+	width: 100%
+	overflow: hidden
+	position: relative
+	margin-bottom: 25px
+
+	&:hover
+		.imgBlock
+			img
+				+transitionspeed(8s)
+				+transformstyle(ease-in-out)
+				+scale(1.2)
+
+	.imgBlock
+		overflow: hidden
+		img
+			+scale(1.1)
+			width: 100%
+			+transitionspeed(8s)
+			+transformstyle(ease-in-out)
+
+	.captionBlock
+		background: url('../images/blackTransparent.png');
+		padding: 15px
+		position: absolute
+		bottom: 0
+		width: 100%
+		text-transform: uppercase
+		box-sizing: border-box
+		.texts
+			float: left
+			+calcu(max-width,'100% - 180px')
+			h3
+				+font($default, 30px, normal)
+				color: $white
+				padding-bottom: 5px
+			p
+				color: $white
+				+font($default, 18px, normal)
+		a
+			background: $red
+			color: $white
+			display: block
+			float: right
+			padding: 20px
+			+font($default, 18px, normal)
+			+transitionspeed(.3s)
+			text-align: center
+			&:hover
+				background: $white
+				color: $red
