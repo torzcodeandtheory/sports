@@ -1153,6 +1153,52 @@ a {
   .schedTab .schedCont .schedTable tr:nth-child(odd) td {
     background: #cccccc; }
 
+.gridwithad {
+  clear: both;
+  padding: 25px 0; }
+  .gridwithad ul {
+    margin: 0 0 15px 0; }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .gridwithad ul {
+        margin: 0; } }
+    .gridwithad ul li {
+      width: 31%;
+      box-sizing: border-box;
+      margin-right: 25px;
+      display: inline-block;
+      vertical-align: text-top; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .gridwithad ul li {
+          width: 48%; } }
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        .gridwithad ul li {
+          width: 100%;
+          margin: 0; } }
+      .gridwithad ul li.big {
+        width: -moz-calc(100% - 35.8%);
+        width: -webkit-calc(100% - 35.8%);
+        width: calc(100% - 35.8%); }
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+          .gridwithad ul li.big {
+            width: 100%;
+            margin: 0; } }
+      .gridwithad ul li.adsWrap {
+        float: none;
+        min-width: 300px;
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        text-align: center; }
+        .gridwithad ul li.adsWrap img {
+          position: relative;
+          margin: 7.7% auto; }
+          @media only screen and (min-width: 1024px) and (max-width: 1168px) {
+            .gridwithad ul li.adsWrap img {
+              margin: 2% auto; } }
+          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            .gridwithad ul li.adsWrap img {
+              margin: 7% auto; } }
+
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {
     width: 100%; }
@@ -1431,7 +1477,12 @@ a {
       .miniBlock.by3s li .captionBlock a {
         float: none;
         padding: 0 15px;
-        line-height: 40px; } }
+        line-height: 40px; }
+  .gridwithad .imgBlock img {
+    width: 100%;
+    height: auto; }
+  .gridwithad .adsWrap img {
+    margin-top: 0; } }
 
 @media only screen and (min-width: 0) and (max-width: 767px) {
   .mid-section ul.nav {
@@ -1577,6 +1628,8 @@ a {
     width: 100%;
     margin-right: 0; }
     .miniBlock.by3s li .captionBlock {
-      padding: 15px; } }
+      padding: 15px; }
+  .gridwithad .adsWrap img {
+    margin-top: 0 !important; } }
 
 /*# sourceMappingURL=main.css.map */

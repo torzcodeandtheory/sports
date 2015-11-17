@@ -1,0 +1,41 @@
+.gridwithad
+	clear: both
+	padding: 25px 0
+	ul	
+		margin: 0 0 15px 0
+		+formobile()
+			margin: 0
+		li
+			width: 31%
+			box-sizing: border-box
+			margin-right: 25px
+			display: inline-block
+			vertical-align: text-top
+
+			+fortablet()
+				width: 48%
+
+			+formobile()
+				width: 100%
+				margin: 0
+			&.big
+				+calc(width, '100% - 35.8%')
+				+fortablet()
+					width: 100%
+					margin: 0
+
+			&.adsWrap
+				float: none
+				min-width: 300px
+				position: relative
+				height: auto
+				overflow: hidden
+				text-align: center
+				img
+					position: relative
+					margin: 7.7% auto
+	
+					+fordesktopSmall()
+						margin: 2% auto
+					+fortablet()
+						margin: 7% auto
