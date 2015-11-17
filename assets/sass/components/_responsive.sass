@@ -1,16 +1,22 @@
 +forresponsive()
 
 	//Inner Contents GLobal
+	.miniBlock
+		&.by2s
+			li
+				width: 100%
+		li
+			float: none
+			margin-right: 0
+			.imgBlock
+				img
+					width: 100%
+					height: auto
 
-	//Full Carousel
-	.fullCarouselBlock
-		.fullCarousel
-			.fc-content
-				.imgBlock
-					.mobImg
-						+showMob()
-					.defImg
-						+showTab()
+	.mobImg
+		+showMob()
+	.defImg
+		+showTab()
 
 	//Header
 	.top-section

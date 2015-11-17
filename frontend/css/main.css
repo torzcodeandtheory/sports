@@ -441,9 +441,6 @@ a {
       height: auto;
       display: block; }
 
-.carouselScheduleBlock .b1366px {
-  padding: 0; }
-
 .fullCarouselBlock {
   background: #000;
   padding-bottom: 10px; }
@@ -477,15 +474,6 @@ a {
         margin: 0 auto;
         position: relative;
         max-height: 450px; }
-        @media only screen and (min-width: 1024px) {
-          .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
-            display: none; } }
-        @media only screen and (min-width: 768px) and (max-width: 1023px) {
-          .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
-            display: block; } }
-        @media only screen and (min-width: 0) and (max-width: 767px) {
-          .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
-            display: block; } }
         .fullCarouselBlock .fullCarousel .fc-content .imgBlock:before {
           content: "";
           position: absolute;
@@ -768,6 +756,18 @@ a {
     padding: 8px 0 0;
     color: #fff; }
 
+@media only screen and (min-width: 1024px) {
+  .mobImg {
+    display: none; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .mobImg {
+    display: block; } }
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .mobImg {
+    display: block; } }
+
 .wrap {
   padding: 25px 0 0;
   overflow: hidden;
@@ -879,34 +879,49 @@ a {
         background: #fff;
         color: #e31837; }
 
-.mini2Block li {
-  width: 50%;
-  float: left; }
-  .mini2Block li .readMore {
+.miniBlock.by2s li {
+  width: 48.59%; }
+
+.miniBlock li {
+  float: left;
+  margin-right: 25px; }
+  .miniBlock li:last-of-type {
+    margin-right: 0; }
+  .miniBlock li .readMore {
     max-width: none; }
 
+@media only screen and (max-width: 1023px) {
+  .miniBlock.by2s li {
+    width: 100%; }
+  .miniBlock li {
+    float: none;
+    margin-right: 0; }
+    .miniBlock li .imgBlock img {
+      width: 100%;
+      height: auto; } }
+
 @media only screen and (max-width: 1023px) and (min-width: 0) and (max-width: 767px) {
-  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
+  .mobImg {
     display: block; } }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
-  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
+  .mobImg {
     display: none; } }
 
 @media only screen and (max-width: 1023px) and (min-width: 1024px) {
-  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .mobImg {
+  .mobImg {
     display: none; } }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
-  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .defImg {
+  .defImg {
     display: block; } }
 
 @media only screen and (max-width: 1023px) and (min-width: 0) and (max-width: 767px) {
-  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .defImg {
+  .defImg {
     display: none; } }
 
 @media only screen and (max-width: 1023px) and (min-width: 1024px) {
-  .fullCarouselBlock .fullCarousel .fc-content .imgBlock .defImg {
+  .defImg {
     display: none; } }
 
 @media only screen and (max-width: 1023px) {
@@ -1204,9 +1219,10 @@ a {
     float: none;
     margin-bottom: 15px;
     max-width: none; }
-  .rightanel {
+  .rightPanel {
     float: none;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    max-width: none; }
   .colBlock {
     float: none;
     max-width: none; }
