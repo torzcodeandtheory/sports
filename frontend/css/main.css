@@ -897,6 +897,9 @@ a {
 .miniBlock.by2s li {
   width: 48.59%; }
 
+.miniBlock.by3s li {
+  width: 31.96%; }
+
 .miniBlock li {
   float: left;
   margin-right: 25px; }
@@ -912,6 +915,8 @@ a {
     padding: 0 20px; }
 
 @media only screen and (max-width: 1023px) {
+  .contBlock.dark .captionBlock {
+    background: #363636; }
   .miniBlock.by2s li {
     width: 100%; }
   .miniBlock li {
@@ -1144,7 +1149,31 @@ a {
       font-size: 21px;
       line-height: 24px; }
     .colBlock .captionBlock .texts p {
-      font-size: 14px; } }
+      font-size: 14px; }
+  .miniBlock.by3s li {
+    float: left;
+    width: 31%;
+    margin-right: 25px; }
+    .miniBlock.by3s li:last-of-type {
+      margin-right: 0; }
+    .miniBlock.by3s li .captionBlock {
+      padding: 15px;
+      position: relative;
+      bottom: auto;
+      overflow: hidden; }
+      .miniBlock.by3s li .captionBlock .texts {
+        float: none;
+        max-width: none;
+        margin-bottom: 15px; }
+        .miniBlock.by3s li .captionBlock .texts h3 {
+          font-size: 21px;
+          line-height: 24px; }
+        .miniBlock.by3s li .captionBlock .texts p {
+          font-size: 14px; }
+      .miniBlock.by3s li .captionBlock a {
+        float: none;
+        padding: 0 15px;
+        line-height: 40px; } }
 
 @media only screen and (min-width: 0) and (max-width: 767px) {
   .mid-section ul.nav {
@@ -1276,6 +1305,12 @@ a {
       .colBlock .captionBlock a {
         float: none;
         padding: 0 15px;
-        line-height: 40px; } }
+        line-height: 40px; }
+  .miniBlock.by3s li {
+    float: none;
+    width: 100%;
+    margin-right: 0; }
+    .miniBlock.by3s li .captionBlock {
+      padding: 15px; } }
 
 /*# sourceMappingURL=main.css.map */
