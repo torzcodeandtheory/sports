@@ -11,6 +11,26 @@
 			margin-right: 2%
 			display: inline-block
 			vertical-align: text-top
+			.captionBlock
+				background: $blakish
+				overflow: hidden
+				min-height: 76px
+				.texts
+					+calc(max-width, '100% - 130px');
+					+centerVert()
+					h3.minis
+						font-size: 18px
+						line-height: 21px
+						padding: 0
+				.readMoreLink
+					max-width: none
+					line-height: 40px
+					padding: 3px 10px
+					font-size: 14px
+				.watchNowMiniLink
+					line-height: 40px
+					padding: 3px 10px
+					font-size: 14px
 
 			+fortablet()
 				width: 48.8%
@@ -22,6 +42,8 @@
 				margin: 0
 			&.big
 				+calc(width, '100% - 35.8%')
+				.captionBlock
+					background: url('../images/blackTransparent.png')
 				+fortablet()
 					width: 100%
 					margin: 0

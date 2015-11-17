@@ -1167,6 +1167,34 @@ a {
       margin-right: 2%;
       display: inline-block;
       vertical-align: text-top; }
+      .gridwithad ul li .captionBlock {
+        background: #1b1b1b;
+        overflow: hidden;
+        min-height: 76px; }
+        .gridwithad ul li .captionBlock .texts {
+          max-width: -moz-calc(100% - 130px);
+          max-width: -webkit-calc(100% - 130px);
+          max-width: calc(100% - 130px);
+          position: absolute;
+          top: 50%;
+          -moz-transform: translateY(-50%);
+            -moz-transform--webkit-transform: translateY(-50%);
+            -moz-transform--ms-transform: translateY(-50%);
+            -moz-transform--o-transform: translateY(-50%);
+          transform: translateY(-50%); }
+          .gridwithad ul li .captionBlock .texts h3.minis {
+            font-size: 18px;
+            line-height: 21px;
+            padding: 0; }
+        .gridwithad ul li .captionBlock .readMoreLink {
+          max-width: none;
+          line-height: 40px;
+          padding: 3px 10px;
+          font-size: 14px; }
+        .gridwithad ul li .captionBlock .watchNowMiniLink {
+          line-height: 40px;
+          padding: 3px 10px;
+          font-size: 14px; }
       @media only screen and (min-width: 768px) and (max-width: 1023px) {
         .gridwithad ul li {
           width: 48.8%; }
@@ -1180,6 +1208,8 @@ a {
         width: -moz-calc(100% - 35.8%);
         width: -webkit-calc(100% - 35.8%);
         width: calc(100% - 35.8%); }
+        .gridwithad ul li.big .captionBlock {
+          background: url("../images/blackTransparent.png"); }
         @media only screen and (min-width: 768px) and (max-width: 1023px) {
           .gridwithad ul li.big {
             width: 100%;
