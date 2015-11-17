@@ -111,24 +111,66 @@
 				background: $white
 				color: $red
 .miniBlock
-	&.by2s
-		li
-			width: 48%
-	&.by3s
-		li
-			width: 31.33%
 	li
 		float: left
 		margin-right: 25px
 
 		&:last-of-type
 			margin-right: 0
-		.texts
-			h3.minis
-				font-size: 18px
-				line-height: 21px
-				padding: 0
-		.readMoreLink
-			max-width: none
-			line-height: 40px
-			padding: 0 20px
+		.captionBlock
+			background: $blakish
+			.texts
+				h3.minis
+					font-size: 18px
+					line-height: 21px
+					padding: 0
+			.readMoreLink
+				max-width: none
+				line-height: 40px
+				padding: 0 20px
+	&.by2s
+		li
+			width: 48%
+	&.by3s
+		li
+			width: 31.33%
+	&.by4s
+		li
+			width: 25%
+			margin-right: 0
+			.texts
+				float: none
+				max-width: none
+	
+.miniBlockCarousel
+	li
+		.imgBlock
+			img
+				width: 100%
+				height: auto
+		.captionBlock
+			padding: 15px
+			background: $lightGray
+			position: relative
+			bottom: auto
+			
+			.texts
+				max-width: none
+				float: none
+				h3
+					&.minis
+						font-size: 18px
+						line-height: 21px
+						padding: 0
+						&.link
+							a
+								float: none
+								background: none
+								padding: 0
+								text-align: left
+								&:hover
+									color: $white
+									text-decoration: underline
+		&:nth-child(odd)
+			.captionBlock
+				background: $white3

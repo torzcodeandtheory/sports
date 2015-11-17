@@ -899,29 +899,64 @@ a {
         background: #fff;
         color: #e31837; }
 
+.miniBlock li {
+  float: left;
+  margin-right: 25px; }
+  .miniBlock li:last-of-type {
+    margin-right: 0; }
+  .miniBlock li .captionBlock {
+    background: #1b1b1b; }
+    .miniBlock li .captionBlock .texts h3.minis {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 0; }
+    .miniBlock li .captionBlock .readMoreLink {
+      max-width: none;
+      line-height: 40px;
+      padding: 0 20px; }
+
 .miniBlock.by2s li {
   width: 48%; }
 
 .miniBlock.by3s li {
   width: 31.33%; }
 
-.miniBlock li {
-  float: left;
-  margin-right: 25px; }
-  .miniBlock li:last-of-type {
-    margin-right: 0; }
-  .miniBlock li .texts h3.minis {
-    font-size: 18px;
-    line-height: 21px;
-    padding: 0; }
-  .miniBlock li .readMoreLink {
+.miniBlock.by4s li {
+  width: 25%;
+  margin-right: 0; }
+  .miniBlock.by4s li .texts {
+    float: none;
+    max-width: none; }
+
+.miniBlockCarousel li .imgBlock img {
+  width: 100%;
+  height: auto; }
+
+.miniBlockCarousel li .captionBlock {
+  padding: 15px;
+  background: #363636;
+  position: relative;
+  bottom: auto; }
+  .miniBlockCarousel li .captionBlock .texts {
     max-width: none;
-    line-height: 40px;
-    padding: 0 20px; }
+    float: none; }
+    .miniBlockCarousel li .captionBlock .texts h3.minis {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 0; }
+      .miniBlockCarousel li .captionBlock .texts h3.minis.link a {
+        float: none;
+        background: none;
+        padding: 0;
+        text-align: left; }
+        .miniBlockCarousel li .captionBlock .texts h3.minis.link a:hover {
+          color: #fff;
+          text-decoration: underline; }
+
+.miniBlockCarousel li:nth-child(odd) .captionBlock {
+  background: #58585a; }
 
 @media only screen and (max-width: 1023px) {
-  .contBlock.dark .captionBlock {
-    background: #363636; }
   .miniBlock.by2s li {
     width: 100%; }
   .miniBlock li {

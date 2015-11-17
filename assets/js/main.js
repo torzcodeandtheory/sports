@@ -95,4 +95,29 @@ $(document).ready(function() {
 			}
 		]
 	});
+	
+	$('.carouselby4s').slick({
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: '<div class="prevBtn"><i class="fa fa-chevron-left fa-2x"></i></div>',
+		nextArrow: '<div class="nextBtn"><i class="fa fa-chevron-right fa-2x"></i></div>',
+		appendArrows: '.carouselSchedule',
+		responsive: [
+			{
+				breakpoint: 1023,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
 });
