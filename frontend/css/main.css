@@ -1105,6 +1105,8 @@ a {
           -ms-transform: rotateX(180deg);
           -o-transform: rotateX(180deg);
           transform: rotateX(180deg); }
+  .mid-section .b1366px {
+    padding: 0; }
   .mid-section.show {
     max-height: 1336px; }
   .mid-section .logo {
