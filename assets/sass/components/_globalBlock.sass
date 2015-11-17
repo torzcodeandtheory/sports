@@ -41,22 +41,22 @@
 .sideAds
 	float: none
 	width: 100%
-	padding: 25px
-	box-sizing: border-box
 	background: $white1
+	position: relative
+	height: 315px
+	overflow: hidden
 	img
-		border: 1px $lighterGray solid
-		width: 100%
-		height: auto
+		+centerAll()
+		
 
 .leftPanel
 	float: left
-	+calcu(max-width,'100% - 325px')
+	+calcu(max-width,'100% - 400px')
 	width: 100%
 
 .rightPanel
 	float: right
-	max-width: 300px
+	max-width: 375px
 	width: 100%
 	
 .colBlock
@@ -119,6 +119,7 @@
 			margin-right: 0
 		.captionBlock
 			background: $blakish
+			overflow: hidden
 			.texts
 				h3.minis
 					font-size: 18px
@@ -131,9 +132,15 @@
 	&.by2s
 		li
 			width: 48%
+
+			+fordesktopB
+				width: 48.37%
 	&.by3s
 		li
 			width: 31.33%
+
+			+fordesktopB
+				width: 31.9%
 	&.by4s
 		li
 			width: 25%
@@ -191,6 +198,10 @@
 
 		&.prevBtn
 			left: 3px
+			+fordesktopB()
+				left: -15px
 
 		&.nextBtn
 			right: 3px
+			+fordesktopB()
+				right: -15px

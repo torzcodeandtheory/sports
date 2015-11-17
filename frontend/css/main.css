@@ -88,12 +88,12 @@ a {
   cursor: pointer; }
 
 .b1366px {
-  max-width: 1366px;
+  max-width: 1198px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 15px;
   position: relative;
-  box-sizing: border-box;
-  padding: 0 25px; }
+  box-sizing: border-box; }
 
 .container {
   clear: both; }
@@ -440,6 +440,9 @@ a {
       width: 100%;
       height: auto;
       display: block; }
+
+.carouselScheduleBlock .b1366px {
+  padding: 0; }
 
 .fullCarouselBlock {
   background: #000;
@@ -796,24 +799,30 @@ a {
 .sideAds {
   float: none;
   width: 100%;
-  padding: 25px;
-  box-sizing: border-box;
-  background: #e1e1e1; }
+  background: #e1e1e1;
+  position: relative;
+  height: 315px;
+  overflow: hidden; }
   .sideAds img {
-    border: 1px #808080 solid;
-    width: 100%;
-    height: auto; }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateY(-50%) translateX(-50%);
+      -moz-transform--webkit-transform: translateY(-50%) translateX(-50%);
+      -moz-transform--ms-transform: translateY(-50%) translateX(-50%);
+      -moz-transform--o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%); }
 
 .leftPanel {
   float: left;
-  max-width: -moz-calc(100% - 325px);
-  max-width: -webkit-calc(100% - 325px);
-  max-width: calc(100% - 325px);
+  max-width: -moz-calc(100% - 400px);
+  max-width: -webkit-calc(100% - 400px);
+  max-width: calc(100% - 400px);
   width: 100%; }
 
 .rightPanel {
   float: right;
-  max-width: 300px;
+  max-width: 375px;
   width: 100%; }
 
 .colBlock {
@@ -905,7 +914,8 @@ a {
   .miniBlock li:last-of-type {
     margin-right: 0; }
   .miniBlock li .captionBlock {
-    background: #1b1b1b; }
+    background: #1b1b1b;
+    overflow: hidden; }
     .miniBlock li .captionBlock .texts h3.minis {
       font-size: 18px;
       line-height: 21px;
@@ -917,9 +927,15 @@ a {
 
 .miniBlock.by2s li {
   width: 48%; }
+  @media only screen and (min-width: 1168px) {
+    .miniBlock.by2s li {
+      width: 48.37%; } }
 
 .miniBlock.by3s li {
   width: 31.33%; }
+  @media only screen and (min-width: 1168px) {
+    .miniBlock.by3s li {
+      width: 31.9%; } }
 
 .miniBlock.by4s li {
   width: 25%;
@@ -984,8 +1000,14 @@ a {
     transition: 0.3s; }
   .showsBlock .slick-arrow.prevBtn {
     left: 3px; }
+    @media only screen and (min-width: 1168px) {
+      .showsBlock .slick-arrow.prevBtn {
+        left: -15px; } }
   .showsBlock .slick-arrow.nextBtn {
     right: 3px; }
+    @media only screen and (min-width: 1168px) {
+      .showsBlock .slick-arrow.nextBtn {
+        right: -15px; } }
 
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {
@@ -1339,15 +1361,17 @@ a {
     padding: 3px 10px 0;
     line-height: 18px; }
   .contBlock .wrap .sideAds {
-    float: none; }
+    float: none;
+    background: transparent; }
     .contBlock .wrap .sideAds img {
-      border: 1px #808080 solid;
       width: 100%;
-      height: auto; }
+      height: auto;
+      max-width: 300px; }
   .leftPanel {
     float: none;
     margin-bottom: 15px;
-    max-width: none; }
+    max-width: none;
+    box-sizing: border-box; }
   .rightPanel {
     float: none;
     margin-bottom: 15px;
@@ -1359,10 +1383,10 @@ a {
       max-height: 250px;
       height: auto; }
       .colBlock .imgBlock img {
-        width: auto;
-        height: 100%; }
+        width: 100%;
+        height: auto; }
     .colBlock .captionBlock {
-      padding: 15px 0;
+      padding: 15px;
       position: relative;
       bottom: auto;
       overflow: hidden; }
