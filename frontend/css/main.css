@@ -939,7 +939,8 @@ a {
   bottom: auto; }
   .miniBlockCarousel li .captionBlock .texts {
     max-width: none;
-    float: none; }
+    float: none;
+    margin-bottom: 0; }
     .miniBlockCarousel li .captionBlock .texts h3.minis {
       font-size: 18px;
       line-height: 21px;
@@ -948,13 +949,43 @@ a {
         float: none;
         background: none;
         padding: 0;
-        text-align: left; }
+        text-align: left;
+        line-height: 21px; }
         .miniBlockCarousel li .captionBlock .texts h3.minis.link a:hover {
           color: #fff;
           text-decoration: underline; }
 
 .miniBlockCarousel li:nth-child(odd) .captionBlock {
   background: #58585a; }
+
+.showsBlock .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+    -moz-transform--webkit-transform: translateY(-50%);
+    -moz-transform--ms-transform: translateY(-50%);
+    -moz-transform--o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  color: #fff;
+  opacity: .8;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .showsBlock .slick-arrow:hover {
+    opacity: 1;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .showsBlock .slick-arrow.prevBtn {
+    left: 3px; }
+  .showsBlock .slick-arrow.nextBtn {
+    right: 3px; }
 
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {

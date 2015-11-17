@@ -102,7 +102,7 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		prevArrow: '<div class="prevBtn"><i class="fa fa-chevron-left fa-2x"></i></div>',
 		nextArrow: '<div class="nextBtn"><i class="fa fa-chevron-right fa-2x"></i></div>',
-		appendArrows: '.carouselSchedule',
+		appendArrows: '.showsBlock',
 		responsive: [
 			{
 				breakpoint: 1023,

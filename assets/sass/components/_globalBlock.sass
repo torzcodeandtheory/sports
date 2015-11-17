@@ -157,6 +157,7 @@
 			.texts
 				max-width: none
 				float: none
+				margin-bottom: 0
 				h3
 					&.minis
 						font-size: 18px
@@ -168,9 +169,28 @@
 								background: none
 								padding: 0
 								text-align: left
+								line-height: 21px
 								&:hover
 									color: $white
 									text-decoration: underline
 		&:nth-child(odd)
 			.captionBlock
 				background: $white3
+.showsBlock
+	.slick-arrow
+		+centerVert()
+		z-index: 2
+		cursor: pointer
+		color: $white
+		opacity: .8
+		+transitionspeed(.3s)
+
+		&:hover
+			opacity: 1
+			+transitionspeed(.3s)
+
+		&.prevBtn
+			left: 3px
+
+		&.nextBtn
+			right: 3px
