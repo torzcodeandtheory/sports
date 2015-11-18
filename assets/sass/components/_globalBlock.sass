@@ -89,6 +89,8 @@
 		width: 100%
 		text-transform: uppercase
 		box-sizing: border-box
+		+formobile
+			background: $blakish
 		.texts
 			float: left
 			+calcu(max-width,'100% - 180px')
@@ -136,6 +138,8 @@
 					font-size: 18px
 					line-height: 21px
 					padding: 0
+				p.minisub
+					font-size: 14px
 			.readMoreLink
 				max-width: none
 				line-height: 40px
@@ -239,7 +243,8 @@
 			width: 100%
 			height: auto
 
-.showMoreBtn
+.showMoreBtn,
+.loadMoreBtn
 	clear: both
 	color: $white
 	background: $red

@@ -870,6 +870,9 @@ a {
     width: 100%;
     text-transform: uppercase;
     box-sizing: border-box; }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .colBlock .captionBlock {
+        background: #1b1b1b; } }
     .colBlock .captionBlock .texts {
       float: left;
       max-width: -moz-calc(100% - 180px);
@@ -935,6 +938,8 @@ a {
           font-size: 18px;
           line-height: 21px;
           padding: 0; }
+        .miniBlock li .captionBlock .texts p.minisub {
+          font-size: 14px; }
       .miniBlock li .captionBlock .readMoreLink {
         max-width: none;
         line-height: 40px;
@@ -1044,7 +1049,8 @@ a {
     width: 100%;
     height: auto; }
 
-.showMoreBtn {
+.showMoreBtn,
+.loadMoreBtn {
   clear: both;
   color: #fff;
   background: #e31837;
@@ -1064,7 +1070,8 @@ a {
   max-width: 100px;
   width: 100%;
   text-align: center; }
-  .showMoreBtn:hover {
+  .showMoreBtn:hover,
+  .loadMoreBtn:hover {
     background: #fff;
     color: #e31837; }
 
@@ -1157,8 +1164,7 @@ a {
     background: #cccccc; }
 
 .gridwithad {
-  clear: both;
-  padding: 25px 0 0; }
+  clear: both; }
   .gridwithad ul {
     margin: 0 0 15px 0; }
     @media only screen and (min-width: 0) and (max-width: 767px) {
@@ -1189,6 +1195,15 @@ a {
             font-size: 18px;
             line-height: 21px;
             padding: 0; }
+          .gridwithad ul li .captionBlock .texts p.minisub {
+            font-size: 14px;
+            padding-top: 5px; }
+          @media only screen and (min-width: 0) and (max-width: 767px) {
+            .gridwithad ul li .captionBlock .texts {
+              position: relative;
+              transform: none;
+              max-width: none;
+              margin-bottom: 15px !important; } }
         .gridwithad ul li .captionBlock .readMoreLink {
           max-width: none;
           line-height: 40px;

@@ -11,7 +11,7 @@ mixin gridwithadtemplate
 				.gridwithad
 					ul
 						li.big
-							+articlesfeatured
+							+watchNow
 						li
 							+miniWatch
 						li
@@ -27,3 +27,50 @@ mixin gridwithadtemplate
 						li
 							+miniWatch
 				a(href="#", class="showMoreBtn") Show more
+				
+mixin latestepisodes
+	.contBlock.dark
+		.b1366px
+			.titleBox
+				h2 latest episodes
+			.wrap
+				.gridwithad
+					ul
+						li.big
+							+watchNow
+						li
+							+miniWatchwithsub
+						li
+							+miniWatchwithsub
+						li
+							+miniWatchwithsub
+						li
+							+miniWatchwithsub
+
+mixin allshows
+	.contBlock.light
+		.b1366px
+			.titleBox.allshows
+				h2 All shows
+			.wrap
+				.gridwithad
+					ul
+						li
+							+miniWatch
+						li
+							+miniWatch
+						li
+							+miniWatch
+						li
+							+miniWatch
+						li
+							+miniWatch
+						li.adsWrap
+							+ads_300x250
+						li
+							+miniWatch
+						li
+							+miniWatch
+						li
+							+miniWatch
+				a(href="#", class="loadMoreBtn") Load more
