@@ -1,0 +1,65 @@
+include ../layout/ads-sizes.jade
+
+mixin uploadtab
+	.contBlock.dark
+			.b970px
+				.titleBox
+					h2 Upload
+					.filterTab
+						ul
+							li
+								a(href="#yhtube") YH Tube
+							li
+								a(href="#pbakalinga") PBA Kalinga
+								
+						.filterConts#yhtube
+							.holder
+								img(src="images/yht-holder.png")
+						.filterConts#pbakalinga
+							.holder
+								img(src="http://lorempixel.com/970/313/")
+
+mixin registration
+	.contBlock.light
+		.b970px
+			.wrap
+				.leftPanel
+					.titleBox
+						h2 Registration
+						.regform
+							.full
+								label First Name
+								input(type="text", id="fname")
+							.full
+								label Last Name
+								input(type="text", id="lname")
+							.thirds
+								label mobile
+								.mobile
+									input(type="text", id="mobile")
+							.thirds
+								label email
+								input(type="text", id="email")
+							.chooseFile
+								label title of video
+								.custombrowse
+									span Choose file
+									input(type="file")
+								.customtext
+									span No file chosen
+								.reminder
+									span * 3 minute maximum for video file and must be in MP4/MPG format.
+							ul.checkboxes
+								li
+									label
+										input(type="checkbox")
+										span Terms of Use
+								li
+									label
+										input(type="checkbox")
+										span Privacy Policy
+							button(type="submit", class="submitBtn") submit
+								
+				.rightPanel
+					.sideAds
+						+ads_300x250

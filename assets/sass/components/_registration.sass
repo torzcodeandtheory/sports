@@ -1,0 +1,111 @@
+.regform
+	clear: both
+	padding: 25px 0
+	div
+		margin-bottom: 15px
+		&.thirds
+			width: 60%
+			+formobile()
+				width: 100%
+	label
+		display: block
+		color: $white
+		padding: 5px 0
+		text-transform: uppercase
+		font-size: 16px
+	input[type=text]
+		width: 100%
+		padding: 5px 10px
+		box-sizing: border-box
+		+font($default, 14px, normal)
+		outline: 0
+		border: 0
+		line-height: 21px
+		position: relative
+		color: $blakish
+	.mobile
+		position: relative
+		input[type=text]
+			padding-left: 30px
+		&:before
+			content: '+63'
+			display: block
+			+centerVert()
+			z-index: 1
+			color: $blakish
+			left: 5px
+	.chooseFile
+		padding-top: 30px
+	
+		.custombrowse
+			position: relative
+			overflow: hidden
+			float: left
+			span
+				background: $dirtyWhite
+				color: $white3
+				display: block
+				width: 165px
+				height: 30px
+				line-height: 30px
+				text-align: center
+				+bradius(8px)
+				+transitionspeed(.3s)
+			&:hover
+				span
+					color: $dirtyWhite
+					background: $white3
+			input
+				position: absolute
+				top: 0
+				left: 0
+				margin: 0
+				padding: 0
+				font-size: 20px
+				cursor: pointer
+				opacity: 0
+				filter: alpha(opacity=0)
+				width: 165px
+		.customtext
+			float: left
+			margin-left: 10px
+			span
+				color: $dirtyWhite
+				display: block
+				line-height: 30px
+		.reminder
+			clear: both
+			color: $dirtyWhite
+			display: block
+			line-height: 30px
+			+font($lato,12px,300)
+	.checkboxes
+		overflow: hidden
+		margin-bottom: 30px
+		li
+			float: left
+			margin-right: 15px
+			input[type=checkbox]
+				margin: 0 5px 0 0
+				float: left
+			span
+				padding: 10px 0
+	.submitBtn
+		clear: both
+		background: $red
+		width: 165px
+		height: 30px
+		line-height: 30px
+		text-align: center
+		display: block
+		border: 0
+		outline: 0
+		cursor: pointer
+		text-transform: uppercase
+		+font($default, 14px, normal)
+		color: $white
+		+bradius(8px)
+		+transitionspeed(.3s)
+		&:hover
+			color: $red
+			background: $white
