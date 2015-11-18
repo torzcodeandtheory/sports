@@ -724,10 +724,10 @@ a {
 .adsBlock {
   padding: 10px 0 15px;
   clear: both; }
-  .adsBlock.dark {
-    background: #262626; }
   .adsBlock.light {
     background: #363636; }
+  .adsBlock.dark {
+    background: #262626; }
   .adsBlock .placeholder {
     max-width: 728px;
     margin: 0 auto;
@@ -754,7 +754,7 @@ a {
       height: 70px; } }
   .ads-wide.dark {
     background: #262626; }
-  .ads-wide.dark {
+  .ads-wide.light {
     background: #363636; }
 
 .ads-box {
@@ -773,8 +773,8 @@ a {
     height: 90px;
     line-height: 90px;
     text-align: center;
-    color: #262626;
-    border: 1px #262626 solid; }
+    color: #1e1e1e;
+    border: 1px #1e1e1e solid; }
     @media only screen and (min-width: 0) and (max-width: 767px) {
       .ads-box:after {
         height: 50px;
@@ -1290,6 +1290,8 @@ a {
         text-align: left; }
   .miniBlock.by2s li {
     width: 47.87%; }
+    .miniBlock.by2s li:nth-child(even) {
+      margin-right: 0; }
     @media only screen and (min-width: 1280px) {
       .miniBlock.by2s li {
         width: 48.37%; } }
