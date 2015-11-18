@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+	head
+		title= pageTitle
+		link(rel='stylesheet' href='css/main.css').
+		link(rel='stylesheet' href='css/slick.css').
+		
+	body
+		include layout/header.jade
+		include layout/advertisement.jade
+		include layout/ads-sizes.jade
+		+ads-leaderboardDark
+		include layout/showstab.jade
+		+showtab2
+		+showcontsblockWhite
+		+episodes2
+		+ads-leaderboardDark
+		include layout/footer.jade
+		
+		script(type='text/javascript' src='js/vendor/jquery.min.js').
+		script(type='text/javascript' src='js/vendor/jquery.unveil.js').
+		script(type='text/javascript' src='js/vendor/slick.min.js').
+		script(type='text/javascript' src='js/vendor/jquery-ui.js').
+		script(type='text/javascript' src='js/all.js').

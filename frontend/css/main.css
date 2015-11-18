@@ -1251,7 +1251,7 @@ a {
   .miniBlock li {
     float: left;
     margin-right: 25px; }
-    .miniBlock li:last-of-type {
+    .miniBlock li:nth-child(3n+3) {
       margin-right: 0; }
     .miniBlock li .captionBlock {
       background: #1b1b1b;
@@ -1543,6 +1543,13 @@ a {
       transform: translate(-50%, -50%);
       line-height: 300px;
       text-align: center; }
+
+.white {
+  color: #1b1b1b; }
+  .white h2 {
+    color: #1b1b1b !important; }
+  .white p {
+    color: #1b1b1b; }
 
 .schedTab .leagueTab li {
   float: left; }
@@ -1896,9 +1903,15 @@ a {
         .showContsWrap .showsTab ul li a:hover {
           background: #e31837;
           color: #fff; }
-      .showContsWrap .showsTab ul li.ui-tabs-active a {
+      .showContsWrap .showsTab ul li.active a {
         background: #e31837;
         color: #fff; }
+      .showContsWrap .showsTab ul li.active:hover a {
+        background: #e31837;
+        color: #fff; }
+      .showContsWrap .showsTab ul li:hover a {
+        color: #e31837;
+        background: none; }
   .showContsWrap .showsTab .showConts .scwrap {
     max-width: 1320px;
     margin: 0 auto;
@@ -2087,6 +2100,24 @@ a {
         margin-right: 0; }
         .showcontsblock div.contsBlock {
           margin-bottom: 25px; } }
+
+.showcontswrapper.eps .contsBlock {
+  float: none;
+  width: 100%;
+  font-family: "Lato", Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 35px; }
+
+.showcontswrapper.eps .commentBox {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+  float: none; }
+  .showcontswrapper.eps .commentBox img {
+    width: 100%;
+    height: auto; }
 
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {

@@ -6,13 +6,13 @@ mixin showtab
 	.contBlock.showContsWrap.dark
 		.b1366px
 			.titleBox
-				h2 Upload
+				h2 Nth Degree
 		.showsTab
 			ul
+				li(class="active")
+					a(href="shows-about.html") about
 				li
-					a(href="#yhtube") YH Tube
-				li
-					a(href="#pbakalinga") PBA Kalinga
+					a(href="shows-episodes.html") episodes
 			.showConts#yhtube
 				.scwrap
 					.leftPanel2
@@ -50,7 +50,20 @@ mixin showtab
 										span.
 											episode 11
 									p The result of the experience gained on race tracks all over the world. State of the art..
-			.showConts#pbakalinga
+
+
+mixin showtab2
+	.contBlock.showContsWrap.dark
+		.b1366px
+			.titleBox
+				h2 Nth Degree
+		.showsTab
+			ul
+				li
+					a(href="shows-about.html") about
+				li(class="active")
+					a(href="shows-episodes.html") episodes
+			.showConts#yhtube
 				.scwrap
 					.leftPanel2
 						.holder
@@ -58,13 +71,36 @@ mixin showtab
 					.rightPanel2
 						.scLinks.scActive
 							.holder
-								img(src="images/http://lorempixel.com/270/150/")
-						.scLinks
+								.scawrap
+									.imgBlock
+										img(src="http://lorempixel.com/270/150/")
+									.socialIcons
+										a(href="#", class="fbLink") <i class="fa fa-facebook fa-lg"></i>
+										a(href="#", class="twLink") <i class="fa fa-twitter fa-lg"></i>
+								.scaconts
+									h2 Nth Degree
+										span.
+											episode 11
+									p Explore Tarlac Circuit Hill, a circuit crafted by motorsport enthusiasts situated in the heart of Tarlac. Discover why this circuit is not just..
+						.scLinks.scNormal
 							.holder
-								img(src="images/http://lorempixel.com/170/90/")
-						.scLinks
+								.imgBlock
+									img(src="http://lorempixel.com/165/95/")
+								.scaconts
+									h2 Nth Degree
+										span.
+											episode 11
+									p The result of the experience gained on race tracks all over the world. State of the art..
+						.scLinks.scNormal
 							.holder
-								img(src="images/http://lorempixel.com/170/90/")
+								.imgBlock
+									img(src="http://lorempixel.com/165/95/")
+								.scaconts
+									h2 Nth Degree
+										span.
+											episode 11
+									p The result of the experience gained on race tracks all over the world. State of the art..
+
 
 mixin episodes
 	.contBlock.light
@@ -81,6 +117,29 @@ mixin episodes
 						+miniWatch
 					li
 						+miniWatch
+						
+mixin episodes2
+	.contBlock.light
+		.b1366px
+			.titleBox
+				h2 Episodes
+				a(href="#", class="moreBtn") More
+
+			.wrap
+				ul.miniBlock.by3s
+					li
+						+miniWatch
+					li
+						+miniWatch
+					li
+						+miniWatch
+					li
+						+miniWatch
+					li
+						+miniWatch
+					li
+						+miniWatch
+				a(href="#", class="showMoreBtn") Show More
 
 mixin showscarousel
 	.contBlock.dark
@@ -122,6 +181,23 @@ mixin showcontsblock
 						.contsBlock
 							p.
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus leo, mollis a convallis eget, pellentesque non sem. Suspendisse pretium dolor est, sed luctus massa lacinia ornare. Curabitur nec maximus elit, et tempus nibh. Fusce venenatis eros ipsum, dictum convallis turpis eleifend in. Proin id diam quis orci sollicitudin porta. Quisque aliquam, mauris nec fermentum vestibulum, neque odio sollicitudin magna, et consectetur erat sapien vitae neque. Integer ac mattis sapien, et scelerisque turpis.
+
+				.rightPanel
+					.sideAds
+						+ads_300x250
+						
+mixin showcontsblockWhite
+	.contBlock.white
+		.b1366px
+			.showcontswrapper.eps
+				.leftPanel
+					.titleBox
+						h2 Episode 11
+					.showcontsblock
+						.contsBlock
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus leo, mollis a convallis eget, pellentesque non sem. Suspendisse pretium dolor est, sed luctus massa lacinia ornare. Curabitur nec maximus elit, et tempus nibh. Fusce venenatis eros ipsum, dictum convallis turpis eleifend in. Proin id diam quis orci sollicitudin porta. Quisque aliquam, mauris nec fermentum vestibulum, neque odio sollicitudin magna, et consectetur erat sapien vitae neque. Integer ac mattis sapien, et scelerisque turpis.
+						.commentBox
+							img(src="images/discusCommentBoxHolder.png")
 
 				.rightPanel
 					.sideAds

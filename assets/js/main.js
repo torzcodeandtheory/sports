@@ -124,7 +124,6 @@ $(document).ready(function() {
 	
 	$('.schedTab').tabs();
 	$('.filterTab').tabs();
-	$('.showsTab').tabs();
 });
 
 function topmobileMenu() {

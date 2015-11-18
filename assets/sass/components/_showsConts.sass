@@ -35,10 +35,18 @@
 					&:hover
 						background: $red
 						color: $white
-				&.ui-tabs-active
+				&.active
 					a
 						background: $red
 						color: $white
+					&:hover
+						a
+							background: $red
+							color: $white
+				&:hover
+					a
+						color: $red
+						background: none
 		.showConts
 			.scwrap
 				max-width: 1320px
@@ -205,3 +213,19 @@
 			&.contsBlock
 				margin-bottom: 25px
 		
+.showcontswrapper
+	&.eps
+		.contsBlock
+			float: none
+			width: 100%
+			+font($lato, 14px, 400)
+			line-height: 22px
+			margin-bottom: 35px
+		.commentBox
+			max-width: 680px
+			width: 100%
+			margin: 0 auto
+			float: none
+			img
+				width: 100%
+				height: auto
