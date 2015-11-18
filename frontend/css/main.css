@@ -2272,7 +2272,8 @@ a {
       font-size: 16px;
       font-weight: 400;
       line-height: 21px;
-      padding-bottom: 15px; }
+      padding-bottom: 15px;
+      display: block; }
       .articlePage .articleTextWrap .articleMainConts p.allcaps {
         text-transform: uppercase;
         font-family: "Lato", Arial;
@@ -2316,7 +2317,8 @@ a {
           -moz-transform--o-transform: translateY(-50%) translateX(-50%);
         transform: translateY(-50%) translateX(-50%); }
   .articlePage .articleTextWrap .articleImgCarousel {
-    position: relative; }
+    position: relative;
+    margin-bottom: 15px; }
     .articlePage .articleTextWrap .articleImgCarousel .slick-arrow {
       position: absolute;
       height: 100%;
@@ -2329,6 +2331,99 @@ a {
         left: 0; }
       .articlePage .articleTextWrap .articleImgCarousel .slick-arrow.slick-next {
         right: 0; }
+  .articlePage .articleTextWrap .videoPlayer {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 15px; }
+    .articlePage .articleTextWrap .videoPlayer iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .articlePage .articleTextWrap blockquote {
+    margin: 15px;
+    font-family: "Lato", Arial;
+    font-size: 30px;
+    font-weight: 300;
+    color: #e31837;
+    line-height: 42px;
+    width: 40%;
+    float: right; }
+    @media only screen and (max-width: 1023px) {
+      .articlePage .articleTextWrap blockquote {
+        float: none;
+        width: 100%;
+        font-size: 21px; } }
+  .articlePage .articleTextWrap .socialIconsFeeds {
+    padding: 35px 0;
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    overflow: hidden; }
+    .articlePage .articleTextWrap .socialIconsFeeds .shares {
+      float: left; }
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        .articlePage .articleTextWrap .socialIconsFeeds .shares {
+          float: none;
+          clear: both;
+          overflow: hidden;
+          margin-bottom: 10px; } }
+      .articlePage .articleTextWrap .socialIconsFeeds .shares li {
+        float: left;
+        margin: 10px 10px 0 0; }
+        .articlePage .articleTextWrap .socialIconsFeeds .shares li:last-of-type {
+          margin-right: 0; }
+    .articlePage .articleTextWrap .socialIconsFeeds .links {
+      float: right;
+      margin-bottom: 35px;
+      overflow: hidden; }
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        .articlePage .articleTextWrap .socialIconsFeeds .links {
+          float: none;
+          clear: both; } }
+      .articlePage .articleTextWrap .socialIconsFeeds .links li {
+        float: left;
+        margin-right: 10px; }
+        .articlePage .articleTextWrap .socialIconsFeeds .links li:last-of-type {
+          margin-right: 0; }
+        .articlePage .articleTextWrap .socialIconsFeeds .links li a {
+          display: block;
+          width: 50px;
+          height: 50px;
+          position: relative;
+          color: #fff;
+          -moz-transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+          .articlePage .articleTextWrap .socialIconsFeeds .links li a.fbLink {
+            background: #537bbd; }
+            .articlePage .articleTextWrap .socialIconsFeeds .links li a.fbLink:hover {
+              background: #3d62a0; }
+          .articlePage .articleTextWrap .socialIconsFeeds .links li a.twLink {
+            background: #78cdf0; }
+            .articlePage .articleTextWrap .socialIconsFeeds .links li a.twLink:hover {
+              background: #4abceb; }
+          .articlePage .articleTextWrap .socialIconsFeeds .links li a.diggLink {
+            background: #1b1b1b; }
+            .articlePage .articleTextWrap .socialIconsFeeds .links li a.diggLink:hover {
+              background: #363636; }
+          .articlePage .articleTextWrap .socialIconsFeeds .links li a i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translateY(-50%) translateX(-50%);
+              -moz-transform--webkit-transform: translateY(-50%) translateX(-50%);
+              -moz-transform--ms-transform: translateY(-50%) translateX(-50%);
+              -moz-transform--o-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%); }
+  .articlePage .articleTextWrap .commentBox img {
+    width: 100%;
+    height: auto; }
 
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {
