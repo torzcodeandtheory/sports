@@ -1711,7 +1711,7 @@ a {
         .gridwithad ul li.adsWrap img {
           position: relative;
           margin: 7.7% auto; }
-          @media only screen and (min-width: 1024px) and (max-width: 1168px) {
+          @media only screen and (min-width: 1024px) and (max-width: 1167px) {
             .gridwithad ul li.adsWrap img {
               margin: 2% auto; } }
           @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1857,6 +1857,9 @@ a {
       color: #e31837;
       background: #fff; }
 
+.showcontswrapper .sideAds img {
+  padding: 25px 0; }
+
 .showContsWrap .showsTab {
   clear: both;
   color: #fff;
@@ -1911,11 +1914,11 @@ a {
       max-width: -webkit-calc(100% - 33%);
       max-width: calc(100% - 33%);
       width: 100%; }
-      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      @media only screen and (max-width: 1023px) {
         .showContsWrap .showsTab .showConts .scwrap .leftPanel2 {
-          max-width: -moz-calc(100% - 330px);
-          max-width: -webkit-calc(100% - 330px);
-          max-width: calc(100% - 330px); } }
+          max-width: none;
+          width: 100%;
+          clear: both; } }
       .showContsWrap .showsTab .showConts .scwrap .leftPanel2 .holder img {
         width: 100%;
         height: auto; }
@@ -1924,49 +1927,11 @@ a {
       max-width: 490px;
       min-width: 300px;
       width: 33%; }
-      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      @media only screen and (max-width: 1023px) {
         .showContsWrap .showsTab .showConts .scwrap .rightPanel2 {
-          width: 39.37%; } }
-      .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder {
-        max-width: 370px;
-        width: 100%;
-        height: 33%;
-        height: auto; }
-        .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap {
-          float: left;
+          max-width: none;
           width: 100%;
-          padding: 10px 0 10px 30px;
-          box-sizing: border-box; }
-          .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .imgBlock {
-            float: left;
-            max-width: -moz-calc(100% - 80px);
-            max-width: -webkit-calc(100% - 80px);
-            max-width: calc(100% - 80px); }
-            .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .imgBlock img {
-              width: 100%;
-              height: auto; }
-          .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .socialIcons {
-            float: right; }
-            .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .socialIcons a {
-              display: block;
-              color: #fff;
-              width: 55px;
-              height: 55px;
-              position: relative;
-              margin-bottom: 3px; }
-              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .socialIcons a.fbLink {
-                background: #537bbd; }
-              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .socialIcons a.twLink {
-                background: #78cdf0; }
-              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .socialIcons a i {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -moz-transform: translateY(-50%) translateX(-50%);
-                  -moz-transform--webkit-transform: translateY(-50%) translateX(-50%);
-                  -moz-transform--ms-transform: translateY(-50%) translateX(-50%);
-                  -moz-transform--o-transform: translateY(-50%) translateX(-50%);
-                transform: translateY(-50%) translateX(-50%); }
+          clear: both; } }
       .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks {
         background: #898989;
         width: 100%;
@@ -1975,6 +1940,128 @@ a {
           background: #58585a; }
         .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive {
           background: #e31837; }
+          .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder {
+            max-width: 390px;
+            width: 100%;
+            height: 33%;
+            height: auto; }
+            .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder img {
+              width: 100%;
+              height: auto; }
+            .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scaconts {
+              padding: 10px 10px 10px 20px; }
+              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scaconts h2 {
+                font-size: 18px;
+                line-height: 21px; }
+                .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scaconts h2 span {
+                  display: block;
+                  padding: 3px 0 0; }
+              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scaconts p {
+                font-family: "Lato", Arial;
+                font-size: 12px;
+                font-weight: normal;
+                text-transform: none;
+                line-height: 18px; }
+            .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap {
+              float: left;
+              width: 100%;
+              padding: 10px 0 10px 20px;
+              box-sizing: border-box; }
+              @media only screen and (min-width: 1024px) and (max-width: 1167px) {
+                .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap {
+                  padding: 10px 5px 7px 20px; } }
+              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .imgBlock {
+                float: left;
+                max-width: -moz-calc(100% - 80px);
+                max-width: -webkit-calc(100% - 80px);
+                max-width: calc(100% - 80px); }
+                @media only screen and (min-width: 1024px) and (max-width: 1167px) {
+                  .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .imgBlock {
+                    max-width: -moz-calc(100% - 150px);
+                    max-width: -webkit-calc(100% - 150px);
+                    max-width: calc(100% - 150px); } }
+              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons {
+                float: right; }
+                @media only screen and (min-width: 1024px) and (max-width: 1167px) {
+                  .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons {
+                    margin-right: 10px; } }
+                @media only screen and (max-width: 1023px) {
+                  .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons {
+                    margin-right: 10px; } }
+                .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons a {
+                  display: block;
+                  color: #fff;
+                  width: 55px;
+                  height: 55px;
+                  position: relative;
+                  margin-bottom: 3px; }
+                  .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons a.fbLink {
+                    background: #537bbd; }
+                  .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons a.twLink {
+                    background: #78cdf0; }
+                  .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons a i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -moz-transform: translateY(-50%) translateX(-50%);
+                      -moz-transform--webkit-transform: translateY(-50%) translateX(-50%);
+                      -moz-transform--ms-transform: translateY(-50%) translateX(-50%);
+                      -moz-transform--o-transform: translateY(-50%) translateX(-50%);
+                    transform: translateY(-50%) translateX(-50%); }
+        .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder {
+          overflow: hidden;
+          padding: 5px 0 4px; }
+          @media only screen and (min-width: 1024px) and (max-width: 1167px) {
+            .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder {
+              padding: 1px 0px 0; } }
+          .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder div {
+            width: 36%;
+            margin-right: 2%;
+            float: left;
+            padding: 10px 0 10px 20px; }
+            .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder div:last-of-type {
+              margin-right: 0; }
+            @media only screen and (min-width: 1024px) and (max-width: 1167px) {
+              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder div.imgBlock {
+                width: 25%; } }
+            @media only screen and (min-width: 768px) and (max-width: 1023px) {
+              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder div.imgBlock {
+                width: 100%;
+                max-width: 160px;
+                margin: 0 auto;
+                float: none;
+                padding: 10px 0; } }
+            .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder div.imgBlock img {
+              width: 100%;
+              height: auto; }
+            .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder div.scaconts {
+              padding: 10px 10px 10px 20px; }
+              @media only screen and (min-width: 1024px) and (max-width: 1167px) {
+                .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder div.scaconts {
+                  padding: 10px 10px 10px 5px;
+                  width: 62%; } }
+              @media only screen and (min-width: 768px) and (max-width: 1023px) {
+                .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder div.scaconts {
+                  width: 100%;
+                  box-sizing: border-box;
+                  padding: 20px; } }
+              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder div.scaconts h2 {
+                font-size: 18px;
+                line-height: 21px; }
+                .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder div.scaconts h2 span {
+                  display: block;
+                  padding: 3px 0 0; }
+              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scNormal .holder div.scaconts p {
+                font-family: "Lato", Arial;
+                font-size: 12px;
+                font-weight: normal;
+                text-transform: none;
+                line-height: 18px; }
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+          .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks {
+            float: left;
+            width: 33.3%;
+            min-height: 245px; } }
 
 .showcontsblock {
   clear: both;
@@ -1994,11 +2081,7 @@ a {
       margin-bottom: 25px; }
       .showcontsblock div.imgBlock img {
         width: 100%; }
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-      .showcontsblock div {
-        width: 100%;
-        margin-right: 0; } }
-    @media only screen and (min-width: 0) and (max-width: 767px) {
+    @media only screen and (max-width: 1023px) {
       .showcontsblock div {
         width: 100%;
         margin-right: 0; }
