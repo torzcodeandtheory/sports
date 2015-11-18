@@ -1283,6 +1283,11 @@ a {
         line-height: 40px;
         padding: 3px 10px;
         font-size: 14px; }
+      .miniBlock li .captionBlock .simpleLink {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        text-align: left; }
   .miniBlock.by2s li {
     width: 47.87%; }
     @media only screen and (min-width: 1280px) {
@@ -2224,6 +2229,9 @@ a {
   .articlePage .titleBox h2 {
     font-size: 48px;
     line-height: 54px; }
+    @media only screen and (max-width: 1023px) {
+      .articlePage .titleBox h2 {
+        line-height: 34px; } }
 
 .articlePage .views {
   overflow: hidden;
@@ -2267,6 +2275,11 @@ a {
     height: auto;
     overflow: hidden;
     box-sizing: border-box; }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .articlePage .articleTextWrap .articleMainConts {
+        float: none;
+        width: 100%;
+        max-width: none; } }
     .articlePage .articleTextWrap .articleMainConts p {
       font-family: "Lato", Arial;
       font-size: 16px;
@@ -2283,6 +2296,10 @@ a {
     width: 100px;
     float: left;
     text-align: center; }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .articlePage .articleTextWrap .socialFeeds {
+        float: none;
+        width: 100%; } }
     .articlePage .articleTextWrap .socialFeeds a {
       display: block;
       width: 50px;
@@ -2295,6 +2312,11 @@ a {
       -o-transition: 0.3s;
       transition: 0.3s;
       margin: 0 auto 3px; }
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        .articlePage .articleTextWrap .socialFeeds a {
+          float: none;
+          display: inline-block;
+          margin: 0 3px; } }
       .articlePage .articleTextWrap .socialFeeds a.fbLink {
         background: #537bbd; }
         .articlePage .articleTextWrap .socialFeeds a.fbLink:hover {
@@ -2356,7 +2378,10 @@ a {
       .articlePage .articleTextWrap blockquote {
         float: none;
         width: 100%;
-        font-size: 21px; } }
+        font-size: 21px;
+        margin: 0;
+        line-height: 28px;
+        margin-bottom: 15px; } }
   .articlePage .articleTextWrap .socialIconsFeeds {
     padding: 35px 0;
     width: 100%;
@@ -2424,6 +2449,15 @@ a {
   .articlePage .articleTextWrap .commentBox img {
     width: 100%;
     height: auto; }
+
+.articlePage .relatedArticles {
+  padding: 25px 0; }
+  .articlePage .relatedArticles h2 {
+    margin-bottom: 15px; }
+  .articlePage .relatedArticles ul.by2s li:nth-child(3n+3) {
+    margin-right: 25px; }
+  .articlePage .relatedArticles ul.by2s li:nth-child(even) {
+    margin-right: 0; }
 
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {

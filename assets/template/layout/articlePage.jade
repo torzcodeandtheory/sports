@@ -1,4 +1,5 @@
 include advertisement.jade
+include ../modules/gallery.jade
 
 .contBlock.light
 	.b1366px
@@ -53,6 +54,18 @@ include advertisement.jade
 									a(href="#", class="diggLink") <i class="fa fa-digg fa-2x"></i>
 						.commentBox
 							img(src="images/discusCommentBoxHolder.png")
+				.relatedArticles
+					.titleBox
+						h2 Related Articles
+					ul.miniBlock.by2s
+						li
+							+articles2
+						li
+							+articles2
+						li
+							+articles2
+						li
+							+articles2
 			.rightPanel
 				.sideAds
 					+ads_300x250
