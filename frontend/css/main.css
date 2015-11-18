@@ -445,9 +445,6 @@ a {
       height: auto;
       display: block; }
 
-.carouselScheduleBlock .b1366px {
-  padding: 0; }
-
 .fullCarouselBlock {
   background: #000;
   padding-bottom: 10px; }
@@ -740,15 +737,17 @@ a {
     .carouselScheduleBlock .slick-arrow.nextBtn {
       float: right; }
 
+.light {
+  background: #363636; }
+
+.dark {
+  background: #262626; }
+
 .contBlock {
   padding: 25px 0;
   float: left;
   width: 100%;
   position: relative; }
-  .contBlock.light {
-    background: #363636; }
-  .contBlock.dark {
-    background: #262626; }
   .contBlock .titleBox h2 {
     font-family: "oswald_light", Arial;
     font-size: 36px;
@@ -1068,6 +1067,10 @@ a {
   .showMoreBtn:hover {
     background: #fff;
     color: #e31837; }
+
+.videoBlock img {
+  width: 100%;
+  height: auto; }
 
 .schedTab .leagueTab li {
   float: left; }
