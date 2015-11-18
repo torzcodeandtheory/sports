@@ -135,10 +135,15 @@
 											height: 55px
 											position: relative
 											margin-bottom: 3px
+											+transitionspeed(.3s)
 											&.fbLink
 												background: $fbBlue
+												&:hover
+													background: $fbBlueDarken
 											&.twLink
 												background: $twBlue
+												&:hover
+													background: $twBlueDarken
 											i
 												+centerAll()
 						&.scNormal

@@ -2016,11 +2016,20 @@ a {
                   width: 55px;
                   height: 55px;
                   position: relative;
-                  margin-bottom: 3px; }
+                  margin-bottom: 3px;
+                  -moz-transition: 0.3s;
+                  -webkit-transition: 0.3s;
+                  -ms-transition: 0.3s;
+                  -o-transition: 0.3s;
+                  transition: 0.3s; }
                   .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons a.fbLink {
                     background: #537bbd; }
+                    .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons a.fbLink:hover {
+                      background: #3d62a0; }
                   .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons a.twLink {
                     background: #78cdf0; }
+                    .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons a.twLink:hover {
+                      background: #4abceb; }
                   .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive .holder .scawrap .socialIcons a i {
                     position: absolute;
                     top: 50%;
