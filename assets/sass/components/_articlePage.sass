@@ -9,8 +9,12 @@
 		h2
 			font-size: 48px
 			line-height: 54px
-			+forresponsive
-				line-height: 34px
+			+fortablet
+				font-size: 30px
+				line-height: 40px
+			+formobile
+				font-size: 24px
+				line-height: 30px
 	.views
 		overflow: hidden
 		clear: both
@@ -27,6 +31,8 @@
 				width: 100%
 				text-align: left
 				padding: 10px 0
+			+formobile
+				font-size: 14px
 		.count
 			float: right
 			text-align: right
@@ -37,6 +43,8 @@
 				width: 100%
 				text-align: left
 				padding: 0 0 10px
+			+formobile
+				font-size: 16px
 	.articleTextWrap
 		background: $white
 		color: $blakish
@@ -48,7 +56,9 @@
 			height: auto
 			overflow: hidden
 			box-sizing: border-box
-			+formobile()
+			+fortablet
+				+calc(max-width, '100% - 50px') 
+			+formobile
 				float: none
 				width: 100%
 				max-width: none
@@ -65,7 +75,9 @@
 			width: 100px
 			float: left
 			text-align: center
-			+formobile()
+			+fortablet
+				width: auto
+			+formobile
 				float: none
 				width: 100%
 			a
@@ -74,7 +86,6 @@
 				height: 50px
 				position: relative
 				color: $white
-				+transitionspeed(.3s)
 				margin: 0 auto 3px
 				+formobile()
 					float: none

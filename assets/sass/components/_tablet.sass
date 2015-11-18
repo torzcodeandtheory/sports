@@ -75,8 +75,11 @@
 		&.by3s
 			li
 				float: left
-				width: 31%
-				margin-right: 25px
+				//width: 31%
+				//margin-right: 25px
+				width: 100%
+				+calc(max-width,'100% / 3 - 5px')
+				+calc(margin-right,'15px / 2')
 				&:last-of-type
 					margin-right: 0
 				.captionBlock

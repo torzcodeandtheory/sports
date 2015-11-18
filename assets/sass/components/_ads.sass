@@ -54,3 +54,55 @@
 		+formobile
 			height: 50px
 			line-height: 50px
+
+.ads-content
+	height: auto
+	width: 100%
+	padding: 10px 0
+	+fortablet
+		width: 100%
+		max-width: 320px
+		height: auto
+		margin: 0 auto
+	+formobile
+		padding: 10px 0
+		width: 100%
+		height: auto
+
+	.ads-box-content
+		width: 100%
+		max-width: 728px
+		height: 90px
+		margin: 0 auto
+		position: relative
+		line-height: 90px
+		text-align: center
+		color: $white
+		background: $darkGrayDarken
+		font-size: 60px
+		font-family: $opensans
+		font-weight: 900
+		+fortablet
+			width: 100%
+			height: 50px;
+			font-size: 20px
+			line-height: 50px
+		+formobile
+			width: 100%
+			max-width: 320px
+			height: 50px
+			line-height: 50px
+			font-size: 20px
+
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			z-index: -1
+			left: 0
+			top: 0
+			+formobile
+				height: 50px
+				line-height: 50px

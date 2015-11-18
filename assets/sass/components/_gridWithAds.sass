@@ -41,6 +41,7 @@
 
 			+fortablet()
 				width: 48.8%
+				//+calc(width,'100% / 2 - ')
 				&:nth-child(odd)
 					margin-right: 0
 
@@ -74,3 +75,11 @@
 						margin: 2% auto
 					+fortablet()
 						margin: 7% auto
+	
+	&.nobanner
+		li
+			+fortablet
+				&:nth-child(odd)
+					margin-right: 2%;
+				&:nth-child(even)
+					margin-right: 0;

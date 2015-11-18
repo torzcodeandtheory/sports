@@ -53,7 +53,7 @@
 	+calcu(max-width,'100% - 400px')
 	width: 100%
 	+fortablet
-		+calcu(max-width,'100% - 320px')
+		+calcu(max-width,'100% - 310px')
 
 .rightPanel
 	float: right
@@ -168,11 +168,16 @@
 				width: 48.37%
 	&.by3s
 		li
-			width: 31.33%
+			//width: 31.33%
+			width: 100%
+			+calc(max-width,'100% / 3 - 20px')
+			+calc(margin-right,'60px / 2')
 			&:nth-child(3n+3)
 				margin-right: 0
 			+fordesktopW
 				width: 31.9%
+			+formobile
+				max-width: none
 			
 	&.by4s
 		li
@@ -356,9 +361,13 @@
 		display: block
 		width: 100%;
 		overflow: hidden
-		+calc(max-width,'100% / 3 - 10px')
-		+calc(margin-right,'30px / 2')
+		+calc(max-width,'100% / 3 - 20px')
+		+calc(margin-right,'60px / 2')
 		+aspect-ratio(1,1)
+		
+		+fortablet
+			+calc(max-width,'100% / 3 - 5px')
+			+calc(margin-right,'15px / 2')
 
 		+formobile
 			width: 100%

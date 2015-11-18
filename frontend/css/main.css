@@ -107,6 +107,9 @@ a {
   position: relative;
   box-sizing: border-box;
   min-width: 320px; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .b970px {
+      padding: 0 20px; } }
 
 .container {
   clear: both; }
@@ -780,6 +783,61 @@ a {
         height: 50px;
         line-height: 50px; } }
 
+.ads-content {
+  height: auto;
+  width: 100%;
+  padding: 10px 0; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .ads-content {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 0) and (max-width: 767px) {
+    .ads-content {
+      padding: 10px 0;
+      width: 100%;
+      height: auto; } }
+  .ads-content .ads-box-content {
+    width: 100%;
+    max-width: 728px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+    line-height: 90px;
+    text-align: center;
+    color: #fff;
+    background: #1e1e1e;
+    font-size: 60px;
+    font-family: "Open Sans";
+    font-weight: 900; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .ads-content .ads-box-content {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px; } }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .ads-content .ads-box-content {
+        width: 100%;
+        max-width: 320px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px; } }
+    .ads-content .ads-box-content:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0; }
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        .ads-content .ads-box-content:after {
+          height: 50px;
+          line-height: 50px; } }
+
 .fullCarouselBlock {
   background: #000;
   padding-bottom: 10px; }
@@ -1143,9 +1201,9 @@ a {
   width: 100%; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .leftPanel {
-      max-width: -moz-calc(100% - 320px);
-      max-width: -webkit-calc(100% - 320px);
-      max-width: calc(100% - 320px); } }
+      max-width: -moz-calc(100% - 310px);
+      max-width: -webkit-calc(100% - 310px);
+      max-width: calc(100% - 310px); } }
 
 .rightPanel {
   float: right;
@@ -1296,12 +1354,21 @@ a {
       .miniBlock.by2s li {
         width: 48.37%; } }
   .miniBlock.by3s li {
-    width: 31.33%; }
+    width: 100%;
+    max-width: -moz-calc(100% / 3 - 20px);
+    max-width: -webkit-calc(100% / 3 - 20px);
+    max-width: calc(100% / 3 - 20px);
+    margin-right: -moz-calc(60px / 2);
+    margin-right: -webkit-calc(60px / 2);
+    margin-right: calc(60px / 2); }
     .miniBlock.by3s li:nth-child(3n+3) {
       margin-right: 0; }
     @media only screen and (min-width: 1280px) {
       .miniBlock.by3s li {
         width: 31.9%; } }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .miniBlock.by3s li {
+        max-width: none; } }
   .miniBlock.by4s li {
     width: 25%;
     margin-right: 0; }
@@ -1503,12 +1570,12 @@ a {
     display: block;
     width: 100%;
     overflow: hidden;
-    max-width: -moz-calc(100% / 3 - 10px);
-    max-width: -webkit-calc(100% / 3 - 10px);
-    max-width: calc(100% / 3 - 10px);
-    margin-right: -moz-calc(30px / 2);
-    margin-right: -webkit-calc(30px / 2);
-    margin-right: calc(30px / 2);
+    max-width: -moz-calc(100% / 3 - 20px);
+    max-width: -webkit-calc(100% / 3 - 20px);
+    max-width: calc(100% / 3 - 20px);
+    margin-right: -moz-calc(60px / 2);
+    margin-right: -webkit-calc(60px / 2);
+    margin-right: calc(60px / 2);
     position: relative; }
     .socialFeeds li:before {
       display: block;
@@ -1521,6 +1588,14 @@ a {
       left: 0;
       right: 0;
       bottom: 0; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .socialFeeds li {
+        max-width: -moz-calc(100% / 3 - 5px);
+        max-width: -webkit-calc(100% / 3 - 5px);
+        max-width: calc(100% / 3 - 5px);
+        margin-right: -moz-calc(15px / 2);
+        margin-right: -webkit-calc(15px / 2);
+        margin-right: calc(15px / 2); } }
     @media only screen and (min-width: 0) and (max-width: 767px) {
       .socialFeeds li {
         width: 100%;
@@ -1733,6 +1808,11 @@ a {
           @media only screen and (min-width: 768px) and (max-width: 1023px) {
             .gridwithad ul li.adsWrap img {
               margin: 7% auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .gridwithad.nobanner li:nth-child(odd) {
+      margin-right: 2%; }
+    .gridwithad.nobanner li:nth-child(even) {
+      margin-right: 0; } }
 
 .regform {
   clear: both;
@@ -1891,6 +1971,9 @@ a {
     position: relative;
     box-sizing: border-box;
     min-width: 320px; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .showContsWrap .showsTab ul {
+        padding: 0 20px; } }
     .showContsWrap .showsTab ul li {
       float: left; }
       .showContsWrap .showsTab ul li p {
@@ -1930,6 +2013,9 @@ a {
     box-sizing: border-box;
     min-width: 320px;
     overflow: hidden; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .showContsWrap .showsTab .showConts .scwrap {
+        padding: 0 20px; } }
     .showContsWrap .showsTab .showConts .scwrap .leftPanel2 {
       float: left;
       max-width: -moz-calc(100% - 33%);
@@ -2240,9 +2326,14 @@ a {
   .articlePage .titleBox h2 {
     font-size: 48px;
     line-height: 54px; }
-    @media only screen and (max-width: 1023px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .articlePage .titleBox h2 {
-        line-height: 34px; } }
+        font-size: 30px;
+        line-height: 40px; } }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .articlePage .titleBox h2 {
+        font-size: 24px;
+        line-height: 30px; } }
 
 .articlePage .views {
   overflow: hidden;
@@ -2261,6 +2352,9 @@ a {
         width: 100%;
         text-align: left;
         padding: 10px 0; } }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .articlePage .views .dateuploaded {
+        font-size: 14px; } }
   .articlePage .views .count {
     float: right;
     text-align: right;
@@ -2272,6 +2366,9 @@ a {
         width: 100%;
         text-align: left;
         padding: 0 0 10px; } }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .articlePage .views .count {
+        font-size: 16px; } }
 
 .articlePage .articleTextWrap {
   background: #fff;
@@ -2286,6 +2383,11 @@ a {
     height: auto;
     overflow: hidden;
     box-sizing: border-box; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .articlePage .articleTextWrap .articleMainConts {
+        max-width: -moz-calc(100% - 50px);
+        max-width: -webkit-calc(100% - 50px);
+        max-width: calc(100% - 50px); } }
     @media only screen and (min-width: 0) and (max-width: 767px) {
       .articlePage .articleTextWrap .articleMainConts {
         float: none;
@@ -2307,6 +2409,9 @@ a {
     width: 100px;
     float: left;
     text-align: center; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .articlePage .articleTextWrap .socialFeeds {
+        width: auto; } }
     @media only screen and (min-width: 0) and (max-width: 767px) {
       .articlePage .articleTextWrap .socialFeeds {
         float: none;
@@ -2317,11 +2422,6 @@ a {
       height: 50px;
       position: relative;
       color: #fff;
-      -moz-transition: 0.3s;
-      -webkit-transition: 0.3s;
-      -ms-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
       margin: 0 auto 3px; }
       @media only screen and (min-width: 0) and (max-width: 767px) {
         .articlePage .articleTextWrap .socialFeeds a {
@@ -2749,8 +2849,13 @@ a {
       transform: translateY(-50%); }
   .miniBlock.by3s li {
     float: left;
-    width: 31%;
-    margin-right: 25px; }
+    width: 100%;
+    max-width: -moz-calc(100% / 3 - 5px);
+    max-width: -webkit-calc(100% / 3 - 5px);
+    max-width: calc(100% / 3 - 5px);
+    margin-right: -moz-calc(15px / 2);
+    margin-right: -webkit-calc(15px / 2);
+    margin-right: calc(15px / 2); }
     .miniBlock.by3s li:last-of-type {
       margin-right: 0; }
     .miniBlock.by3s li .captionBlock {

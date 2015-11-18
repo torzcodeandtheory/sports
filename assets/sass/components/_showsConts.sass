@@ -18,6 +18,8 @@
 			position: relative
 			box-sizing: border-box
 			min-width: 320px
+			+fortablet
+				padding: 0 20px
 			li
 				float: left
 				p
@@ -57,6 +59,10 @@
 				box-sizing: border-box
 				min-width: 320px
 				overflow: hidden
+				+fortablet
+					padding: 0 20px
+	
+	
 				.leftPanel2
 					float: left
 					+calcu(max-width,'100% - 33%')
