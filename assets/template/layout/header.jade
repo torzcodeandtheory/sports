@@ -2,9 +2,27 @@ include doubleMenu.jade
 include searchBlock.jade
 
 .header
-	.top-section
-		.b1366px
-			+doubleMenu
+	.topbar
+		.wrapper
+			a(class='topnav mobile')
+				i(class='fa fa-angle-double-down')
+
+			ul.topmenu
+				li: a(href='')
+					img(src='/css/img/home.png')
+				li: a(href='') live
+					span.liveindicator
+				li: a(href='') sports
+				li: a(href='') news
+				li: a(href='') entertainment
+				li: a(class='more') more
+
+
+
+
+			ul.access
+				li: a(href='') SINGUP
+				li: a(href='') LOG IN
 	
 	.mid-section
 		.b1366px

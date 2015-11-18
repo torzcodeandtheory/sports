@@ -1,124 +1,4 @@
-.top-section 
-	border-top: 1px $maroon solid
-	border-bottom: 1px $maroon solid
-	background: $red
-	max-height: 27px
-	+font($lato,12px,400)
-	text-transform: uppercase
-	line-height: 27px
-	float: left
-	width: 100%
 
-	.b1366px
-		padding: 0
-
-	.moreNav,
-	.backHome,
-	.moreNavContents
-		display: none
-
-	ul.topnav
-		position: relative
-		float: left
-
-		li
-			float: left
-			position: relative
-
-			&:before
-				content: ""
-				display: block
-				background: $white
-				width:	1px
-				height: 10px
-				+centerVert
-				right: 0
-			
-			&:last-of-type
-				&:before
-					display: none
-	
-			a
-				color: $white
-				padding: 0 12px
-				display: block
-				+transitionspeed(.3s)
-				
-				&:hover
-					background: $maroon
-				
-				&.live
-					i
-						color: $liveGreen
-	
-		.dropdown
-			ul
-				position: absolute
-				background: $maroon
-				width: 200px
-				max-height: 0
-				overflow: hidden
-				+transitionspeed(.3s)
-				border-bottom: 1px $maroon solid
-				z-index: 1
-		
-				li
-					border-top: 1px $maroon solid
-					float: none
-			
-					&:before
-						display: none
-				
-					a
-						background: $lighterMaroon
-						+transitionspeed(.3s)
-		
-						&:hover
-							background: $red
-	
-				&:first-of-type
-					border: 0
-		
-			&:hover,
-			&.active
-				a
-					background: $maroon
-				ul
-					+transitionspeed(.3s)
-					max-height: 1000px
-	
-	ul.signlogs
-		float: right
-		background: $darkAqua
-		padding: 0 15px
-
-		li
-			float: left
-			position: relative
-
-			&:before
-				content: ""
-				display: block
-				background: $white
-				width:	1px
-				height: 10px
-				position: absolute
-				top: 50%
-				transform: translateY(-50%)
-				right: 0
-	
-			&:last-of-type
-				&:before
-					display: none
-			
-			a
-				color: $white
-				padding: 0 10px
-				display: block
-				+transitionspeed(.3s)
-		
-				&:hover
-					color: $lightAqua
 
 .mid-section
 	background: $darkGray
@@ -247,3 +127,129 @@
 							background: $twBlueDarken
 					i
 						+centerAll()
+	
+.topbar
+	width: 100%
+	height: 28px
+	background: $red
+
+	+formobile
+		overflow: hidden
+		height: auto
+		max-height: 28px
+		+transitionspeed(50ms)
+
+		&.slideDown
+			max-height: 1000px
+			+transitionspeed(1s)
+	.wrapper
+		width: 100%
+		max-width: 1366px
+		padding: 0 30px
+		margin: 0 auto
+		+fortablet
+			padding: 0 20px
+		+formobile
+			min-height: 0
+			padding: 0 10px
+		
+.topmenu
+	display: block
+	width: auto
+	float: left
+	height: 28px
+	margin-left: 60px
+	+fortablet
+		margin-left: 0
+	+formobile
+		margin-left: 0
+		float: none
+		overflow: hidden
+		height: auto
+
+
+	li
+		display: block
+		float: left
+		height: 28px
+		line-height: 28px
+		font-size: 12
+		+formobile
+			float: none
+
+
+		a
+			display: block
+			height: 12px
+			line-height: 12px
+			margin: 8px 0
+			padding: 0 10px
+			color: $white
+			font-family: $opensans
+			text-transform: uppercase
+			border-right: 1px $white solid
+			+formobile
+				border-right: 0 $white solid
+
+			.liveindicator
+				display: inline-block
+				width: 12px
+				height: 12px
+				background: $green
+				+bradius(50%)
+				margin-left: 5px
+
+		&:last-child
+			a
+				border-right: 0
+
+	.more
+		+formobile
+			display: none
+.access
+	float: right
+	display: block
+	width: auto
+	background: $black-2
+	height: 28px
+	padding: 0 20px
+	margin-right: 40px
+	+fortablet
+		margin-right: 0
+	+formobile
+		float: none
+		margin-right: 0
+		margin-left: -10px
+		+calcu(width,'100% + 20px')
+
+	li
+		display: block
+		float: left
+		+formobile
+			width: 50%
+			text-align: center
+		a
+			display: block
+			height: 12px
+			line-height: 12px
+			margin: 8px 0
+			padding: 0 10px
+			color: $white
+			font-family: $opensans
+			text-transform: uppercase
+			border-right: 1px $white solid
+
+		&:last-child
+				a
+					border-right: 0
+
+//topnav for mobile
+.topnav
+	display: none
+	+formobile
+		display: block
+		height: 28px
+		text-align: center
+		color: $white
+		line-height: 28px
+		font-size: 20px

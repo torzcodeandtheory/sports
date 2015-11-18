@@ -95,6 +95,9 @@ a {
   position: relative;
   box-sizing: border-box;
   min-width: 320px; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .b1366px {
+      padding: 0 20px; } }
 
 .b970px {
   max-width: 990px;
@@ -107,128 +110,6 @@ a {
 
 .container {
   clear: both; }
-
-.top-section {
-  border-top: 1px #872836 solid;
-  border-bottom: 1px #872836 solid;
-  background: #e31837;
-  max-height: 27px;
-  font-family: "Lato", Arial;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 27px;
-  float: left;
-  width: 100%; }
-  .top-section .b1366px {
-    padding: 0; }
-  .top-section .moreNav,
-  .top-section .backHome,
-  .top-section .moreNavContents {
-    display: none; }
-  .top-section ul.topnav {
-    position: relative;
-    float: left; }
-    .top-section ul.topnav li {
-      float: left;
-      position: relative; }
-      .top-section ul.topnav li:before {
-        content: "";
-        display: block;
-        background: #fff;
-        width: 1px;
-        height: 10px;
-        position: absolute;
-        top: 50%;
-        -moz-transform: translateY(-50%);
-          -moz-transform--webkit-transform: translateY(-50%);
-          -moz-transform--ms-transform: translateY(-50%);
-          -moz-transform--o-transform: translateY(-50%);
-        transform: translateY(-50%);
-        right: 0; }
-      .top-section ul.topnav li:last-of-type:before {
-        display: none; }
-      .top-section ul.topnav li a {
-        color: #fff;
-        padding: 0 12px;
-        display: block;
-        -moz-transition: 0.3s;
-        -webkit-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-        .top-section ul.topnav li a:hover {
-          background: #872836; }
-        .top-section ul.topnav li a.live i {
-          color: #8dc63f; }
-    .top-section ul.topnav .dropdown ul {
-      position: absolute;
-      background: #872836;
-      width: 200px;
-      max-height: 0;
-      overflow: hidden;
-      -moz-transition: 0.3s;
-      -webkit-transition: 0.3s;
-      -ms-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-      border-bottom: 1px #872836 solid;
-      z-index: 1; }
-      .top-section ul.topnav .dropdown ul li {
-        border-top: 1px #872836 solid;
-        float: none; }
-        .top-section ul.topnav .dropdown ul li:before {
-          display: none; }
-        .top-section ul.topnav .dropdown ul li a {
-          background: #912b3a;
-          -moz-transition: 0.3s;
-          -webkit-transition: 0.3s;
-          -ms-transition: 0.3s;
-          -o-transition: 0.3s;
-          transition: 0.3s; }
-          .top-section ul.topnav .dropdown ul li a:hover {
-            background: #e31837; }
-      .top-section ul.topnav .dropdown ul:first-of-type {
-        border: 0; }
-    .top-section ul.topnav .dropdown:hover a, .top-section ul.topnav .dropdown.active a {
-      background: #872836; }
-    .top-section ul.topnav .dropdown:hover ul, .top-section ul.topnav .dropdown.active ul {
-      -moz-transition: 0.3s;
-      -webkit-transition: 0.3s;
-      -ms-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-      max-height: 1000px; }
-  .top-section ul.signlogs {
-    float: right;
-    background: #2f3837;
-    padding: 0 15px; }
-    .top-section ul.signlogs li {
-      float: left;
-      position: relative; }
-      .top-section ul.signlogs li:before {
-        content: "";
-        display: block;
-        background: #fff;
-        width: 1px;
-        height: 10px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0; }
-      .top-section ul.signlogs li:last-of-type:before {
-        display: none; }
-      .top-section ul.signlogs li a {
-        color: #fff;
-        padding: 0 10px;
-        display: block;
-        -moz-transition: 0.3s;
-        -webkit-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-        .top-section ul.signlogs li a:hover {
-          color: #a4f2e9; }
 
 .mid-section {
   background: #262626;
@@ -391,6 +272,144 @@ a {
               -moz-transform--ms-transform: translateY(-50%) translateX(-50%);
               -moz-transform--o-transform: translateY(-50%) translateX(-50%);
             transform: translateY(-50%) translateX(-50%); }
+
+.topbar {
+  width: 100%;
+  height: 28px;
+  background: #e31837; }
+  @media only screen and (min-width: 0) and (max-width: 767px) {
+    .topbar {
+      overflow: hidden;
+      height: auto;
+      max-height: 28px;
+      -moz-transition: 50ms;
+      -webkit-transition: 50ms;
+      -ms-transition: 50ms;
+      -o-transition: 50ms;
+      transition: 50ms; }
+      .topbar.slideDown {
+        max-height: 1000px;
+        -moz-transition: 1s;
+        -webkit-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; } }
+  .topbar .wrapper {
+    width: 100%;
+    max-width: 1366px;
+    padding: 0 30px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .topbar .wrapper {
+        padding: 0 20px; } }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .topbar .wrapper {
+        min-height: 0;
+        padding: 0 10px; } }
+
+.topmenu {
+  display: block;
+  width: auto;
+  float: left;
+  height: 28px;
+  margin-left: 60px; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .topmenu {
+      margin-left: 0; } }
+  @media only screen and (min-width: 0) and (max-width: 767px) {
+    .topmenu {
+      margin-left: 0;
+      float: none;
+      overflow: hidden;
+      height: auto; } }
+  .topmenu li {
+    display: block;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12; }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .topmenu li {
+        float: none; } }
+    .topmenu li a {
+      display: block;
+      height: 12px;
+      line-height: 12px;
+      margin: 8px 0;
+      padding: 0 10px;
+      color: #fff;
+      font-family: "Open Sans";
+      text-transform: uppercase;
+      border-right: 1px #fff solid; }
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        .topmenu li a {
+          border-right: 0 #fff solid; } }
+      .topmenu li a .liveindicator {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: #8dc63f;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        margin-left: 5px; }
+    .topmenu li:last-child a {
+      border-right: 0; }
+  @media only screen and (min-width: 0) and (max-width: 767px) {
+    .topmenu .more {
+      display: none; } }
+
+.access {
+  float: right;
+  display: block;
+  width: auto;
+  background: #2f3837;
+  height: 28px;
+  padding: 0 20px;
+  margin-right: 40px; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .access {
+      margin-right: 0; } }
+  @media only screen and (min-width: 0) and (max-width: 767px) {
+    .access {
+      float: none;
+      margin-right: 0;
+      margin-left: -10px;
+      width: -moz-calc(100% + 20px);
+      width: -webkit-calc(100% + 20px);
+      width: calc(100% + 20px); } }
+  .access li {
+    display: block;
+    float: left; }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .access li {
+        width: 50%;
+        text-align: center; } }
+    .access li a {
+      display: block;
+      height: 12px;
+      line-height: 12px;
+      margin: 8px 0;
+      padding: 0 10px;
+      color: #fff;
+      font-family: "Open Sans";
+      text-transform: uppercase;
+      border-right: 1px #fff solid; }
+    .access li:last-child a {
+      border-right: 0; }
+
+.topnav {
+  display: none; }
+  @media only screen and (min-width: 0) and (max-width: 767px) {
+    .topnav {
+      display: block;
+      height: 28px;
+      text-align: center;
+      color: #fff;
+      line-height: 28px;
+      font-size: 20px; } }
 
 .footer {
   clear: both;
@@ -825,11 +844,20 @@ a {
   max-width: -webkit-calc(100% - 400px);
   max-width: calc(100% - 400px);
   width: 100%; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .leftPanel {
+      max-width: -moz-calc(100% - 320px);
+      max-width: -webkit-calc(100% - 320px);
+      max-width: calc(100% - 320px); } }
 
 .rightPanel {
   float: right;
   max-width: 375px;
   width: 100%; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .rightPanel {
+      width: 300px;
+      max-width: 300px; } }
 
 .colBlock {
   width: 100%;

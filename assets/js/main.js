@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+	topmobileMenu();
 	//dropdown var and height
 	var dd = $('.dropdown ul');
 	
@@ -124,3 +124,17 @@ $(document).ready(function() {
 	$('.schedTab').tabs();
 	$('.filterTab').tabs();
 });
+
+function topmobileMenu() {
+	$('.topnav').on('click', function () {
+		if ($(this).hasClass('open')) {
+			$(this).removeClass('open');
+			$(this).children('i').removeClass('fa-angle-double-up').addClass('fa-angle-double-down');
+			$('.topbar').removeClass('slideDown');
+		} else {
+			$(this).addClass('open');
+			$(this).children('i').removeClass('fa-angle-double-down').addClass('fa-angle-double-up');
+			$('.topbar').addClass('slideDown');
+		}
+	});
+}

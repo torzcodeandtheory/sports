@@ -54,11 +54,16 @@
 	float: left
 	+calcu(max-width,'100% - 400px')
 	width: 100%
+	+fortablet
+		+calcu(max-width,'100% - 320px')
 
 .rightPanel
 	float: right
 	max-width: 375px
 	width: 100%
+	+fortablet
+		width: 300px
+		max-width: 300px
 	
 .colBlock
 	width: 100%
