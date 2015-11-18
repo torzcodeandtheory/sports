@@ -2103,6 +2103,34 @@ a {
         .showcontsblock div.contsBlock {
           margin-bottom: 25px; } }
 
+.showcontswrapper.eps .titleBox.vids h2 {
+  float: left;
+  width: 75%; }
+  @media only screen and (max-width: 1023px) {
+    .showcontswrapper.eps .titleBox.vids h2 {
+      float: none;
+      width: 100%;
+      margin-bottom: 15px; } }
+
+.showcontswrapper.eps .titleBox.vids .views {
+  float: right;
+  text-align: right;
+  width: 25%; }
+  @media only screen and (max-width: 1023px) {
+    .showcontswrapper.eps .titleBox.vids .views {
+      float: none;
+      width: 100%;
+      text-align: left; } }
+  .showcontswrapper.eps .titleBox.vids .views .dateuploaded {
+    font-family: "Lato", Arial;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 5px; }
+  .showcontswrapper.eps .titleBox.vids .views .count {
+    font-family: "Lato", Arial;
+    font-size: 18px;
+    font-weight: 700; }
+
 .showcontswrapper.eps .contsBlock {
   float: none;
   width: 100%;

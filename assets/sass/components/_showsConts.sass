@@ -215,6 +215,28 @@
 		
 .showcontswrapper
 	&.eps
+		.titleBox
+			&.vids
+				h2
+					float: left
+					width: 75%
+					+forresponsive()
+						float: none
+						width: 100%
+						margin-bottom: 15px
+				.views
+					float: right
+					text-align: right
+					width: 25%
+					+forresponsive()
+						float: none
+						width: 100%
+						text-align: left
+					.dateuploaded
+						+font($lato, 14px, 400)
+						padding-bottom: 5px
+					.count
+						+font($lato, 18px, 700)
 		.contsBlock
 			float: none
 			width: 100%
