@@ -1490,6 +1490,66 @@ a {
       width: 100%;
       height: auto; }
 
+.socialFeeds {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .socialFeeds li {
+    float: left;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    max-width: -moz-calc(100% / 3 - 10px);
+    max-width: -webkit-calc(100% / 3 - 10px);
+    max-width: calc(100% / 3 - 10px);
+    margin-right: -moz-calc(30px / 2);
+    margin-right: -webkit-calc(30px / 2);
+    margin-right: calc(30px / 2);
+    position: relative; }
+    .socialFeeds li:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 100%; }
+    .socialFeeds li > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .socialFeeds li {
+        width: 100%;
+        float: none;
+        max-width: none;
+        margin-bottom: 10px; } }
+    .socialFeeds li:last-child {
+      margin-right: 0; }
+    .socialFeeds li img {
+      width: 100%; }
+  .socialFeeds .adsFeed {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ccc; }
+    .socialFeeds .adsFeed .adbox {
+      max-width: 300px;
+      max-height: 300px;
+      width: 100%;
+      height: 100%;
+      border: 1px #999 solid;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      line-height: 300px;
+      text-align: center; }
+
 .schedTab .leagueTab li {
   float: left; }
   .schedTab .leagueTab li a {
