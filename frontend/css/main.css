@@ -2344,15 +2344,29 @@ a {
     .articlePage .articleTextWrap .articleImgCarousel .slick-arrow {
       position: absolute;
       height: 100%;
-      width: 20px;
+      width: 40px;
       display: block;
       border: 0;
       top: 0;
-      z-index: 1; }
-      .articlePage .articleTextWrap .articleImgCarousel .slick-arrow.slick-prev {
+      z-index: 1;
+      background: url("../images/blackTransparent.png");
+      color: #fff;
+      cursor: pointer; }
+      .articlePage .articleTextWrap .articleImgCarousel .slick-arrow:hover {
+        color: #e31837; }
+      .articlePage .articleTextWrap .articleImgCarousel .slick-arrow.prevBtn {
         left: 0; }
-      .articlePage .articleTextWrap .articleImgCarousel .slick-arrow.slick-next {
+      .articlePage .articleTextWrap .articleImgCarousel .slick-arrow.nextBtn {
         right: 0; }
+      .articlePage .articleTextWrap .articleImgCarousel .slick-arrow i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateY(-50%) translateX(-50%);
+          -moz-transform--webkit-transform: translateY(-50%) translateX(-50%);
+          -moz-transform--ms-transform: translateY(-50%) translateX(-50%);
+          -moz-transform--o-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%); }
   .articlePage .articleTextWrap .videoPlayer {
     position: relative;
     padding-bottom: 56.25%;

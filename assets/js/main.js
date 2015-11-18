@@ -76,9 +76,9 @@ $(document).ready(function() {
 		lazyLoad: 'ondemand',
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		prevArrow: '<div class="prevBtn"><i class="fa fa-chevron-left fa-2x"></i></div>',
-		nextArrow: '<div class="nextBtn"><i class="fa fa-chevron-right fa-2x"></i></div>',
-		appendArrows: '.articleImgCarouselArrows'
+		prevArrow: '<div class="prevBtn"><i class="fa fa-caret-left fa-3x"></i></div>',
+		nextArrow: '<div class="nextBtn"><i class="fa fa-caret-right fa-3x"></i></div>',
+		appendArrows: '.articleImgCarousel'
 	});
 	
 	$('.csBox').slick({

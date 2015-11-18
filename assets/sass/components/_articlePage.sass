@@ -101,15 +101,22 @@
 			.slick-arrow
 				position: absolute
 				height: 100%
-				width: 20px
+				width: 40px
 				display: block
 				border: 0
 				top: 0
 				z-index: 1
-				&.slick-prev
+				background: url('../images/blackTransparent.png')
+				color: $white
+				cursor: pointer
+				&:hover
+					color: $red
+				&.prevBtn
 					left: 0
-				&.slick-next
+				&.nextBtn
 					right: 0
+				i
+					+centerAll()
 		.videoPlayer
 			position: relative
 			padding-bottom: 56.25%
