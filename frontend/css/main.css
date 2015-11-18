@@ -2473,6 +2473,29 @@ a {
   .articlePage .relatedArticles ul.by2s li:nth-child(even) {
     margin-right: 0; }
 
+.relatedListArticle {
+  padding: 35px 0; }
+  .relatedListArticle ul {
+    width: 100%; }
+    .relatedListArticle ul li {
+      overflow: hidden;
+      background: #fff;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px; }
+      .relatedListArticle ul li .imgBlock {
+        float: left;
+        margin-right: 10px; }
+      .relatedListArticle ul li .titleWrap h2 a {
+        color: #1b1b1b;
+        font-size: 18px;
+        line-height: 24px; }
+      .relatedListArticle ul li .titleWrap h2 span {
+        display: block; }
+      .relatedListArticle ul li .titleWrap p {
+        font-size: 12px;
+        color: #1b1b1b; }
+
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {
     width: 100%; }
