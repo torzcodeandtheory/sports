@@ -1,4 +1,6 @@
 include ../layout/ads-sizes.jade
+include ../layout/advertisement.jade
+include ../modules/gallery.jade
 
 mixin showtab
 	.contBlock.showContsWrap.dark
@@ -50,3 +52,46 @@ mixin showtab
 						.scLinks
 							.holder
 								img(src="images/http://lorempixel.com/170/90/")
+
+mixin episodes
+	.contBlock.light
+		.b1366px
+			.titleBox
+				h2 Episodes
+				a(href="#", class="moreBtn") More
+
+			.wrap
+				ul.miniBlock.by3s
+					li
+						+miniWatch
+					li
+						+miniWatch
+					li
+						+miniWatch
+
+mixin showscarousel
+	.contBlock.dark
+		.b1366px
+			.titleBox
+				h2 Shows
+				a(href="#", class="moreBtn") More
+
+			.wrap
+				.showsBlock
+					ul.miniBlockCarousel.carouselby4s
+						li
+							+showsConts
+						li
+							+showsConts
+						li
+							+showsConts
+						li
+							+showsConts
+						li
+							+showsConts
+						li
+							+showsConts
+						li
+							+showsConts
+						li
+							+showsConts
