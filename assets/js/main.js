@@ -69,6 +69,18 @@ $(document).ready(function() {
 		nextArrow: '<div class="nextBtn"><i class="fa fa-chevron-right fa-2x"></i></div>'
 	});
 	
+	$('.articleImgCarousel').slick({
+		infinite: true,
+		speed: 500,
+		cssEase: 'linear',
+		lazyLoad: 'ondemand',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="prevBtn"><i class="fa fa-chevron-left fa-2x"></i></div>',
+		nextArrow: '<div class="nextBtn"><i class="fa fa-chevron-right fa-2x"></i></div>',
+		appendArrows: '.articleImgCarouselArrows'
+	});
+	
 	$('.csBox').slick({
 		infinite: true,
 		slidesToShow: 3,
