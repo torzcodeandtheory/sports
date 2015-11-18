@@ -1472,6 +1472,125 @@ a {
       color: #e31837;
       background: #fff; }
 
+.showContsWrap .showsTab {
+  clear: both;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px 0 10px; }
+  .showContsWrap .showsTab ul {
+    overflow: hidden;
+    max-width: 1198px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+    position: relative;
+    box-sizing: border-box;
+    min-width: 320px; }
+    .showContsWrap .showsTab ul li {
+      float: left; }
+      .showContsWrap .showsTab ul li p {
+        width: 70px;
+        line-height: 21px;
+        padding-top: 3px;
+        display: block; }
+      .showContsWrap .showsTab ul li a {
+        color: #fff;
+        text-align: center;
+        line-height: 32px;
+        padding: 3px 15px 0;
+        display: block;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .showContsWrap .showsTab ul li a:hover {
+          background: #e31837;
+          color: #fff; }
+      .showContsWrap .showsTab ul li.ui-tabs-active a {
+        background: #e31837;
+        color: #fff; }
+  .showContsWrap .showsTab .showConts .scwrap {
+    max-width: 1320px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+    position: relative;
+    box-sizing: border-box;
+    min-width: 320px;
+    overflow: hidden; }
+    .showContsWrap .showsTab .showConts .scwrap .leftPanel2 {
+      float: left;
+      max-width: -moz-calc(100% - 33%);
+      max-width: -webkit-calc(100% - 33%);
+      max-width: calc(100% - 33%);
+      width: 100%; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .showContsWrap .showsTab .showConts .scwrap .leftPanel2 {
+          max-width: -moz-calc(100% - 300px);
+          max-width: -webkit-calc(100% - 300px);
+          max-width: calc(100% - 300px); } }
+      .showContsWrap .showsTab .showConts .scwrap .leftPanel2 .holder img {
+        width: 100%;
+        height: auto; }
+    .showContsWrap .showsTab .showConts .scwrap .rightPanel2 {
+      float: right;
+      max-width: 490px;
+      min-width: 300px;
+      width: 33%; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .showContsWrap .showsTab .showConts .scwrap .rightPanel2 {
+          width: 33%; } }
+      .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder {
+        max-width: 370px;
+        width: 100%;
+        height: 33%;
+        height: auto; }
+        .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap {
+          float: left;
+          width: 100%;
+          padding: 10px 0 10px 30px;
+          box-sizing: border-box; }
+          .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .imgBlock {
+            float: left;
+            max-width: -moz-calc(100% - 80px);
+            max-width: -webkit-calc(100% - 80px);
+            max-width: calc(100% - 80px); }
+            .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .imgBlock img {
+              width: 100%;
+              height: auto; }
+          .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .socialIcons {
+            float: right; }
+            .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .socialIcons a {
+              display: block;
+              color: #fff;
+              width: 55px;
+              height: 55px;
+              position: relative;
+              margin-bottom: 3px; }
+              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .socialIcons a.fbLink {
+                background: #537bbd; }
+              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .socialIcons a.twLink {
+                background: #78cdf0; }
+              .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .holder .scawrap .socialIcons a i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -moz-transform: translateY(-50%) translateX(-50%);
+                  -moz-transform--webkit-transform: translateY(-50%) translateX(-50%);
+                  -moz-transform--ms-transform: translateY(-50%) translateX(-50%);
+                  -moz-transform--o-transform: translateY(-50%) translateX(-50%);
+                transform: translateY(-50%) translateX(-50%); }
+      .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks {
+        background: #898989;
+        width: 100%;
+        overflow: hidden; }
+        .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks:nth-child(odd) {
+          background: #58585a; }
+        .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive {
+          background: #e31837; }
+
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {
     width: 100%; }
