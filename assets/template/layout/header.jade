@@ -30,27 +30,26 @@ include ads-sizes
 			.logo
 				img(src="images/main-logo.png")
 			.triggers
-				.burger
-					<i class="fa fa-navicon fa-2x"></i>
+				.burgermenu
+					span
+					//<i class="fa fa-navicon fa-2x"></i>
 				.search
 					<i class="fa fa-search fa-2x"></i>
+			.mobilesearchbox
+				input(type='search' class='mobilesearch' placeholder='Search')
 			ul.nav
-				li
-					a(href="index.html") Home
-				li
-					a(href="livepage.html") Live
-				li
-					a(href="category.html") Basketball
-				li
-					a(href="#") Volleyball
-				li
-					a(href="#") Football
-				li
-					a(href="#") E-Sports
-				li
-					a(href="shows.html") Shows
-				li
-					a(href="upload.html") Upload
+				li: a(href="index.html") Home
+				li: a(href="livepage.html") Live
+				li: a(href="category.html") Basketball
+				li: a(href="#") Volleyball
+				li: a(href="#") Football
+				li: a(href="#") E-Sports
+				li: a(href="shows.html") Shows
+				li: a(href="upload.html") Upload
+				
+			.mobile-social
+				a(class='m-social--facebook'): i(class='fa fa-facebook')
+				a(class='m-social--twitter'): i(class='fa fa-twitter')
 					
 			.searchsocial
 				.searchBlock

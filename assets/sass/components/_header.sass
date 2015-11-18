@@ -12,7 +12,7 @@
 	background: $darkGray
 	float: left
 	width: 100%
-	max-height: 80px
+	max-height: 78px
 	border-bottom: 2px $red solid
 	+transitionspeed(.3s)
 	.triggers
@@ -264,3 +264,175 @@
 		color: $white
 		line-height: 28px
 		font-size: 20px
+
+.mobile-social
+	display: none
+	+fortablet
+		display: block
+		width: 100%
+		height: 30px
+		overflow: hidden
+
+		a
+			display: block
+			float: left
+			width: 50%
+			text-align: center
+			height: 30px
+			line-height: 30px
+			color: $white
+			&.m-social--twitter
+				background: #4099ff
+			&.m-social--facebook
+				background: #3b5998
+	+formobile
+		display: block
+		width: 100%
+		height: 30px
+		overflow: hidden
+
+		a
+			display: block
+			float: left
+			width: 50%
+			text-align: center
+			height: 30px
+			line-height: 30px
+			color: $white
+			&.m-social--twitter
+				background: #4099ff
+			&.m-social--facebook
+				background: #3b5998
+
+.mobilesearchbox
+	display: none
+	+fortablet
+		display: block
+		width: 100%
+		height: 60px
+		padding: 10px 0
+		+borderbox
+		clear: both
+	+formobile
+		display: block
+		width: 100%
+		height: 60px
+		padding: 10px 0
+		+borderbox
+		clear: both
+.mobilesearch
+	display: none
+	+fortablet
+		display: block
+		+appearance(none)
+		+bradius(0)
+		border: 0
+		+calcu(width,'100% - 20px')
+		margin: 0 auto
+		height: 40px
+		padding: 0 20px
+	+formobile
+		display: block
+		+appearance(none)
+		+bradius(0)
+		border: 0
+		+calcu(width,'100% - 20px')
+		height: 40px
+		margin: 10px auto
+		padding: 0 20px
+		margin: 0 auto
+
+.burgermenu
+	display: none
+	+fortablet
+		display: block
+		float: right
+		width: 30px
+		height: 20px
+		margin: 35px 20px 0 0 
+		position: relative
+
+		span
+			display: block
+			position: absolute
+			width: 100%
+			height: 3px
+			background: $white
+			+calcu(top,'50% - 2px')
+
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 3px
+			background: $white
+			top: 0
+			+transitionspeed(0.2s)
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 3px
+			background: $white
+			bottom: 0
+			+transitionspeed(0.2s)
+
+		&.open
+			span
+				display: none
+			&:before
+				+transitionspeed(0.2s)
+				+transform(rotate(45deg))
+				top: 50%
+			&:after
+				+transitionspeed(0.2s)
+				+transform(rotate(-45deg))
+				top: 50%
+	+formobile
+		display: block
+		float: right
+		width: 30px
+		height: 20px
+		margin: 27px 10px 0 0
+		position: relative
+
+		span
+			display: block
+			position: absolute
+			width: 100%
+			height: 3px
+			background: $white
+			+calcu(top,'50% - 2px')
+
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 3px
+			background: $white
+			top: 0
+			+transitionspeed(0.2s)
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 3px
+			background: $white
+			bottom: 0
+			+transitionspeed(0.2s)
+
+		&.open
+			span
+				display: none
+			&:before
+				+transitionspeed(0.2s)
+				+transform(rotate(45deg))
+				top: 50%
+			&:after
+				+transitionspeed(0.2s)
+				+transform(rotate(-45deg))
+				top: 50%

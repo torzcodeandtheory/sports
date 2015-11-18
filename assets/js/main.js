@@ -46,13 +46,13 @@ $(document).ready(function() {
 	var midSectBox = $('.mid-section');
 	var midSectUL = $('.mid-section ul.nav');
 
-	$('.burger').click(function() {
-		if(!$(this).hasClass('show')) {
-			$(this).addClass('show');
+	$('.burgermenu').click(function() {
+		if(!$(this).hasClass('open')) {
+			$(this).addClass('open');
 			$(midSectBox).addClass('show');
 			$(midSectUL).addClass('show');
 		} else {
-			$(this).removeClass('show');
+			$(this).removeClass('open');
 			$(midSectBox).removeClass('show');
 			$(midSectUL).removeClass('show');
 		}

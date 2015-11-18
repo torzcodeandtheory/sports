@@ -125,21 +125,14 @@
 			cursor: pointer
 			+transitionspeed(.3s)
 			right: 0
+		
+			.search
+				+fortablet
+					display: none
+				+formobile
+					display: none
 
-			& > div
-				position: relative
-				height: 80px
-				width: 25px
-				float: right
-				margin-right: 10px
-
-				&.show,
-				&:hover
-					color: $red
-					+transitionspeed(.3s)
-
-				i
-					+centerVert()
+			
 	
 	//Footer
 	.footer
