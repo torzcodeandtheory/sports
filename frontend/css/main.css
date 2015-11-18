@@ -1922,6 +1922,29 @@ a {
         .showContsWrap .showsTab .showConts .scwrap .rightPanel2 .scLinks.scActive {
           background: #e31837; }
 
+.showcontsblock {
+  clear: both;
+  padding: 25px 0; }
+  .showcontsblock div {
+    float: left;
+    width: 48%;
+    margin-right: 25px; }
+    .showcontsblock div:last-of-type {
+      margin-right: 0;
+      font-family: "Lato", Arial;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #fff; }
+    .showcontsblock div.imgBlock {
+      margin-bottom: 25px; }
+      .showcontsblock div.imgBlock img {
+        width: 100%; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .showcontsblock div {
+        width: 100%;
+        margin-right: 0; } }
+
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {
     width: 100%; }
