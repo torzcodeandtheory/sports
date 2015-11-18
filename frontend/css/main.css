@@ -111,6 +111,15 @@ a {
 .container {
   clear: both; }
 
+.header {
+  overflow: hidden;
+  width: 100%; }
+  .header.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9; }
+
 .mid-section {
   background: #262626;
   float: left;
@@ -218,6 +227,9 @@ a {
         font-size: 14px; }
         .mid-section .searchsocial .searchBlock .searchIcon:hover {
           color: #e31837; }
+        @media only screen and (min-width: 0) and (max-width: 767px) {
+          .mid-section .searchsocial .searchBlock .searchIcon {
+            display: none; } }
       .mid-section .searchsocial .searchBlock.open .searchIcon {
         color: #e31837;
         -moz-transition: 0.3s;
@@ -472,6 +484,45 @@ a {
       width: 100%;
       height: auto;
       display: block; }
+
+.ads-wide {
+  background: #363636;
+  height: 110px;
+  padding: 10px 0;
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media only screen and (min-width: 0) and (max-width: 767px) {
+    .ads-wide {
+      padding: 10px 0;
+      width: 100%;
+      height: 70px; } }
+
+.ads-box {
+  width: 728px;
+  height: 90px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 0) and (max-width: 767px) {
+    .ads-box {
+      width: 100%;
+      max-width: 320px;
+      height: 50px; } }
+  .ads-box:after {
+    content: 'LEADERBOARD';
+    display: block;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    color: #262626;
+    border: 1px #262626 solid; }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .ads-box:after {
+        height: 50px;
+        line-height: 50px; } }
 
 .fullCarouselBlock {
   background: #000;

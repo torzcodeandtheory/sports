@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	topmobileMenu();
+	navFixed();
 	//dropdown var and height
 	var dd = $('.dropdown ul');
 	
@@ -136,6 +137,16 @@ function topmobileMenu() {
 			$(this).addClass('open');
 			$(this).children('i').removeClass('fa-angle-double-down').addClass('fa-angle-double-up');
 			$('.topbar').addClass('slideDown');
+		}
+	});
+}
+
+function navFixed() {
+	$(window).on('scroll',function () {
+		if ($(this).scrollTop() > 110) {
+			$('.header').addClass('fixed');
+		} else if ($(this).scrollTop() < 110) {
+			$('.header').removeClass('fixed');
 		}
 	});
 }
