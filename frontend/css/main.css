@@ -1290,6 +1290,8 @@ a {
         width: 48.37%; } }
   .miniBlock.by3s li {
     width: 31.33%; }
+    .miniBlock.by3s li:nth-child(3n+3) {
+      margin-right: 0; }
     @media only screen and (min-width: 1280px) {
       .miniBlock.by3s li {
         width: 31.9%; } }
@@ -2118,6 +2120,70 @@ a {
   .showcontswrapper.eps .commentBox img {
     width: 100%;
     height: auto; }
+
+.showcontswrapper.eps .socialIconsFeeds {
+  width: 100%;
+  margin: 0 auto;
+  float: none;
+  overflow: hidden; }
+  .showcontswrapper.eps .socialIconsFeeds .shares {
+    float: left; }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .showcontswrapper.eps .socialIconsFeeds .shares {
+        float: none;
+        clear: both;
+        overflow: hidden;
+        margin-bottom: 10px; } }
+    .showcontswrapper.eps .socialIconsFeeds .shares li {
+      float: left;
+      margin: 10px 10px 0 0; }
+      .showcontswrapper.eps .socialIconsFeeds .shares li:last-of-type {
+        margin-right: 0; }
+  .showcontswrapper.eps .socialIconsFeeds .links {
+    float: right;
+    margin-bottom: 35px;
+    overflow: hidden; }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .showcontswrapper.eps .socialIconsFeeds .links {
+        float: none;
+        clear: both; } }
+    .showcontswrapper.eps .socialIconsFeeds .links li {
+      float: left;
+      margin-right: 10px; }
+      .showcontswrapper.eps .socialIconsFeeds .links li:last-of-type {
+        margin-right: 0; }
+      .showcontswrapper.eps .socialIconsFeeds .links li a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        color: #fff;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .showcontswrapper.eps .socialIconsFeeds .links li a.fbLink {
+          background: #537bbd; }
+          .showcontswrapper.eps .socialIconsFeeds .links li a.fbLink:hover {
+            background: #3d62a0; }
+        .showcontswrapper.eps .socialIconsFeeds .links li a.twLink {
+          background: #78cdf0; }
+          .showcontswrapper.eps .socialIconsFeeds .links li a.twLink:hover {
+            background: #4abceb; }
+        .showcontswrapper.eps .socialIconsFeeds .links li a.diggLink {
+          background: #1b1b1b; }
+          .showcontswrapper.eps .socialIconsFeeds .links li a.diggLink:hover {
+            background: #363636; }
+        .showcontswrapper.eps .socialIconsFeeds .links li a i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -moz-transform: translateY(-50%) translateX(-50%);
+            -moz-transform--webkit-transform: translateY(-50%) translateX(-50%);
+            -moz-transform--ms-transform: translateY(-50%) translateX(-50%);
+            -moz-transform--o-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%); }
 
 @media only screen and (max-width: 1023px) {
   .miniBlock.by2s li {
