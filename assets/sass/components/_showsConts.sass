@@ -1,0 +1,107 @@
+.showContsWrap
+	.showsTab
+		clear: both
+		color: $white
+		text-transform: uppercase
+		font-size: 14px
+		padding: 5px 0 10px
+		ul
+			overflow: hidden
+			max-width: 1198px
+			margin: 0 auto
+			width: 100%
+			padding: 0 10px
+			position: relative
+			box-sizing: border-box
+			min-width: 320px
+			li
+				float: left
+				p
+					width: 70px
+					line-height: 21px
+					padding-top: 3px
+					display: block
+				a
+					color: $white
+					text-align: center
+					line-height: 32px
+					padding: 3px 15px 0
+					display: block
+					+transitionspeed(.3s)
+					&:hover
+						background: $red
+						color: $white
+				&.ui-tabs-active
+					a
+						background: $red
+						color: $white
+		.showConts
+			.scwrap
+				max-width: 1320px
+				margin: 0 auto
+				width: 100%
+				padding: 0 10px
+				position: relative
+				box-sizing: border-box
+				min-width: 320px
+				overflow: hidden
+				.leftPanel2
+					float: left
+					+calcu(max-width,'100% - 33%')
+					width: 100%
+					+fortablet()
+						+calcu(max-width,'100% - 300px')
+					.holder
+						img
+							width: 100%
+							height: auto
+
+				.rightPanel2
+					float: right
+					max-width: 490px
+					min-width: 300px
+					width: 33%
+					+fortablet()
+						width: 33%
+					.holder
+						max-width: 370px
+						width: 100%
+						height: 33%
+						height: auto
+						.scaconts
+							
+						.scawrap
+							float: left
+							width: 100%
+							padding: 10px 0 10px 30px
+							box-sizing: border-box
+							.imgBlock
+								float: left
+								+calcu(max-width,'100% - 80px')
+								img
+									width: 100%
+									height: auto
+							.socialIcons
+								float: right
+								a
+									display: block
+									color: $white
+									width: 55px
+									height: 55px
+									position: relative
+									margin-bottom: 3px
+									&.fbLink
+										background: $fbBlue
+									&.twLink
+										background: $twBlue
+									i
+										+centerAll()
+									
+					.scLinks
+						background: $gray
+						width: 100%
+						overflow: hidden
+						&:nth-child(odd)
+							background: $white3
+						&.scActive
+							background: $red

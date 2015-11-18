@@ -1,0 +1,52 @@
+include ../layout/ads-sizes.jade
+
+mixin showtab
+	.contBlock.showContsWrap.dark
+		.b1366px
+			.titleBox
+				h2 Upload
+		.showsTab
+			ul
+				li
+					a(href="#yhtube") YH Tube
+				li
+					a(href="#pbakalinga") PBA Kalinga
+			.showConts#yhtube
+				.scwrap
+					.leftPanel2
+						.holder
+							img(src="images/vidHolder.png")
+					.rightPanel2
+						.scLinks.scActive
+							.holder
+								.scawrap
+									.imgBlock
+										img(src="http://lorempixel.com/270/150/")
+									.socialIcons
+										a(href="#", class="fbLink") <i class="fa fa-facebook fa-lg"></i>
+										a(href="#", class="twLink") <i class="fa fa-twitter fa-lg"></i>
+								.scaconts
+									h2 Nth Degree
+										span.
+											episode 11
+						.scLinks
+							.holder
+								img(src="http://lorempixel.com/170/90/")
+						.scLinks
+							.holder
+								img(src="http://lorempixel.com/170/90/")
+			.showConts#pbakalinga
+				.scwrap
+					.leftPanel2
+						.holder
+							img(src="images/vidHolder.png")
+					.rightPanel2
+						.scLinks.scActive
+							.holder
+								img(src="images/http://lorempixel.com/270/150/")
+						.scLinks
+							.holder
+								img(src="images/http://lorempixel.com/170/90/")
+						.scLinks
+							.holder
+								img(src="images/http://lorempixel.com/170/90/")
