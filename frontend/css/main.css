@@ -121,7 +121,32 @@ a {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 9; }
+    z-index: 9;
+    height: 50px; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .header.fixed {
+        height: auto; } }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .header.fixed {
+        height: auto; } }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .header.fixed .burgermenu {
+        margin: 15px 10px 0 0; } }
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      .header.fixed .burgermenu {
+        margin: 15px 10px 0 0; } }
+    .header.fixed .topbar {
+      display: none; }
+    .header.fixed .mid-section {
+      max-height: 48px; }
+      .header.fixed .mid-section.show {
+        max-height: 1366px !important; }
+      .header.fixed .mid-section .logo {
+        height: 50px; }
+      .header.fixed .mid-section .searchsocial {
+        margin: 13px 0 0; }
+      .header.fixed .mid-section .nav {
+        margin: 20px 0 0; }
 
 .mid-section {
   background: #262626;

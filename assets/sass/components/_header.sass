@@ -7,6 +7,28 @@
 		left: 0
 		top: 0
 		z-index: 9
+		height: 50px
+		+fortablet
+			height: auto
+		+formobile
+			height: auto
+		.burgermenu
+			+fortablet
+				margin: 15px 10px 0 0
+			+formobile
+				margin: 15px 10px 0 0
+		.topbar
+			display: none
+		.mid-section
+			max-height: 48px
+			&.show
+				max-height: 1366px!important
+			.logo
+				height: 50px
+			.searchsocial
+				margin: 13px 0 0 
+			.nav
+				margin: 20px 0 0
 
 .mid-section
 	background: $darkGray
