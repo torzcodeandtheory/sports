@@ -1340,6 +1340,9 @@ a {
       background: #1b1b1b;
       overflow: hidden;
       min-height: 76px; }
+      .miniBlock li .captionBlock.captionrel {
+        position: relative;
+        bottom: auto; }
       .miniBlock li .captionBlock .texts {
         max-width: -moz-calc(100% - 130px);
         max-width: -webkit-calc(100% - 130px);
@@ -1408,6 +1411,9 @@ a {
 .miniBlockCarousel li .captionBlock {
   padding: 15px;
   background: #363636; }
+  .miniBlockCarousel li .captionBlock.captionrel {
+    position: relative;
+    bottom: auto; }
   .miniBlockCarousel li .captionBlock .texts {
     max-width: none;
     float: none;
@@ -1761,6 +1767,10 @@ a {
         background: #1b1b1b;
         overflow: hidden;
         min-height: 76px; }
+        .gridwithad ul li .captionBlock.captionrel {
+          position: relative;
+          bottom: auto;
+          padding: 10px 15px; }
         .gridwithad ul li .captionBlock .texts {
           max-width: -moz-calc(100% - 130px);
           max-width: -webkit-calc(100% - 130px);

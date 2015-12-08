@@ -135,6 +135,10 @@
 			background: $blakish
 			overflow: hidden
 			min-height: 76px
+			&.captionrel
+				position: relative
+				bottom: auto
+				
 			.texts
 				+calc(max-width, '100% - 130px');
 				+centerVert()
@@ -196,6 +200,9 @@
 		.captionBlock
 			padding: 15px
 			background: $lightGray
+			&.captionrel
+				position: relative
+				bottom: auto
 			
 			.texts
 				max-width: none
